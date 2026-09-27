@@ -38,11 +38,12 @@ working privately on the problem of motion.[^britannica]
 
 News of a Dutch spyglass reached Venice in the summer of 1609. Galileo grasped the
 arrangement quickly — a weak convex objective at one end of a tube, a strong concave
-eyepiece at the other — ground his own lenses, and reached roughly eight times magnification
-almost at once, about twenty times by the end of the year, and some thirty times
-later.[^museo] In August 1609 he demonstrated the instrument to the Venetian Senate from the
-campanile of San Marco, arguing its value for sighting ships hours before they were visible
-to the naked eye. The Senate doubled his salary and confirmed his post for life.
+eyepiece at the other — and ground his own lenses, moving from a first three-power instrument
+that summer to eight power within weeks and twenty power by November. On 21 August 1609 he
+demonstrated the telescope from the campanile of San Marco before the Doge and the Venetian
+notables, arguing its value for sighting ships hours before they were visible to the naked
+eye; his professorship was confirmed for life and his salary raised to a thousand florins a
+year.[^museo]
 
 What he did next set him apart from the other early telescope makers: he pointed it away
 from the harbour. Between November 1609 and March 1610 he established that the line dividing
@@ -50,10 +51,11 @@ lunar day from night is ragged rather than smooth, implying mountains and valley
 that Aristotelian cosmology required to be perfectly spherical; that the Milky Way resolves
 into individual stars; and, from 7 January 1610, that four small bodies accompany Jupiter and
 shift position from night to night. He published all of it within weeks as *Sidereus
-Nuncius*, printed in Venice on 13 March 1610, naming the satellites the Medicean Stars after
-the ruling family of Tuscany, which promptly appointed him mathematician and philosopher to
-the Grand Duke.[^loc] The names now in use — Io, Europa, Ganymede and Callisto — were
-proposed by his rival Simon Marius and became standard only in the twentieth century.
+Nuncius*, printed in Venice in March 1610, naming the satellites the Medicean Stars after the
+ruling family of Tuscany, which promptly appointed him mathematician and philosopher to the
+Grand Duke.[^sidereus] By his own account the instrument magnified more than thirty diameters.
+The names now in use — Io, Europa, Ganymede and Callisto — were proposed by his rival Simon
+Marius and became standard only in the twentieth century.
 
 ## Further observations
 
@@ -68,10 +70,10 @@ Sun's surface rather than in front of it, and inferred the Sun's rotation from t
 His optics could not resolve Saturn's rings, which he described as two attendant bodies that
 later inexplicably vanished.
 
-The instrument was understood through an older tradition of optics. The behaviour of
-[[Light]] in lenses and the formation of inverted images inside a darkened room, the
-[[Camera obscura]], had been analysed centuries before, and Galileo used projection rather
-than direct viewing for his solar work.
+The instrument was understood through an older tradition of optics: the behaviour of
+[[Light]] in lenses and the inverted image formed inside a darkened room, the
+[[Camera obscura]], had been analysed centuries earlier. Galileo used projection rather than
+direct viewing for his solar work.
 
 ## The science of motion
 
@@ -196,28 +198,32 @@ scripture.[^vatican]
             },
             {
                 "key": "museo",
-                "title": "Museo Galileo, Institute and Museum of the History of Science",
-                "url": "https://www.museogalileo.it/en/",
+                "title": "Galileo's Telescope: From the Workshop to the Stars",
+                "url": (
+                    "https://brunelleschi.imss.fi.it/esplora/cannocchiale/dswmedia/storia/"
+                    "estoria2_st.html"
+                ),
                 "authors": "",
-                "publisher": "Museo Galileo, Florence",
-                "published_on": "",
+                "publisher": (
+                    "Museo Galileo, Institute and Museum of the History of Science, Florence"
+                ),
+                "published_on": "2008",
                 "accessed_on": "2026-09-26",
                 "identifier": "",
                 "quote": "",
             },
             {
-                "key": "loc",
-                "title": "Starry Messenger: Galileo's Rapidly Published Findings",
-                "url": (
-                    "https://www.loc.gov/static/collections/"
-                    "finding-our-place-in-the-cosmos-with-carl-sagan/articles-and-essays/"
-                    "modeling-the-cosmos/galileo-and-the-telescope.html"
+                "key": "sidereus",
+                "title": "Sidereus Nuncius, or The Sidereal Messenger",
+                "url": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo22228783.html",
+                "authors": (
+                    "Galileo Galilei; translated with introduction, conclusion and notes by "
+                    "Albert Van Helden"
                 ),
-                "authors": "",
-                "publisher": "Library of Congress",
-                "published_on": "",
+                "publisher": "University of Chicago Press, second edition",
+                "published_on": "2015",
                 "accessed_on": "2026-09-26",
-                "identifier": "",
+                "identifier": "ISBN 978-0-226-32012-0",
                 "quote": "",
             },
             {
@@ -272,7 +278,7 @@ scripture.[^vatican]
             "holes are now observed through X-rays, stellar orbits, gravitational waves and "
             "direct imaging."
         ),
-        "content": """**Black holes** are regions of spacetime in which gravity is so strong that no
+        "content": """**A black hole** is a region of spacetime in which gravity is so strong that no
 matter and no signal, including [[Light|light itself]], can escape to the outside. The
 boundary of such a region is its event horizon, a one-way surface rather than a physical
 membrane: an object crossing it can still send signals inward but never outward again. Black
@@ -408,10 +414,10 @@ light-years away and far more variable, followed on 12 May 2022.[^eht2022]
 
 ## Thermodynamics and Hawking radiation
 
-The deepest surprises are thermodynamic. In 1972 Jacob Bekenstein argued that a black hole
+The deepest surprises are thermodynamic. In 1973 Jacob Bekenstein argued that a black hole
 must carry an entropy proportional to the area of its horizon rather than to its volume,
 because otherwise dropping matter into one would let an observer violate the second law of
-[[Thermodynamics]].[^bekenstein] Two years later Stephen Hawking showed that applying
+[[Thermodynamics]].[^bekenstein] The following year Stephen Hawking showed that applying
 [[Quantum mechanics]] to fields near a horizon makes the black hole radiate with a genuine
 thermal spectrum, fixing the constant in Bekenstein's formula.[^hawking] The entropy equals
 one quarter of the horizon area in Planck units.
@@ -688,10 +694,10 @@ inside. No consensus resolution has been established.
             "its shadow on the surface. Because the two discs appear almost the same size, "
             "totality lasts only minutes and briefly exposes the Sun's corona."
         ),
-        "content": """**Solar eclipses** occur when the Moon passes between the Earth and the Sun and
-casts its shadow across part of the Earth's surface. They depend on a coincidence with no
-physical cause: the Sun is roughly 400 times the diameter of the Moon and also roughly 390
-times as far away, so the two discs appear almost exactly the same size from the ground. A
+        "content": """**A solar eclipse** occurs when the Moon passes between the Earth and the Sun
+and casts its shadow across part of the Earth's surface. Totality depends on a coincidence
+with no physical cause: the Sun is roughly 400 times the diameter of the Moon and also roughly
+390 times as far away, so the two discs appear almost exactly the same size from the ground. A
 slightly smaller Moon would never produce totality; a slightly larger one would hide the
 Sun's outer atmosphere along with the disc.
 
@@ -701,7 +707,7 @@ The Moon's orbit is tilted about five degrees to the plane of the Earth's orbit,
 moons pass above or below the Sun. An eclipse requires the new moon to fall near one of the
 two nodes where the orbital planes cross, which happens during eclipse seasons about 173 days
 apart. Both orbits are elliptical, so the apparent diameters vary: the Moon's between roughly
-29.4 and 33.5 arcminutes, the Sun's between about 31.6 and 32.7. Whether a given central
+29.4 and 33.5 arcminutes, the Sun's between about 31.5 and 32.5. Whether a given central
 eclipse is total or annular depends on where in that range the two discs happen to fall.
 
 The shadow has two parts. Within the umbra the solar disc is entirely covered; within the

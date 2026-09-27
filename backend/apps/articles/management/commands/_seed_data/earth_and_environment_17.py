@@ -203,7 +203,7 @@ Krakatoa does not require an eruption on the scale of 1883.[^britannica]
                     "The Eruption of Krakatoa, and Subsequent Phenomena: Report of the Krakatoa "
                     "Committee of the Royal Society"
                 ),
-                "url": "",
+                "url": "https://archive.org/details/eruptionofkrakat00roya",
                 "authors": "G. J. Symons (editor)",
                 "publisher": "Trübner & Co., London",
                 "published_on": "1888",
@@ -230,7 +230,7 @@ Krakatoa does not require an eruption on the scale of 1883.[^britannica]
                 "publisher": "Harvard University Press",
                 "published_on": "1996",
                 "accessed_on": "2026-09-26",
-                "identifier": "",
+                "identifier": "ISBN 978-0-674-50568-1",
                 "quote": "",
             },
             {
@@ -474,12 +474,12 @@ still there.
             {
                 "key": "epica2004",
                 "title": "Eight glacial cycles from an Antarctic ice core",
-                "url": "",
+                "url": "https://doi.org/10.1038/nature02599",
                 "authors": "EPICA community members",
-                "publisher": "Nature 429",
+                "publisher": "Nature 429, 623–628",
                 "published_on": "2004",
                 "accessed_on": "2026-09-26",
-                "identifier": "",
+                "identifier": "doi:10.1038/nature02599",
                 "quote": "",
             },
             {
@@ -495,13 +495,16 @@ still there.
             },
             {
                 "key": "darwin1839",
-                "title": "Observations on the parallel roads of Glen Roy",
-                "url": "",
+                "title": (
+                    "Observations on the parallel roads of Glen Roy, and other parts of Lochaber "
+                    "in Scotland, with an attempt to prove that they are of marine origin"
+                ),
+                "url": "https://doi.org/10.1098/rstl.1839.0005",
                 "authors": "Charles Darwin",
-                "publisher": "Philosophical Transactions of the Royal Society of London",
+                "publisher": "Philosophical Transactions of the Royal Society of London 129, 39–81",
                 "published_on": "1839",
                 "accessed_on": "2026-09-26",
-                "identifier": "",
+                "identifier": "doi:10.1098/rstl.1839.0005",
                 "quote": "",
             },
         ],
@@ -619,11 +622,15 @@ maximum of the current [[Ice age]] the sea stood about 125 metres lower than tod
 
 ## Measuring the cycle
 
-The question of whether rainfall is sufficient to feed rivers and springs was settled by
-measurement. Pierre Perrault gauged precipitation in the upper Seine basin and compared it
-with the river's discharge in *De l'origine des fontaines* of 1674, showing a large surplus;
-Edmond Halley followed with experiments on evaporation rates that closed the other side of
-the account.[^perrault1674] Modern monitoring combines rain gauges and river gauging stations
+Until the seventeenth century springs and rivers were widely held to be fed by seawater drawn
+underground, on the grounds that rain was far too meagre to supply them. The question was
+settled by measurement. Pierre Perrault gauged precipitation over the upper Seine basin and
+compared the total with the river's discharge in *De l'origine des fontaines* of 1674,
+concluding that only about a sixth of the rainfall was needed to account for the
+flow.[^perrault1674] Edme Mariotte repeated the comparison for the Seine at Paris in the
+following decade, and Edmond Halley measured evaporation from a heated pan of water and scaled
+the result to the Mediterranean, closing the other side of the account. Modern monitoring
+combines rain gauges and river gauging stations
 with satellites: precipitation radar and microwave instruments measure rainfall over the
 oceans, and pairs of satellites detect month-to-month changes in groundwater and ice by
 sensing tiny variations in Earth's gravity field.[^nasagpm] Stable isotopes of hydrogen and
@@ -719,12 +726,12 @@ water travelled.
                     "Estimates of the Global Water Budget and Its Annual Cycle Using "
                     "Observational and Model Data"
                 ),
-                "url": "",
+                "url": "https://doi.org/10.1175/JHM600.1",
                 "authors": "Kevin E. Trenberth, Lesley Smith, Taotao Qian, Aiguo Dai and John Fasullo",
                 "publisher": "Journal of Hydrometeorology 8, 758–769",
                 "published_on": "2007",
                 "accessed_on": "2026-09-26",
-                "identifier": "",
+                "identifier": "doi:10.1175/JHM600.1",
                 "quote": "",
             },
             {
@@ -746,7 +753,7 @@ water travelled.
                 "title": "De l'origine des fontaines",
                 "url": "",
                 "authors": "Pierre Perrault",
-                "publisher": "",
+                "publisher": "Pierre Le Petit, Paris",
                 "published_on": "1674",
                 "accessed_on": "2026-09-26",
                 "identifier": "",

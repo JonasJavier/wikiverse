@@ -22,18 +22,17 @@ muscular mantle and a nervous system of which the greater part lies outside the 
 ## Classification and diversity
 
 Octopuses are coleoid cephalopods, the lineage that also produced squid and cuttlefish,
-and therefore molluscs whose ancestors abandoned the external shell. Modern
-classifications recognise about 300 species, split between the incirrate octopuses,
-which include almost all familiar shallow-water forms, and the cirrate or dumbo
-octopuses of deep water, which keep fins on the mantle and filaments beside their
-suckers.
+and so molluscs whose ancestors abandoned the external shell. About 300 species are
+recognised, split between the incirrate octopuses, which include almost all familiar
+shallow-water forms, and the cirrate or dumbo octopuses of deep water, which keep fins
+on the mantle.
 
 The size range is wide. *Octopus wolfi* of the western Pacific matures at roughly 1.5 cm
 and weighs under a gram, while adult giant Pacific octopuses (*Enteroctopus dofleini*)
-commonly reach about 15 kg with an arm span of some 4 m, and exceptional individuals
-have been recorded at 50 kg or more. Octopuses occur in every ocean, from intertidal
-pools and the crevices of a [[Coral reef]] to hydrothermal vents and abyssal sediment
-several kilometres down.
+commonly reach about 15 kg with an arm span of some 4 m, and larger individuals are
+occasionally reported. Octopuses occur in every ocean, from intertidal pools and the
+crevices of a [[Coral reef]] to hydrothermal vents and abyssal sediment several
+kilometres down.
 
 ## Body plan
 
@@ -43,7 +42,7 @@ ventilates the gills and drives jet propulsion; octopuses also crawl, and a few 
 walk on two arms. Three hearts serve the circulation: two branchial hearts push blood
 through the gills and one systemic heart sends it to the body. Oxygen is carried by
 haemocyanin, a copper-bearing protein that is colourless when empty and blue when
-loaded, and that performs comparatively well in cold, oxygen-poor water.
+loaded, that works comparatively well in cold, oxygen-poor water.
 
 In most species the chitinous beak is the only hard part of the body, so its width sets
 the narrowest gap an animal can squeeze through — the basis of the octopus reputation
@@ -54,17 +53,18 @@ against the incompressible tissue held by another.
 ## Nervous system
 
 The common octopus (*Octopus vulgaris*) has on the order of 500 million neurons, closer
-to a small mammal than to any other invertebrate of comparable size. Only about a third
-sit in the central brain, a lobed mass wrapped around the oesophagus. Roughly two-thirds
-— some 40 million per arm — lie in the arms themselves, in axial nerve cords with a
-ganglion at each sucker, so that an arm can run a reach-and-grasp movement largely on
-its own and a severed arm still withdraws from noxious stimuli.
+to a small mammal than to any other invertebrate of comparable size. Only 40 to 45
+million lie in the central brain itself, a mass of some 40 lobes wrapped around the
+oesophagus, with a further large share in the optic lobes behind the eyes. Roughly
+two-thirds of the total — about 40 million per arm — sit in the arms, in axial nerve
+cords with a ganglion at each sucker, so that an arm can run a reach-and-grasp movement
+largely on its own and a severed arm still withdraws from noxious stimuli.
 
-The suckers are chemical organs as well as mechanical ones. They carry a family of
-chemotactile receptors, related to nicotinic acetylcholine receptors but tuned to poorly
-soluble molecules and responsive only on contact, so an octopus probing a crevice it
-cannot see is in effect tasting the surface it touches.[^vangiesen2020] The central
-brain includes a vertical lobe implicated in learning and [[Memory|memory]] , and
+The suckers are chemical organs as well as mechanical ones. They carry chemotactile
+receptors that fire only on contact and respond to poorly soluble molecules, so an
+octopus probing a crevice it cannot see is in effect tasting the surface it
+touches.[^vangiesen2020] The central
+brain includes a vertical lobe implicated in learning and [[Memory|memory]], and
 trained animals retain visual and tactile discriminations for weeks.
 
 ## Skin, colour and camouflage
@@ -73,7 +73,7 @@ Octopus skin is an actively driven display surface. Chromatophores — elastic s
 pigment, each pulled open by a ring of radial muscles under direct neural control —
 allow whole-body pattern changes in well under a second, without the hormonal delay seen
 in fish and reptiles. Beneath them, iridophores and leucophores reflect and scatter
-[[Light|light]] , adding structural blues, greens and a broadband white, while papillae
+[[Light|light]], adding structural blues, greens and a broadband white, while papillae
 raise the skin into ridges and flaps that change texture as well as tone.
 
 The puzzle is that octopuses appear to be colour blind. Their retinas express a single
@@ -89,8 +89,7 @@ Octopuses learn mazes, discriminate shapes, open screw-top containers and drill 
 shells of prey to inject saliva. The clearest case of invertebrate tool use comes from
 soft-sediment habitats off Indonesia, where veined octopuses (*Amphioctopus marginatus*)
 were repeatedly filmed carrying stacked coconut shell halves for up to 20 m in an
-awkward stilt-walking gait that offers no protection while the animal is moving, then
-assembling them into a shelter on arrival.[^finn2009] Because the object is carried for
+awkward stilt-walking gait, then assembling them into a shelter on arrival.[^finn2009] Because the object is carried for
 later use rather than picked up on the spot, the behaviour meets a stricter definition
 of tool use than most reported invertebrate examples.
 
@@ -101,7 +100,7 @@ packaged sperm with a modified arm, the hectocotylus. Females lay strings of egg
 and ventilate them, generally stop feeding, and die at or shortly after hatching. The
 optic glands behind the eyes drive this decline; in brooding *Octopus bimaculoides* they
 switch on several distinct signalling systems at once, including cholesterol and
-steroid-hormone synthesis, rather than simply suppressing appetite.[^wang2018]
+steroid-hormone synthesis.[^wang2018]
 
 Brooding can be extraordinarily long in cold water. A female *Graneledone boreopacifica*
 was revisited on the same rock face at 1,397 m off central California over 53 months and
@@ -116,9 +115,8 @@ base pairs, comparable to a human genome but not the product of whole-genome
 duplication. It contains 168 protocadherin genes, roughly ten times the number found in
 other invertebrates and more than twice the mammalian complement, alongside a large
 expansion of C2H2 zinc-finger transcription factors and hundreds of novel genes
-expressed in neural tissue and suckers.[^albertin2015] Since cephalopod neurons lack
-myelin and signal poorly over long distances, these short-range cell-adhesion genes are
-thought to matter for wiring a large but locally organised nervous system.
+expressed in neural tissue and suckers.[^albertin2015] These short-range cell-adhesion
+genes are thought to matter for wiring a large but locally organised nervous system.
 
 Coleoid cephalopods also make unusually heavy use of RNA editing. Tens of thousands of
 conserved adenosine-to-inosine sites recode messenger RNA, concentrated in transcripts
@@ -129,11 +127,10 @@ transcript is bought at the price of slower evolution in the genome.[^liscovitch
 ## Evolutionary significance
 
 Cephalopods and vertebrates arrived independently at camera eyes with a lens and a
-focused retinal image, one of the most cited cases of convergence under
-[[Natural selection]] ; the octopus retina is not inverted, so it has no blind spot. A
-large nervous system combined with a short life and no parental instruction makes the
-group a useful test of which features of complex behaviour require a vertebrate
-architecture.
+focused retinal image, a much-cited case of convergence under [[Natural selection]]; the
+octopus retina is not inverted, so it has no blind spot. A large nervous system paired
+with a short life and no parental instruction makes the group a useful test of which
+features of complex behaviour require a vertebrate architecture.
 """,
         "tier": "standard",
         "kind": "concept",
@@ -393,7 +390,7 @@ individually marked bees, and shared the 1973 Nobel Prize in Physiology or Medic
 Konrad Lorenz and Nikolaas Tinbergen for the work.[^frisch1973] The dance is one of the
 few well-documented animal signals to encode two continuous quantities in a single
 display, which has made it a standard example in discussions of how much a signal can
-carry — the subject matter of [[Information theory]] . It is also a memory problem: a
+carry — the subject matter of [[Information theory]]. It is also a memory problem: a
 forager must retain the bearing and range of a site visited earlier and correct for the
 sun's movement, drawing on processes studied under [[Memory|memory]] in other animals.
 
@@ -409,12 +406,12 @@ that prime the cluster to warm its flight muscles for departure.[^seeley2004] Be
 the quorum is reached soonest at the cavity attracting the most independent inspection,
 the mechanism tends to choose good sites while keeping the decision short — an
 accuracy-against-speed trade-off of the kind treated formally in
-[[Probability theory|probability]] .
+[[Probability theory|probability]].
 
 ## Honey and the colony's economy
 
 Nectar is a dilute sugar solution whose concentration varies widely with plant and
-weather, produced by flowers that run on [[Photosynthesis]] . House bees add the enzyme
+weather, produced by flowers that run on [[Photosynthesis]]. House bees add the enzyme
 invertase, which splits sucrose into glucose and fructose, and reduce the water content
 to below about 20 per cent by repeatedly exposing droplets to air and fanning the nest.
 The result keeps almost indefinitely: it is acidic and holds too little available water
@@ -621,7 +618,7 @@ wrong about the agent. A rival contagionist tradition held that something materi
 passed between the sick and the well, and it had produced working institutions long
 before it produced a mechanism: from the fourteenth century, [[Venice|Venetian]]
 authorities and their Adriatic neighbours ran isolation islands and imposed fixed
-detention periods on arriving ships in response to [[The Black Death|plague]] .
+detention periods on arriving ships in response to [[The Black Death|plague]].
 
 In 1546 the Veronese physician Girolamo Fracastoro published *De contagione et
 contagiosis morbis*, which argued that contagion was carried by *seminaria*, minute
@@ -687,7 +684,7 @@ It did not convert official opinion, which went on preferring miasma and elevati
 the river, and *Vibrio cholerae* was not accepted as the cause for another three
 decades. The episode is nevertheless a founding case in epidemiology, and it tied
 disease for the first time to the engineered portion of
-[[The water cycle|the water cycle]] .
+[[The water cycle|the water cycle]].
 
 ## Fermentation, spontaneous generation and Pasteur
 
@@ -706,7 +703,7 @@ in the bend. Tilt the flask so that the broth touched the dust, or snap the neck
 and it clouded within days. Pasteur then applied the reasoning in the field, diagnosing
 and controlling the silkworm disease pébrine through the 1860s and developing
 attenuated-culture vaccines for fowl cholera, anthrax and rabies in the 1880s, which
-opened the modern history of [[Vaccination|vaccination]] .
+opened the modern history of [[Vaccination|vaccination]].
 
 ## Antisepsis in surgery
 

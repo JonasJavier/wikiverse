@@ -274,22 +274,25 @@ at [[Mercury (planet)]].
 
 ## Physical properties
 
-Mercury melts at -38.83 °C and boils at 356.73 °C, a liquid range of nearly four hundred
+Mercury melts at -38.83 °C and boils at 356.6 °C, a liquid range of nearly four hundred
 degrees, and its density of 13.534 grams per cubic centimetre at 25 °C means a one-litre
 flask holds about 13.5 kilograms of it.[^rsc] Its surface tension is very high, and because it
-does not wet glass it beads on a surface and stands with a meniscus that curves upward in a
-tube. Thermal expansion is close to linear across most of the liquid range, which is why
-mercury made accurate thermometers; electrical conductivity is high while thermal conductivity
-is poor for a metal. The triple point at -38.8344 °C is one of the defining fixed points of
+does not wet glass it beads on a surface and stands in a tube with a meniscus that bulges
+upward rather than dipping. Thermal expansion is close to linear across most of the liquid
+range, which is why mercury made accurate thermometers, while both its electrical and its
+thermal conductivity are poor for a metal: it served in switches and rectifiers because a
+liquid conductor makes and breaks contact cleanly, not because it conducts especially well.
+The triple point at -38.8344 °C is one of the defining fixed points of
 the International Temperature Scale of 1990. Mercury also opened low-temperature physics: in
 1911 Heike Kamerlingh Onnes cooled a mercury thread below 4.2 kelvin and found its electrical
 resistance vanish, the first observation of superconductivity.
 
 ## Why mercury is liquid
 
-The anomalies follow from relativity. In an atom holding 80 protons the innermost electrons
-move at a substantial fraction of the speed of light, and the resulting relativistic increase
-in their mass contracts and stabilises the 6s orbital.[^norrby] Mercury's two 6s electrons are
+The anomalies follow from relativity. Around a nucleus of 80 protons, electrons in s orbitals,
+which have appreciable probability density close to the nucleus, reach a substantial fraction
+of the speed of light there, and the resulting relativistic mass increase contracts and
+stabilises the 6s orbital.[^norrby] Mercury's two 6s electrons are
 therefore bound tightly and shared reluctantly, so neighbouring atoms in the solid and the
 liquid are held mostly by weak dispersion forces rather than by strong metallic bonding —
 closer in this respect to a noble gas than to its neighbours gold and thallium. The
@@ -309,9 +312,10 @@ is unusually simple: roasting the ore in air drives off sulfur dioxide and mercu
 which is condensed to the liquid metal. Two deposits dominated historical supply — Almadén in
 central Spain, worked since antiquity, and Idrija in Slovenia, found in 1490 — and the two
 were jointly inscribed on the UNESCO World Heritage List in 2012 as the largest mercury mines
-in the world.[^unesco] The mine at Huancavelica in Peru supplied mercury for the patio
-amalgamation process that separated silver at Potosí from the mid-sixteenth century, which
-made the metal a strategic commodity of the Spanish empire.
+in the world.[^unesco] The mine at Huancavelica in Peru, expropriated by the crown in 1572,
+supplied mercury for the amalgamation process that separated silver at Potosí; developed in New
+Spain in the 1550s and imposed on the Andean refineries in the 1570s, it made mercury a
+strategic commodity of the Spanish empire.
 
 ## Uses
 
@@ -343,9 +347,10 @@ Japan, where a chemical works discharged methylmercury into the bay; the resulti
 neurological disease was identified in 1956 and traced to contaminated fish and shellfish. The
 Minamata Convention on Mercury, adopted at Kumamoto on 10 October 2013 and in force since 16
 August 2017, restricts primary mining, trade and mercury-added products.[^minamata] The United
-Nations Environment Programme's 2018 assessment put anthropogenic emissions to air at about
-2,220 tonnes a year, with artisanal and small-scale gold mining the largest single source at
-roughly 38 per cent, ahead of coal combustion at about 21 per cent.[^unep] Mercury thus
+Nations Environment Programme's 2018 assessment put anthropogenic emissions to air in 2015 at
+about 2,220 tonnes, with artisanal and small-scale gold mining the largest single source at
+roughly 38 per cent, ahead of the stationary combustion of coal at about 21 per cent.[^unep]
+Mercury thus
 belongs with radium, whose hazards went unrecognised in the laboratories of [[Marie Curie]] and
 her contemporaries, among the substances whose usefulness was understood long before their
 harm.
@@ -369,7 +374,7 @@ harm.
                 {"kind": "header", "value": "Physical properties"},
                 {"kind": "row", "label": "Appearance", "value": "Silvery liquid metal"},
                 {"kind": "row", "label": "Melting point", "value": "-38.83 °C"},
-                {"kind": "row", "label": "Boiling point", "value": "356.73 °C"},
+                {"kind": "row", "label": "Boiling point", "value": "356.6 °C"},
                 {
                     "kind": "row",
                     "label": "Density",
@@ -559,10 +564,10 @@ radioactivity and half jointly to Pierre and Marie Curie for their research on t
 phenomena he had found. She was the first woman to receive a Nobel Prize, and she had not
 appeared in the original nomination.[^nobel1903][^nobeltheme] Pierre was killed by a
 horse-drawn wagon in a Paris street on 19 April 1906, and the faculty gave her his chair,
-making her the first woman to teach at the Sorbonne. In 1911 she received the Nobel Prize in
-Chemistry alone, "in recognition of her services to the advancement of chemistry by the
-discovery of the elements radium and polonium, by the isolation of radium and the study of the
-nature and compounds of this remarkable element".[^nobel1911] Her Nobel lecture set out
+making her the first woman to teach at the Sorbonne; she was appointed its first woman titular
+professor in 1908. In 1911 she received the Nobel Prize in Chemistry alone, cited for the
+discovery of radium and polonium, the isolation of radium, and the study of that element's
+nature and compounds.[^nobel1911] Her Nobel lecture set out
 radium's chemistry and the new principle that an element could be characterised by its
 radiation as well as by its reactions.[^lecture] The Institut du radium, built jointly by the
 University of Paris and the Pasteur Institute, opened on the eve of the First World War with

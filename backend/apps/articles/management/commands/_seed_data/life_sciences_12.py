@@ -51,8 +51,9 @@ later confirmed.
 
 ## Pigments and light capture
 
-Absorption is the work of pigments held in protein complexes. Chlorophyll a, isolated and
-named in 1817 by Joseph Bienaimé Caventou and Pierre Joseph Pelletier, absorbs strongly in
+Absorption is the work of pigments held in protein complexes. Chlorophyll was isolated from
+leaves and named in 1817 by Pierre Joseph Pelletier and Joseph Bienaimé Caventou; the several
+forms it takes were distinguished later. Its commonest form, chlorophyll a, absorbs strongly in
 the blue near 430 nm and in the red near 660 to 680 nm, and weakly in between; the green
 [[Light|light]] it neither absorbs nor uses is what reaches the eye, which is why most foliage
 looks green. Chlorophyll b and the carotenoids widen the usable spectrum and also dissipate
@@ -174,9 +175,10 @@ plant could restore air in which a candle had burnt out. Jan Ingenhousz demonstr
 that the restorative effect required sunlight and came from the green parts of the
 plant.[^ingenhousz] Jean Senebier identified carbon dioxide as the carbon source, and
 Nicolas-Théodore de Saussure showed by weighing that water is incorporated too. Julius von
-Sachs established in 1862 that starch grains accumulate in chloroplasts in the light. Robert
-Hill separated the two halves of the process in 1937 by showing that isolated chloroplasts
-evolve oxygen with an artificial electron acceptor and no carbon dioxide present.[^britannica]
+Sachs established in 1862 that starch grains accumulate in chloroplasts in the
+light.[^britannica] Robert Hill separated the two halves of the process in 1937 by showing that
+chloroplasts isolated from leaves evolve oxygen in the light when supplied with an artificial
+electron acceptor and no carbon dioxide at all.[^hill1937]
 Each of those results narrowed the question the next generation had to answer, and the
 selective advantage of the resulting machinery is itself a standard illustration of
 [[Natural selection]] acting on biochemistry.
@@ -239,20 +241,17 @@ selective advantage of the resulting machinery is itself a standard illustration
             {
                 "key": "rubenkamen",
                 "title": "Heavy Oxygen (O18) as a Tracer in the Study of Photosynthesis",
-                "url": "",
+                "url": "https://doi.org/10.1021/ja01848a512",
                 "authors": "Samuel Ruben, Merle Randall, Martin Kamen, James L. Hyde",
                 "publisher": "Journal of the American Chemical Society, vol. 63, pp. 877–879",
                 "published_on": "1941",
                 "accessed_on": "2026-09-26",
-                "identifier": "",
+                "identifier": "doi:10.1021/ja01848a512",
                 "quote": "",
             },
             {
                 "key": "umena",
-                "title": (
-                    "Crystal structure of oxygen-evolving photosystem II at a resolution "
-                    "of 1.9 Å"
-                ),
+                "title": "Crystal structure of oxygen-evolving photosystem II at 1.9 Å",
                 "url": "https://doi.org/10.1038/nature09913",
                 "authors": "Yasufumi Umena, Keisuke Kawakami, Jian-Ren Shen, Nobuo Kamiya",
                 "publisher": "Nature, vol. 473, pp. 55–60",
@@ -267,23 +266,23 @@ selective advantage of the resulting machinery is itself a standard illustration
                     "Photosynthesis by sugar-cane leaves: a new carboxylation reaction and "
                     "the pathway of sugar formation"
                 ),
-                "url": "",
+                "url": "https://doi.org/10.1042/bj1010103",
                 "authors": "Marshall D. Hatch, C. Roger Slack",
                 "publisher": "Biochemical Journal, vol. 101, pp. 103–111",
                 "published_on": "1966",
                 "accessed_on": "2026-09-26",
-                "identifier": "",
+                "identifier": "doi:10.1042/bj1010103",
                 "quote": "",
             },
             {
                 "key": "lyons",
                 "title": "The rise of oxygen in Earth's early ocean and atmosphere",
-                "url": "",
+                "url": "https://doi.org/10.1038/nature13068",
                 "authors": "Timothy W. Lyons, Christopher T. Reinhard, Noah J. Planavsky",
                 "publisher": "Nature, vol. 506, pp. 307–315",
                 "published_on": "2014",
                 "accessed_on": "2026-09-26",
-                "identifier": "",
+                "identifier": "doi:10.1038/nature13068",
                 "quote": "",
             },
             {
@@ -306,12 +305,12 @@ selective advantage of the resulting machinery is itself a standard illustration
             {
                 "key": "zhu",
                 "title": "Improving photosynthetic efficiency for greater yield",
-                "url": "",
+                "url": "https://doi.org/10.1146/annurev-arplant-042809-112206",
                 "authors": "Xin-Guang Zhu, Stephen P. Long, Donald R. Ort",
                 "publisher": "Annual Review of Plant Biology, vol. 61, pp. 235–261",
                 "published_on": "2010",
                 "accessed_on": "2026-09-26",
-                "identifier": "",
+                "identifier": "doi:10.1146/annurev-arplant-042809-112206",
                 "quote": "",
             },
             {
@@ -326,6 +325,17 @@ selective advantage of the resulting machinery is itself a standard illustration
                 "published_on": "1779",
                 "accessed_on": "2026-09-26",
                 "identifier": "",
+                "quote": "",
+            },
+            {
+                "key": "hill1937",
+                "title": "Oxygen Evolved by Isolated Chloroplasts",
+                "url": "https://doi.org/10.1038/139881a0",
+                "authors": "Robert Hill",
+                "publisher": "Nature, vol. 139, pp. 881–882",
+                "published_on": "1937",
+                "accessed_on": "2026-09-26",
+                "identifier": "doi:10.1038/139881a0",
                 "quote": "",
             },
             {
@@ -370,9 +380,10 @@ selective advantage of the resulting machinery is itself a standard illustration
         ),
         "content": """**Natural selection** is the process by which heritable differences between
 individuals lead to differences in survival or reproduction, so that the more successful
-variants become more common in later generations. Proposed jointly by
-[[Charles Darwin]] and Alfred Russel Wallace in 1858 and set out at length in Darwin's *On the
-Origin of Species* the following year, it remains the only well-supported mechanism that
+variants become more common in later generations. Reached independently by
+[[Charles Darwin]] and Alfred Russel Wallace, announced jointly in 1858 and set out at length
+in Darwin's *On the Origin of Species* the following year, it remains the only well-supported
+mechanism that
 explains why organisms appear designed for the conditions they live in.[^darwin1859]
 
 ## The argument
@@ -607,7 +618,7 @@ biology.
                 ),
                 "published_on": "1858",
                 "accessed_on": "2026-09-26",
-                "identifier": "",
+                "identifier": "doi:10.1111/j.1096-3642.1858.tb02500.x",
                 "quote": "",
             },
             {
@@ -618,7 +629,7 @@ biology.
                 "publisher": "Princeton University Press",
                 "published_on": "2014",
                 "accessed_on": "2026-09-26",
-                "identifier": "",
+                "identifier": "ISBN 978-0-691-16046-7",
                 "quote": "",
             },
             {
@@ -627,12 +638,12 @@ biology.
                     "Selective bird predation on the peppered moth: the last experiment of "
                     "Michael Majerus"
                 ),
-                "url": "",
+                "url": "https://doi.org/10.1098/rsbl.2011.1136",
                 "authors": "L. M. Cook, B. S. Grant, I. J. Saccheri, J. Mallet",
                 "publisher": "Biology Letters, vol. 8, pp. 609–612",
                 "published_on": "2012",
                 "accessed_on": "2026-09-26",
-                "identifier": "",
+                "identifier": "doi:10.1098/rsbl.2011.1136",
                 "quote": "",
             },
             {
@@ -641,14 +652,14 @@ biology.
                     "Historical contingency and the evolution of a key innovation in an "
                     "experimental population of Escherichia coli"
                 ),
-                "url": "",
+                "url": "https://doi.org/10.1073/pnas.0803151105",
                 "authors": "Zachary D. Blount, Christina Z. Borland, Richard E. Lenski",
                 "publisher": (
                     "Proceedings of the National Academy of Sciences, vol. 105, pp. 7899–7906"
                 ),
                 "published_on": "2008",
                 "accessed_on": "2026-09-26",
-                "identifier": "",
+                "identifier": "doi:10.1073/pnas.0803151105",
                 "quote": "",
             },
             {
@@ -671,7 +682,7 @@ biology.
                 "url": "https://plato.stanford.edu/entries/natural-selection/",
                 "authors": "Peter Gildenhuys",
                 "publisher": "Stanford Encyclopedia of Philosophy",
-                "published_on": "",
+                "published_on": "2019, substantive revision 2024",
                 "accessed_on": "2026-09-26",
                 "identifier": "",
                 "quote": "",
@@ -718,8 +729,9 @@ biology.
         ),
         "content": """**Charles Darwin** (12 February 1809 – 19 April 1882) was an English naturalist
 and geologist who established that living species descend from common ancestors and proposed
-[[Natural selection]] as the mechanism by which they change. His five years aboard HMS *Beagle*
-supplied the observations; two further decades of patient collecting, breeding, dissection and
+[[Natural selection]] as the mechanism by which they change. His nearly five years aboard HMS
+*Beagle* supplied the observations; two further decades of patient collecting, breeding,
+dissection and
 correspondence supplied the case; and *On the Origin of Species*, published in 1859, presented
 it.
 
@@ -751,8 +763,10 @@ making the voyage as much an exercise in [[Marine chronometer|chronometry]] and
 Darwin spent much of the voyage ashore. In Patagonia he excavated the bones of large extinct
 mammals, among them *Megatherium*, *Toxodon* and *Macrauchenia*, and a fossil horse tooth in
 strata that contained no living horses — evidence both of [[Extinction]] and of a succession of
-related forms in the same region. He experienced the destruction of Concepción by earthquake in
-February 1835, found raised beds of marine shells high in the Andes, and read the first volume
+related forms in the same region. He felt the great Chilean earthquake of February 1835 while
+ashore near Valdivia and inspected the ruins of Concepción a fortnight later, noting the
+evidence that the land had been permanently lifted; he found raised beds of marine shells high
+in the Andes, and read the first volume
 of Charles Lyell's *Principles of Geology*, which taught him to think in terms of slow,
 cumulative change.
 
@@ -939,8 +953,11 @@ his correspondence.[^darwinonline]
             },
             {
                 "key": "ladd1960",
-                "title": "Drilling operations on Eniwetok Atoll",
-                "url": "",
+                "title": (
+                    "Bikini and nearby atolls, Marshall Islands: drilling operations on "
+                    "Eniwetok Atoll"
+                ),
+                "url": "https://pubs.usgs.gov/publication/pp260Y",
                 "authors": "Harry S. Ladd, Seymour O. Schlanger",
                 "publisher": "U.S. Geological Survey Professional Paper 260-Y",
                 "published_on": "1960",

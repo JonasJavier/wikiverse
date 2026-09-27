@@ -26,8 +26,8 @@ magnitude below Earth's.[^nasafacts]
 The planet is named after the Roman messenger god, conventionally explained by the speed with
 which it crosses the sky; the liquid metal [[Mercury (element)|mercury]] carries the same
 name, and the other senses are collected at [[Mercury]]. Because Mercury never appears more
-than about 28 degrees from the Sun, it is awkward to observe from the ground, and only two
-spacecraft have reached it.
+than about 28 degrees from the Sun, it is awkward to observe from the ground, and only three
+spacecraft have been sent to it.
 
 ## Orbit and rotation
 
@@ -151,7 +151,10 @@ module.[^esabepi]
                 {
                     "kind": "row",
                     "label": "Spacecraft",
-                    "value": "Mariner 10 (1974–1975), MESSENGER (2008–2015)",
+                    "value": (
+                        "Mariner 10 (1974–1975), MESSENGER (2008–2015), "
+                        "BepiColombo (flybys from 2021)"
+                    ),
                 },
                 {
                     "kind": "full",
@@ -175,8 +178,7 @@ module.[^esabepi]
             ),
             "license": "Public domain",
             "source_url": (
-                "https://commons.wikimedia.org/wiki/"
-                "File:Mercury_in_color_-_Prockter07_centered.jpg"
+                "https://commons.wikimedia.org/wiki/File:Mercury_in_color_-_Prockter07_centered.jpg"
             ),
         },
         "references": [
@@ -544,8 +546,7 @@ recovery of ancient texts during
             "credit": "Nicolaus Copernicus, De revolutionibus orbium coelestium (1543)",
             "license": "Public domain",
             "source_url": (
-                "https://commons.wikimedia.org/wiki/"
-                "File:Copernican_heliocentrism_diagram-2.jpg"
+                "https://commons.wikimedia.org/wiki/File:Copernican_heliocentrism_diagram-2.jpg"
             ),
         },
         "references": [
@@ -566,7 +567,7 @@ recovery of ancient texts during
                     "The Copernican Revolution: Planetary Astronomy in the Development of "
                     "Western Thought"
                 ),
-                "url": "https://www.hup.harvard.edu/books/9780674171039",
+                "url": "https://openlibrary.org/isbn/9780674171039",
                 "authors": "Thomas S. Kuhn",
                 "publisher": "Harvard University Press",
                 "published_on": "1957",
@@ -589,7 +590,7 @@ recovery of ancient texts during
                 "key": "sepkepler",
                 "title": "Johannes Kepler",
                 "url": "https://plato.stanford.edu/entries/kepler/",
-                "authors": "",
+                "authors": "Daniel A. Di Liscia",
                 "publisher": "Stanford Encyclopedia of Philosophy",
                 "published_on": "",
                 "accessed_on": "2026-09-26",
@@ -600,7 +601,7 @@ recovery of ancient texts during
                 "key": "sepgalileo",
                 "title": "Galileo Galilei",
                 "url": "https://plato.stanford.edu/entries/galileo/",
-                "authors": "",
+                "authors": "Peter Machamer and David Marshall Miller",
                 "publisher": "Stanford Encyclopedia of Philosophy",
                 "published_on": "",
                 "accessed_on": "2026-09-26",

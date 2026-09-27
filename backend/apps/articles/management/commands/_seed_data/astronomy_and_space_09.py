@@ -59,10 +59,13 @@ moons, and nitrogen plumes on Neptune's moon Triton.
 
 Returning that material across the Solar System pushed the engineering of coded transmission.
 The signal arriving at Earth is far too weak to be read directly, so the data are wrapped in
-error-correcting codes. For Uranus and Neptune the onboard software was reprogrammed to add a
-Reed-Solomon outer code to the convolutional code already in use, a concatenated scheme drawn
-from [[Information theory]] that repairs bursts of errors for only a modest increase in the
-number of bits sent.[^costello2007]
+error-correcting codes. From the Uranus encounter onward Voyager 2's downlink used a
+concatenated scheme drawn from [[Information theory]]: a Reed-Solomon block code was applied
+outside the convolutional code already in service, the outer code being well suited to
+repairing the bursts of errors the inner one leaves behind.[^costello2007] The flight data
+subsystem was also reprogrammed in flight to compress images before transmission, and the two
+measures together cut the telemetry rate needed for a given return by more than half against
+Saturn practice, with little loss of information.[^urban1987]
 
 ## The Golden Record
 
@@ -82,8 +85,8 @@ panpipes and Chuck Berry's "Johnny B. Goode".[^nasa_record]
 The record's aluminium jacket doubles as its instruction manual. Engraved on the cover are a
 drawing of the stylus in the groove and the correct playback speed, a key for reconstructing
 the images, and a map giving the Sun's position relative to fourteen pulsars identified by
-their periods; a plated sample of uranium-238 lets a finder date the launch from the fraction
-that has decayed.[^murmurs]
+their periods; a plated sample of uranium-238, whose half-life is 4.5 billion years, lets a
+finder date the launch from the fraction that has decayed.[^nasa_cover][^murmurs]
 
 ## Interstellar mission
 
@@ -107,9 +110,11 @@ fuelled with plutonium-238, which together supplied about 470 watts at launch.[^
 falls by roughly 4 watts a year as the fuel decays and the thermocouples degrade, so
 instruments and heaters are switched off one at a time. Engineers turned off Voyager 1's
 cosmic ray subsystem on 25 February 2025 and Voyager 2's low-energy charged particle
-instrument on 24 March 2025, leaving three working instruments on each craft; the conservation
-plan is intended to keep at least one instrument running on each probe into the
-2030s.[^jpl_power]
+instrument on 24 March 2025, leaving three working instruments on each craft, under a
+conservation plan meant to keep at least one instrument running on each probe into the
+2030s.[^jpl_power] The retirements have continued: Voyager 1's own low-energy charged particle
+experiment was shut down on 17 April 2026, reducing that craft to a plasma wave receiver and a
+magnetometer.[^nasa_v1_lecp]
 
 The imaging system was retired much earlier. On 14 February 1990, from about 6 billion
 kilometres out, Voyager 1 turned its cameras back toward the inner Solar System and recorded a
@@ -245,6 +250,20 @@ Dot".[^nasa_pbd] The cameras were shut down soon afterwards to save power and co
                 "quote": "",
             },
             {
+                "key": "nasa_cover",
+                "title": "The Golden Record Cover",
+                "url": "https://science.nasa.gov/mission/voyager/golden-record-cover/",
+                "authors": "",
+                "publisher": "NASA Science",
+                "published_on": "",
+                "accessed_on": "2026-09-26",
+                "identifier": "",
+                "quote": (
+                    "shows the location of the solar system with respect to 14 pulsars, whose "
+                    "precise periods are given"
+                ),
+            },
+            {
                 "key": "burlaga2019",
                 "title": (
                     "Magnetic field and particle measurements made by Voyager 2 at and near "
@@ -270,6 +289,20 @@ Dot".[^nasa_pbd] The cameras were shut down soon afterwards to save power and co
                 "quote": "",
             },
             {
+                "key": "urban1987",
+                "title": "Voyager image data compression and block encoding",
+                "url": "https://ntrs.nasa.gov/citations/19880046413",
+                "authors": "Michael G. Urban",
+                "publisher": "Jet Propulsion Laboratory; ITC/USA '87, San Diego",
+                "published_on": "October 1987",
+                "accessed_on": "2026-09-26",
+                "identifier": "",
+                "quote": (
+                    "reduce telemetry transmission rates by over 50 percent compared to those "
+                    "used at Saturn, with negligible loss in information return"
+                ),
+            },
+            {
                 "key": "jpl_power",
                 "title": "NASA Turns Off 2 Voyager Science Instruments to Extend Mission",
                 "url": (
@@ -282,6 +315,23 @@ Dot".[^nasa_pbd] The cameras were shut down soon afterwards to save power and co
                 "accessed_on": "2026-09-26",
                 "identifier": "",
                 "quote": "",
+            },
+            {
+                "key": "nasa_v1_lecp",
+                "title": "NASA Shuts Off Instrument on Voyager 1 to Keep Spacecraft Operating",
+                "url": (
+                    "https://science.nasa.gov/blogs/voyager/2026/04/17/"
+                    "nasa-shuts-off-instrument-on-voyager-1-to-keep-spacecraft-operating/"
+                ),
+                "authors": "",
+                "publisher": "NASA Science",
+                "published_on": "17 April 2026",
+                "accessed_on": "2026-09-26",
+                "identifier": "",
+                "quote": (
+                    "Voyager 1 still has two remaining operating science instruments - one "
+                    "that listens to plasma waves and one that measures magnetic fields."
+                ),
             },
             {
                 "key": "nasa_where",
@@ -572,23 +622,19 @@ agree, and no single diagram satisfies both.[^scerri2020]
         "references": [
             {
                 "key": "iupac2016",
-                "title": (
-                    "IUPAC is naming the four new elements nihonium, moscovium, tennessine "
-                    "and oganesson"
-                ),
+                "title": "IUPAC announces the names of the elements 113, 115, 117, and 118",
                 "url": (
                     "https://iupac.org/"
-                    "iupac-is-naming-the-four-new-elements-nihonium-moscovium-tennessine-"
-                    "and-oganesson/"
+                    "iupac-announces-the-names-of-the-elements-113-115-117-and-118/"
                 ),
                 "authors": "",
                 "publisher": "International Union of Pure and Applied Chemistry",
-                "published_on": "November 2016",
+                "published_on": "30 November 2016",
                 "accessed_on": "2026-09-26",
                 "identifier": "",
                 "quote": (
-                    "The four new elements means that the seventh period of the periodic "
-                    "table of elements is now complete."
+                    "For now, we can all cherish our periodic table completed down to the "
+                    "seventh row."
                 ),
             },
             {

@@ -8,163 +8,173 @@ ARTICLES = [
         "title": "Mount Everest",
         "category": "Geography and Places",
         "categories": ["Earth and Environment"],
-        "short_description": "The highest mountain on Earth above sea level, on the Nepal-China border",
+        "short_description": "The highest point on Earth, 8,848.86 metres above sea level",
         "summary": (
-            "Mount Everest reaches 8,848.86 metres on the border of Nepal and Tibet. Raised by "
-            "the collision of India with Asia, it was first measured from the Indian plains in "
-            "the 1850s and first climbed in 1953."
+            "Mount Everest reaches 8,848.86 metres on the Nepal-China border in the "
+            "Himalayas. Built by continental collision, its summit is marine limestone, "
+            "and the air there holds about a third of the pressure available at sea level."
         ),
-        "content": """**Mount Everest** is the highest mountain on Earth measured above sea level,
-reaching 8,848.86 metres (29,031.7 ft) at a small snow dome on the border between Nepal and
-the Tibet Autonomous Region of China. It is called Sagarmāthā in Nepali and Chomolungma —
-transcribed from Chinese as Qomolangma — in Tibetan. The English name commemorates George
-Everest, Surveyor General of India from 1830 to 1843, who took no part in identifying the
-peak and objected to the proposal on the grounds that his name could not be written or
-pronounced in the languages of the region.[^keay]
+        "content": """**Mount Everest** is the highest mountain on Earth measured from
+sea level, reaching 8,848.86 metres (29,032 feet) at a point on the frontier
+between Nepal and the Tibet
+Autonomous Region of China. It stands in the Mahalangur section of the Great Himalayas at
+the head of Nepal's Khumbu valley, flanked by Lhotse and Nuptse to the south and falling
+away eastward into the Kangshung face. In Nepali the mountain is Sagarmatha; in Tibetan it
+is Chomolungma, transcribed Qomolangma in Chinese usage.[^britannica]
 
-The superlative needs qualifying. Everest's summit is the highest point above mean sea level,
-but Mauna Kea rises further from its base on the Pacific floor, the flanks of Denali stand
-taller above the surrounding land, and because the planet bulges at the equator the summit of
-Chimborazo in Ecuador sits further from the centre of the Earth.
+## Setting and names
 
-## Setting
-
-Everest stands in the Mahalangur Himal, a section of the Himalaya astride the
-Nepal-Tibet frontier, which the border follows over the summit itself. Lhotse (8,516 m) and
-Nuptse (7,861 m) close a horseshoe around the Western Cwm, a high snow basin drained by the
-Khumbu Glacier. Where the glacier spills out of the Cwm it breaks into the Khumbu Icefall, a
-shifting maze of ice towers and crevasses that the Nepalese route must cross. On the Tibetan
-side the Rongbuk Glacier drains north. Three great faces — the southwest, the north and the
-east or Kangshung — separate the ridges.
-
-Two routes carry almost all traffic: the South Col route from Nepal, which starts at a base
-camp near 5,364 metres and climbs the Icefall, the Cwm, the Lhotse Face and the col at about
-7,900 metres; and the northeast ridge from Tibet. The Khumbu and Rongbuk glaciers are
-shrunken remnants of the far larger [[Ice age|ice-age]] glacier systems that excavated these
-valleys, and both have thinned measurably since the middle of the twentieth
-century.[^britannica_everest]
+The Great Trigonometrical Survey of India catalogued the peak as Peak XV. In 1856 Andrew
+Waugh, then Surveyor General, proposed naming it for his predecessor George Everest, and
+the Royal Geographical Society adopted the name in 1865. Everest objected: he had never
+seen the mountain, and a name that local people could neither pronounce nor write cut
+against the survey's own practice of recording indigenous names.[^keay] Nepal was closed to
+foreign surveyors at the time, which is one reason the survey worked from the Indian plains
+and why the Nepali and Tibetan names took more than a century to enter general English use.
 
 ## Geology
 
-The mountain is a product of continental collision. India converged on Eurasia through the
-Cretaceous and met it roughly 50 million years ago, and the Himalaya is the thickened,
-stacked and faulted crust of that encounter ([[Plate tectonics]]). The rock at the very top
-is neither granite nor gneiss but marine limestone: the Qomolangma Formation, laid down in a
-warm shallow sea during the Ordovician about 450 million years ago and still carrying
-fragments of trilobites, crinoids and ostracods. Beneath it, separated by a low-angle fault
-known as the Qomolangma Detachment, lies the Yellow Band, a metamorphosed Cambrian limestone
-whose muscovite records heating events about 33 and 25 million years ago; deeper again are
-the schists and gneisses of the North Col Formation.[^sakai] The summit is therefore a slab
-of ancient sea floor lifted almost nine kilometres into the jet stream.
+The mountain is a product of continental collision. India drifted north across the Tethys
+Ocean and met Asia in a collision that began roughly 50 million years ago and has been
+stacking and thrusting sheets of crust ever since. The summit pyramid is Ordovician
+limestone, the Qomolangma Formation, laid down as carbonate mud on the Tethyan seafloor and
+still carrying fragments of crinoids and other marine animals. A low-angle fault, the
+Qomolangma Detachment, separates it from the older rocks beneath, whose uppermost member is
+the conspicuous pale Yellow Band of metamorphosed limestone that climbers cross high on
+both main routes.[^searle] The [[Plate tectonics|plate motions]] responsible have not
+stopped: satellite geodesy shows the range creeping northeast by a few centimetres a year
+while rising by a few millimetres.
 
-Convergence continues. The range rises a few millimetres a year while erosion strips material
-away, and the same stress produces destructive earthquakes: the magnitude 7.8 Gorkha
-[[Earthquake|earthquake]] of 25 April 2015 ruptured the fault system beneath the Nepalese
-foothills and shook the whole massif.
+## Measuring the height
 
-## Measuring the mountain
-
-Nepal was closed to British surveyors, so the peak catalogued as Peak XV by the Great
-Trigonometrical Survey of India had to be fixed from stations on the plains to the south, the
-nearest of them more than 170 kilometres away. The observations required correction for
+Because the approaches were shut, Peak XV was fixed entirely by theodolite sightings taken
+from six stations on the plains of Bihar in 1849 and 1850, at distances of up to about 240
+kilometres. Radhanath Sikdar, the survey's chief computer, is generally credited with
+reducing the observations in 1852 and concluding that Peak XV was the highest yet measured.
+The result came out at almost exactly 29,000 feet, and Waugh published 29,002 feet in 1856
+so that the figure would not read as a round guess.[^keay] The hard corrections were for
 atmospheric refraction and for the deflection of the plumb line by the mass of the range
-itself. The computation was carried out in Calcutta by Radhanath Sikdar, a mathematician
-employed by the survey as a "computer", and Andrew Waugh announced the result in March 1856:
-29,002 feet, or about 8,840 metres, within roughly ten metres of the accepted modern
-value.[^keay] Triangulation across land, rather than the astronomical position-fixing that
-had made the [[Marine chronometer|marine chronometer]] indispensable at sea, is what made
-such accuracy possible, and the same network underlies the mapping of the subcontinent
-([[Cartography]]).
+itself. As with the longitude problem that the [[Marine chronometer|marine chronometer]]
+settled at sea, the difficulty lay less in the measurement than in the reference frame: a
+height above sea level taken a thousand kilometres inland depends on a model of where sea
+level would lie beneath the rock, which is the same class of choice that governs
+[[Cartography|projection and datum]] in map-making. A Survey of India campaign of 1952-54
+produced 8,848 metres, the value most atlases carried for half a century. Nepalese
+surveyors reached the summit with [[Global Positioning System|satellite positioning]]
+receivers in May 2019 and a Chinese team repeated the exercise in May 2020; on 8 December
+2020 the two governments announced the agreed figure of 8,848.86 metres, snow cap
+included.[^britannica]
 
-Later figures disagreed largely because they measured different things. The Survey of India's
-1954 value of 8,848 metres became the standard; a survey in 1999 using the
-[[Global Positioning System]] proposed 8,850 metres. In December 2020 Nepal and China jointly
-announced 8,848.86 metres, combining a Nepali survey that reached the summit in 2019 with a
-Chinese one in 2020.[^britannica_everest] Residual disagreement turns on whether the snow cap
-or the rock head is measured, and on which model of mean sea level the height is referred to.
+## Atmosphere and the death zone
 
-## The death zone
+Barometers carried to the summit by the 1981 American Medical Research Expedition recorded
+a mean pressure of about 253 torr, near 337 hectopascals — roughly a third of the
+sea-level value, and higher than the standard atmosphere predicts for that altitude
+because the tropical tropopause bulges upward.[^west] The partial pressure of oxygen in
+inspired air is correspondingly low, and the summit lies very close to the ceiling an
+acclimatised human can reach breathing ambient air at all. Reinhold Messner and Peter
+Habeler first did so in May 1978. Above roughly 8,000 metres, the belt climbers call the
+death zone, acclimatisation no longer offsets deterioration and time spent is paid for in
+tissue damage. The jet stream crosses the summit for much of the year, so almost all
+ascents fall in short windows before and after the monsoon, chiefly in May.
 
-Above roughly 8,000 metres lies what climbers call the death zone, where the body
-deteriorates faster than rest can repair it. The only direct barometric measurement made on
-the summit, in October 1981, gave 253 torr, about a third of the standard sea-level value of
-760; a second measurement in 1997 agreed to within about one torr.[^west1999] Because the
-fraction of oxygen in air does not change with height, that pressure drop is the whole
-problem. During the 2007 Caudwell Xtreme Everest expedition, arterial blood drawn from
-climbers breathing ambient air at 8,400 metres gave a mean arterial oxygen partial pressure
-of 24.6 mmHg, roughly a quarter of a healthy sea-level value and among the lowest recorded in
-conscious people.[^grocott] Weeks of acclimatisation raise ventilation and red cell count but
-cannot close that gap, and most parties use bottled oxygen; Reinhold Messner and Peter Habeler
-reached the summit without it in 1978.
+## Exploration and ascent
 
-A survey of expeditions from 1921 to 2006 found a mortality rate of 1.3 per cent among
-climbers who went above base camp, and reported that most deaths above 8,000 metres occurred
-during the descent from the summit rather than on the way up.[^firth] Around 340 deaths had
-been recorded on the mountain by 2024.
+British reconnaissance from the Tibetan side began in 1921. On 8 June 1924 George Mallory
+and Andrew Irvine disappeared high on the northeast ridge, leaving an argument about how
+far they reached that has never been settled. The first confirmed ascent was made on 29 May
+1953 by Edmund Hillary and Tenzing Norgay, by the South Col and southeast ridge, on a
+British expedition led by John Hunt; a Chinese party summited from the north in May 1960.
+Commercial guiding on the standard routes expanded sharply from the 1990s. The Himalayan
+Database, the standard register of Nepalese Himalayan climbing, logged more than 800
+summits in the 2024 season alone.[^himdb]
 
-## Climbing history
+## Sherpa labour and risk
 
-British reconnaissance began from the Tibetan side in 1921. George Mallory and Andrew Irvine
-disappeared high on the northeast ridge in June 1924, and Mallory's body was found in 1999
-without settling whether they had reached the top. The first confirmed ascent was made on 29
-May 1953 by Edmund Hillary and Tenzing Norgay via the South Col. Junko Tabei became the first
-woman to summit in 1975, and Messner climbed the mountain alone and without supplementary
-oxygen in 1980. Commercial guiding expanded sharply from the 1990s; in a settled season
-several hundred people reach the summit, concentrated into the few days when the jet stream
-lifts clear of the peak.
+The Sherpa, a Tibetan-speaking people of Solukhumbu, supply most of the high-altitude
+workforce: fixing rope and ladders through the shifting Khumbu Icefall, carrying loads,
+stocking camps and increasingly guiding clients. The exposure is not shared evenly, because
+the dangerous ground is crossed many more times by the people who prepare it than by those
+who use it once. The first deaths on the mountain were seven porters killed by an avalanche
+on the 1922 expedition. On 18 April 2014 a block of ice fell into the icefall and killed
+sixteen Nepali workers, then the deadliest single day on Everest. Just over a year later,
+on 25 April 2015, the magnitude 7.8 Gorkha [[Earthquake|earthquake]] shook an avalanche off
+neighbouring Pumori into Base Camp, killing at least 19 people.[^gorkha] Climbing from
+Nepal was abandoned in both seasons.
 
-## Sherpa labour
+## The mountain today
 
-The Sherpa are an ethnic group of the Solu-Khumbu valleys, and the word is also used loosely
-in mountaineering for high-altitude staff of any background. They fix and repair the route:
-the ladders through the Khumbu Icefall are placed and reset repeatedly through a season, and
-load-carrying means crossing the most dangerous ground many times where a client crosses it
-twice. On 18 April 2014 a serac collapse from the mountain's west shoulder swept the Icefall
-and killed sixteen Nepali workers; the season was abandoned amid a dispute over pay and
-insurance. The following year the Gorkha earthquake triggered a swarm of avalanches, one from
-the flank of neighbouring Pumori, which struck Base Camp with a reported death toll of
-between about eighteen and twenty-four — the deadliest single event in the mountain's climbing
-history. The 1921-2006 survey counted 14,138 mountaineers on Everest, of whom roughly 6,100
-were sherpas, a workforce whose losses rarely appear in accounts of individual
-summits.[^firth]
+Everest is now among the most closely monitored mountains anywhere, and among the most
+heavily used. The Khumbu Glacier draining its southern cirque has thinned and is
+increasingly pitted with meltwater ponds, part of a Himalaya-wide retreat from the extents
+the ranges held during the last [[Ice age|glaciation]]. Congestion on the fixed ropes near
+the summit on good days, abandoned equipment and human waste at the high camps, and the
+permit revenue on which Nepal's mountaineering economy depends are all recurring subjects
+of regulation.[^britannica]
 """,
         "tier": "standard",
         "kind": "place",
         "infobox": {
             "title": "Mount Everest",
-            "subtitle": "Mahalangur Himal, Himalaya",
+            "subtitle": "Sagarmatha; Chomolungma",
             "rows": [
-                {"kind": "header", "value": "Geography"},
-                {"kind": "row", "label": "Elevation", "value": "8,848.86 m (29,031.7 ft)"},
+                {
+                    "kind": "header",
+                    "value": "Geography",
+                },
+                {
+                    "kind": "row",
+                    "label": "Elevation",
+                    "value": "8,848.86 m (29,032 ft)",
+                },
+                {
+                    "kind": "row",
+                    "label": "Range",
+                    "value": "Mahalangur Himal, Great Himalayas",
+                },
                 {
                     "kind": "row",
                     "label": "Location",
-                    "value": "Border of Nepal and the Tibet Autonomous Region of China",
+                    "value": "Nepal and Tibet Autonomous Region of China",
                 },
-                {"kind": "row", "label": "Range", "value": "Mahalangur Himal, Himalaya"},
                 {
                     "kind": "row",
-                    "label": "Coordinates",
-                    "value": "27°59′17″N 86°55′31″E",
+                    "label": "Prominence",
+                    "value": "8,848.86 m — the highest point on Earth",
                 },
-                {"kind": "row", "label": "Summit rock", "value": "Ordovician marine limestone"},
-                {"kind": "header", "value": "Names"},
-                {"kind": "row", "label": "Nepali", "value": "Sagarmāthā"},
-                {"kind": "row", "label": "Tibetan", "value": "Chomolungma (Qomolangma)"},
-                {"kind": "row", "label": "Survey designation", "value": "Peak XV"},
-                {"kind": "header", "value": "Climbing"},
+                {
+                    "kind": "header",
+                    "value": "Geology",
+                },
+                {
+                    "kind": "row",
+                    "label": "Summit rock",
+                    "value": "Ordovician limestone, Qomolangma Formation",
+                },
+                {
+                    "kind": "row",
+                    "label": "Origin",
+                    "value": "India-Asia continental collision, from about 50 Ma",
+                },
+                {
+                    "kind": "header",
+                    "value": "Climbing",
+                },
                 {
                     "kind": "row",
                     "label": "First ascent",
                     "value": "29 May 1953, Edmund Hillary and Tenzing Norgay",
                 },
-                {"kind": "row", "label": "Usual route", "value": "South Col, via the Khumbu Icefall"},
-                {"kind": "row", "label": "Recorded deaths", "value": "About 340 by 2024"},
+                {
+                    "kind": "row",
+                    "label": "Standard routes",
+                    "value": "South Col from Nepal; northeast ridge from Tibet",
+                },
                 {
                     "kind": "full",
                     "value": (
-                        "Height announced in 1856 as 29,002 ft; revised to 8,848.86 m by a joint "
-                        "Nepali and Chinese survey announced in December 2020."
+                        "Summit air pressure averages about 253 torr, near a third of the "
+                        "sea-level value."
                     ),
                 },
             ],
@@ -172,53 +182,14 @@ summits.[^firth]
         "image": None,
         "references": [
             {
-                "key": "sakai",
-                "title": (
-                    "Geology of the summit limestone of Mount Qomolangma (Everest) and cooling "
-                    "history of the Yellow Band under the Qomolangma detachment"
-                ),
-                "url": "https://doi.org/10.1111/j.1440-1738.2005.00499.x",
-                "authors": "Harutaka Sakai et al.",
-                "publisher": "Island Arc",
-                "published_on": "2005",
+                "key": "britannica",
+                "title": "Mount Everest",
+                "url": "https://www.britannica.com/place/Mount-Everest",
+                "authors": "",
+                "publisher": "Encyclopaedia Britannica",
+                "published_on": "",
                 "accessed_on": "2026-09-26",
-                "identifier": "doi:10.1111/j.1440-1738.2005.00499.x",
-                "quote": "",
-            },
-            {
-                "key": "west1999",
-                "title": "Barometric pressures on Mt. Everest: new data and physiological significance",
-                "url": "https://doi.org/10.1152/jappl.1999.86.3.1062",
-                "authors": "John B. West",
-                "publisher": "Journal of Applied Physiology",
-                "published_on": "March 1999",
-                "accessed_on": "2026-09-26",
-                "identifier": "doi:10.1152/jappl.1999.86.3.1062",
-                "quote": "",
-            },
-            {
-                "key": "grocott",
-                "title": "Arterial Blood Gases and Oxygen Content in Climbers on Mount Everest",
-                "url": "https://doi.org/10.1056/NEJMoa0801581",
-                "authors": (
-                    "Michael P. W. Grocott, Daniel S. Martin, Denny Z. H. Levett, Roger McMorrow, "
-                    "Jeremy Windsor and Hugh E. Montgomery"
-                ),
-                "publisher": "New England Journal of Medicine",
-                "published_on": "January 2009",
-                "accessed_on": "2026-09-26",
-                "identifier": "doi:10.1056/NEJMoa0801581",
-                "quote": "",
-            },
-            {
-                "key": "firth",
-                "title": "Mortality on Mount Everest, 1921-2006: descriptive study",
-                "url": "https://doi.org/10.1136/bmj.a2654",
-                "authors": "Paul G. Firth et al.",
-                "publisher": "BMJ",
-                "published_on": "2008",
-                "accessed_on": "2026-09-26",
-                "identifier": "doi:10.1136/bmj.a2654",
+                "identifier": "",
                 "quote": "",
             },
             {
@@ -226,18 +197,62 @@ summits.[^firth]
                 "title": (
                     "The Great Arc: The Dramatic Tale of How India Was Mapped and Everest Was Named"
                 ),
-                "url": "",
+                "url": "https://archive.org/details/dli.pahar.3721",
                 "authors": "John Keay",
                 "publisher": "HarperCollins",
                 "published_on": "2000",
+                "accessed_on": "2026-09-26",
+                "identifier": "ISBN 978-0-00-653123-4",
+                "quote": "",
+            },
+            {
+                "key": "searle",
+                "title": (
+                    "Colliding Continents: A Geological Exploration of the Himalaya, "
+                    "Karakoram, and Tibet"
+                ),
+                "url": (
+                    "https://global.oup.com/academic/product/colliding-continents-9780199653003"
+                ),
+                "authors": "Mike Searle",
+                "publisher": "Oxford University Press",
+                "published_on": "2013",
+                "accessed_on": "2026-09-26",
+                "identifier": "ISBN 978-0-19-965300-3",
+                "quote": "",
+            },
+            {
+                "key": "west",
+                "title": (
+                    "Barometric pressures at extreme altitudes on Mt. Everest: "
+                    "physiological significance"
+                ),
+                "url": "https://journals.physiology.org/doi/abs/10.1152/jappl.1983.54.5.1188",
+                "authors": (
+                    "John B. West, Sukhamay Lahiri, Karl H. Maret, Richard M. Peters, "
+                    "Christopher J. Pizzo"
+                ),
+                "publisher": "Journal of Applied Physiology",
+                "published_on": "1983",
+                "accessed_on": "2026-09-26",
+                "identifier": "doi:10.1152/jappl.1983.54.5.1188",
+                "quote": "",
+            },
+            {
+                "key": "himdb",
+                "title": "The Himalayan Database",
+                "url": "https://www.himalayandatabase.com/",
+                "authors": "",
+                "publisher": "The Himalayan Database",
+                "published_on": "",
                 "accessed_on": "2026-09-26",
                 "identifier": "",
                 "quote": "",
             },
             {
-                "key": "britannica_everest",
-                "title": "Mount Everest",
-                "url": "https://www.britannica.com/place/Mount-Everest",
+                "key": "gorkha",
+                "title": "Nepal earthquake of 2015",
+                "url": "https://www.britannica.com/topic/Nepal-earthquake-of-2015",
                 "authors": "",
                 "publisher": "Encyclopaedia Britannica",
                 "published_on": "",
@@ -256,153 +271,176 @@ summits.[^firth]
         "aliases": ["Everest"],
         "is_stub": False,
         "is_disambiguation": False,
-        "tags": ["mountains", "himalaya", "surveying", "high altitude", "nepal"],
+        "tags": ["himalayas", "mountaineering", "geodesy", "plate tectonics"],
     },
     {
         "title": "The Nile",
         "category": "Geography and Places",
         "categories": ["Earth and Environment", "History"],
-        "short_description": "The river of northeastern Africa whose flood built and fed ancient Egypt",
+        "short_description": "The north-flowing river of northeast Africa and the spine of Egypt",
         "summary": (
-            "The Nile runs about 6,650 kilometres from the East African lakes and the Ethiopian "
-            "Highlands to the Mediterranean. Its annual silt-bearing flood sustained Egyptian "
-            "agriculture for millennia until the Aswan High Dam ended it in 1970."
+            "The Nile drains close to three million square kilometres of northeast Africa "
+            "and flows north to the Mediterranean. Its White and Blue branches meet at "
+            "Khartoum, and an annual flood sustained Egypt until the Aswan High Dam."
         ),
-        "content": """**The Nile** is a river of northeastern Africa, about 6,650 kilometres
-(4,130 miles) long, which drains roughly 3.3 million square kilometres across eleven
-countries and reaches the Mediterranean through a delta in Egypt. For most of the twentieth
-century it was described without qualification as the longest river in the world; since 2007,
-surveys that trace the river draining [[The Amazon rainforest|the Amazon basin]] to headwaters
-high in the Peruvian Andes have made the title genuinely contested, because the answer depends
-on which tributary is counted as the source and how a braided mouth is measured.
+        "content": """**The Nile** is the principal river of northeast Africa, running
+north from the equatorial lakes and the Ethiopian highlands to a delta on the
+Mediterranean. Its basin covers close
+to three million square kilometres across eleven countries, and for most of its lower
+course it crosses desert that contributes nothing to its flow.[^nile]
 
 ## Course
 
-The Nile is built from two very different rivers. The White Nile leaves Lake Victoria at Jinja
-in Uganda, over the drowned site of Ripon Falls, and its longest headstream is the Kagera,
-which rises in the highlands of Burundi and Rwanda. It passes through Lake Kyoga and Lake
-Albert, then, as the Bahr al-Jabal, enters the Sudd in South Sudan: a wetland where the
-gradient almost vanishes, the channel disperses among papyrus and floating vegetation, and
-roughly half the water entering is lost to evaporation and transpiration before the river
-re-forms.[^sutcliffe] What survives flows north, steady and clear, to Khartoum.
+The river has two great branches. The White Nile leaves Lake Victoria at Ripon Falls —
+submerged since the 1950s behind the Owen Falls dam — and runs on through Lake Kyoga and
+Lake Albert; traced further upstream it reaches the Kagera system in the highlands of
+Rwanda and Burundi. The Blue Nile, the Abay, flows out of Lake Tana in the Ethiopian
+highlands, whose chief feeder rises at the spring of Gish Abay. The two meet at Khartoum.
+The Atbara, the last tributary of any size, joins about 300 kilometres downstream, and for
+the remaining two and a half thousand kilometres to the sea no perennial water enters the
+channel at all. Six cataracts, bars of harder basement rock numbered upstream from Aswan,
+break the Sudanese and southern Egyptian reaches and long restricted navigation. Below
+Cairo the river splits into the Rosetta and Damietta branches across a delta fronting some
+240 kilometres of coastline; ancient geographers counted as many as seven mouths.[^nile]
 
-The Blue Nile leaves Lake Tana in the Ethiopian Highlands and falls through a gorge more than
-a kilometre deep before meeting the White Nile at Khartoum. The Atbara, the last tributary,
-joins in northern Sudan; below it the river receives nothing for some 2,700 kilometres to the
-sea. Six cataracts, numbered upstream from the First at Aswan, break the Nubian reach. Below
-Cairo the river divides into the Rosetta and Damietta branches — antiquity counted seven
-mouths — and builds a delta some 240 kilometres wide.[^britannica_nile]
+The Nile's length is usually given as about 6,650 kilometres, which makes it the longest or
+second-longest river in the world depending on how the Amazon is traced. The number is not
+a fixed quantity: it depends on which headstream is treated as the source and how closely
+the channel is followed, and satellite-based remeasurements have produced longer values.
+
+## Two rivers
+
+The branches behave differently, and the difference shaped Egyptian life. The White Nile
+arrives steady, its flow buffered first by Lake Victoria and then by the Sudd, an immense
+papyrus and sedge wetland in South Sudan where roughly half the water is lost to
+evaporation and transpiration before the river emerges. The Blue Nile is violently
+seasonal, fed by the summer monsoon over the Ethiopian highlands, and it carries most of
+the sediment. Measured at Aswan, a little over half the annual flow comes down the Blue
+Nile, about a third down the White Nile and the remainder from the Atbara; at the height of
+the flood the Ethiopian tributaries supply the overwhelming majority.[^nile] The river is a
+compact demonstration of how [[The water cycle|the water cycle]] couples distant places:
+rain falling on Ethiopia in July reaches Egypt weeks later, having crossed a large part of
+[[The Sahara]] without gaining a drop.
 
 ## The flood
 
-Almost all of the river's variability came from Ethiopia. Summer monsoon rains falling on the
-highlands between June and September sent a pulse of water and suspended silt down the Blue
-Nile and the Atbara, while the White Nile, buffered by the great lakes and the Sudd, supplied
-a nearly constant baseflow. Together the two eastern tributaries delivered most of the water
-arriving in Egypt each year, and the overwhelming majority of it at the height of the flood.
-The inundation reached Aswan in June or July, crested in September and fell away through the
-autumn — the visible end of a limb of [[The water cycle|the water cycle]] that carried
-Indian Ocean and Atlantic moisture inland to the Ethiopian escarpment.
+Before the twentieth century the Nile at Aswan began to rise in late June, peaked in
+September and fell through the winter, spreading water and fine silt across the floodplain.
+[[Ancient Egypt|Egyptian]] administration was built on that rhythm. The civil calendar had
+three seasons — akhet, the inundation; peret, the emergence of the fields; and shemu, the
+harvest and low water — of four thirty-day months each, plus five additional days.
+Officials read the height of the rise on nilometers, graduated wells and stairways at
+Elephantine, at Roda Island in Cairo and elsewhere, because the height forecast the harvest
+and therefore the tax assessment; the Roda structure standing today dates in its present
+form from 861. A low flood meant shortage, and a very high one destroyed embankments and
+villages.[^nile] Silt was the other gift: a fresh layer each year renewed soil fertility
+without manuring, which is one reason the valley supported dense population for three
+millennia. The same landscape supplied natron, a naturally occurring soda [[Salt|salt]]
+gathered from lake beds west of the delta, which Egyptian embalmers used to dry bodies.
 
-Egyptian administration was organised around it. The year was divided into three seasons named
-for the river's behaviour: akhet, the inundation; peret, the emergence of the land; and shemu,
-the low water and harvest. Graduated shafts called nilometers recorded the height of each
-flood, and taxation was assessed against it; the best-known survivor, on Roda Island in Cairo,
-dates in its present form to 861 CE. A flood a metre too low meant shortage, and one a metre
-too high destroyed villages and canals.
+## Searching for the source
 
-## The river and the state
-
-The flood deposited a fresh layer of silt on the floodplain every year, which is why a narrow
-strip of Egypt supported dense population and monumental building while the ground on either
-side was open desert ([[The Sahara]]). Basin irrigation trapped the water behind earth banks
-and let it soak in; the cropping calendar followed the river rather than the rains. Herodotus,
-writing in the fifth century BCE, called the lower land a gift of the river, a remark now
-usually quoted as "Egypt is the gift of the Nile".[^herodotus]
-
-The Nile was also the main road. Boats ran north on the current and south on the prevailing
-north wind, so convenient that the hieroglyph for travelling upstream is a boat under sail.
-Papyrus from the marshes supplied writing material; natron, a naturally occurring
-[[Salt|salt]] gathered from lakes west of the delta, was used in mummification and glassmaking.
-Three thousand years of [[Ancient Egypt]] rest on this hydrology, and so do the Nubian
-kingdoms upstream.
-
-## Finding the source
-
-Classical geographers placed the source in the Mountains of the Moon, a name Ptolemy recorded
-without knowing what it referred to. John Hanning Speke reached the southern shore of Lake
-Victoria in 1858 and its northern outflow in 1862, and argued that the lake fed the Nile;
-Richard Burton disputed it publicly, and the question was only closed when Henry Morton
-Stanley circumnavigated the lake in 1875 and confirmed a single outlet. The search then moved
-to the longest headstream: the Kagera was traced to a spring in Burundi in the 1930s, and
-expeditions since 2006 have pushed a rival claim to streams in the Nyungwe forest of Rwanda.
-The dispute is partly a question of hydrology and partly one of convention, of the sort that
-recurs throughout [[Cartography]].
+Classical geographers knew the lower river intimately and its head not at all. Ptolemy
+placed the origin in snowy "Mountains of the Moon", later identified with the Rwenzori
+range. The roughly north-south alignment of Alexandria and Syene, near modern Aswan, gave
+Eratosthenes at [[The Library of Alexandria|the Mouseion]] the baseline for his estimate of
+the Earth's circumference. The modern search was an exercise in competitive
+[[Cartography|mapping]]. John Hanning Speke, travelling with Richard Burton, struck north
+alone and reached the great lake on 30 July 1858, naming it for Queen Victoria; he returned
+in 1862 and on 28 July identified its outlet, which he called Ripon Falls. Burton rejected
+the claim, and Speke was killed by his own gun in September 1864, the day before the two
+were to debate the question in public. Henry Morton Stanley's circumnavigation of the lake
+in 1875 effectively settled it.[^speke]
 
 ## Damming the river
 
-The first Aswan Dam was completed in 1902 and heightened twice. The Aswan High Dam, built
-between 1960 and 1970 four miles upstream, is about 111 metres high and 3,830 metres long, and
-impounds Lake Nasser, which extends some 500 kilometres upstream into Sudan and has a gross
-capacity of roughly 169 cubic kilometres — about twice the river's average annual
-flow.[^britannica_aswan] For the first time the flood could be stored rather than merely
-endured. Perennial irrigation replaced the basin system, allowing two or three crops a year;
-the turbines supplied a large share of Egypt's electricity; and the droughts of the 1980s
-passed without famine in Egypt.
+Perennial irrigation had been extended through the nineteenth century by barrages and
+canals, and the Aswan Low Dam, completed in 1902 and twice raised, stored part of the
+flood. The Aswan High Dam, built between 1960 and 1970 a few kilometres upstream, ended the
+flood outright. Its reservoir, Lake Nasser, holds on the order of 130 cubic kilometres,
+more than a year's flow, which converts a wildly variable river into a managed supply,
+allows several crops a year and generates hydroelectricity. The costs were equally
+concrete: Lower Nubia was drowned, tens of thousands of people were resettled, and
+monuments including the temples at Abu Simbel were cut apart and rebuilt on higher
+ground.[^aswan]
 
-The costs were equally structural. The silt now settles in Lake Nasser instead of on the
-fields, so Egyptian agriculture depends on manufactured fertiliser, and the delta coastline,
-no longer resupplied with sediment, is eroding. Waterlogging and salinisation followed
-year-round irrigation, and perennial canals enlarged the habitat of the freshwater snails that
-host schistosome parasites. Nubian communities in Egypt and Sudan, on the order of a hundred
-thousand people, were resettled, and the temples at Abu Simbel were cut into blocks and
-rebuilt on higher ground between 1964 and 1968. Construction of the Grand Ethiopian
-Renaissance Dam on the Blue Nile began in 2011, adding comparable storage upstream, so the
-river's flow is now governed almost entirely by engineered reservoirs.
+## The delta now
 
-## The river today
-
-About 95 per cent of Egypt's population lives within a few kilometres of the river or in its
-delta, on a small fraction of the country's area, and the basin's water is fully allocated
-among its riparian states. The Jonglei Canal, begun in 1978 to bypass the Sudd and recover the
-water it evaporates, was abandoned in the 1980s with roughly two-thirds of its length
-excavated. Nile perch, Nile crocodile and hippopotamus remain characteristic of the upper
-river, though the hippopotamus has long been absent from Egypt.
+The reservoir also traps the silt. On the order of a hundred million tonnes a year now
+settles behind the dam instead of reaching the fields and the coast, so Egyptian farming
+depends on manufactured fertiliser, and the delta shoreline, no longer resupplied, is
+eroding — locally by tens of metres a year — while subsidence and seawater intrusion
+compound the loss. The promontories at the Rosetta and Damietta mouths have retreated
+markedly since 1970.[^aswan]
 """,
         "tier": "standard",
         "kind": "place",
         "infobox": {
             "title": "The Nile",
-            "subtitle": "River in northeastern Africa",
+            "subtitle": "River of northeast Africa",
             "rows": [
-                {"kind": "header", "value": "The river"},
-                {"kind": "row", "label": "Length", "value": "About 6,650 km (4,130 mi)"},
-                {"kind": "row", "label": "Basin area", "value": "About 3.3 million km²"},
-                {"kind": "row", "label": "Basin states", "value": "Eleven countries"},
                 {
-                    "kind": "row",
-                    "label": "Source (White Nile)",
-                    "value": "Lake Victoria at Jinja, Uganda; longest headstream the Kagera",
+                    "kind": "header",
+                    "value": "Course",
                 },
                 {
                     "kind": "row",
-                    "label": "Source (Blue Nile)",
-                    "value": "Lake Tana, Ethiopian Highlands",
+                    "label": "Length",
+                    "value": "About 6,650 km; estimates vary with method",
                 },
-                {"kind": "row", "label": "Confluence", "value": "Khartoum, Sudan"},
-                {"kind": "row", "label": "Mouth", "value": "Mediterranean Sea, via the Nile Delta"},
-                {"kind": "row", "label": "Mean discharge", "value": "About 2,800 m³/s"},
-                {"kind": "header", "value": "Engineering"},
+                {
+                    "kind": "row",
+                    "label": "Branches",
+                    "value": "White Nile from Lake Victoria; Blue Nile from Lake Tana",
+                },
+                {
+                    "kind": "row",
+                    "label": "Confluence",
+                    "value": "Khartoum, Sudan",
+                },
+                {
+                    "kind": "row",
+                    "label": "Mouth",
+                    "value": "Mediterranean Sea, by the Rosetta and Damietta branches",
+                },
+                {
+                    "kind": "header",
+                    "value": "Basin",
+                },
+                {
+                    "kind": "row",
+                    "label": "Drainage area",
+                    "value": "Close to 3 million km2",
+                },
+                {
+                    "kind": "row",
+                    "label": "Basin states",
+                    "value": "Eleven",
+                },
+                {
+                    "kind": "row",
+                    "label": "Discharge at Aswan",
+                    "value": "About 2,800 cubic metres per second",
+                },
+                {
+                    "kind": "header",
+                    "value": "Regulation",
+                },
+                {
+                    "kind": "row",
+                    "label": "Aswan Low Dam",
+                    "value": "Completed 1902, raised twice",
+                },
                 {
                     "kind": "row",
                     "label": "Aswan High Dam",
-                    "value": "Built 1960-1970; reservoir Lake Nasser, about 169 km³",
+                    "value": "Built 1960-1970; reservoir Lake Nasser",
                 },
                 {
                     "kind": "full",
                     "value": (
-                        "The annual silt-bearing flood, on which Egyptian agriculture depended for "
-                        "millennia, ended when the Aswan High Dam closed."
+                        "The annual flood ended in 1970; the silt it carried now settles "
+                        "in Lake Nasser."
                     ),
                 },
             ],
@@ -410,7 +448,7 @@ river, though the hippopotamus has long been absent from Egypt.
         "image": None,
         "references": [
             {
-                "key": "britannica_nile",
+                "key": "nile",
                 "title": "Nile River",
                 "url": "https://www.britannica.com/place/Nile-River",
                 "authors": "",
@@ -421,9 +459,9 @@ river, though the hippopotamus has long been absent from Egypt.
                 "quote": "",
             },
             {
-                "key": "britannica_aswan",
-                "title": "Aswan High Dam",
-                "url": "https://www.britannica.com/topic/Aswan-High-Dam",
+                "key": "aswan",
+                "title": "Nile River: Dams and reservoirs",
+                "url": "https://www.britannica.com/place/Nile-River/Dams-and-reservoirs",
                 "authors": "",
                 "publisher": "Encyclopaedia Britannica",
                 "published_on": "",
@@ -432,23 +470,12 @@ river, though the hippopotamus has long been absent from Egypt.
                 "quote": "",
             },
             {
-                "key": "sutcliffe",
-                "title": "The Hydrology of the Nile",
-                "url": "",
-                "authors": "J. V. Sutcliffe and Y. P. Parks",
-                "publisher": "International Association of Hydrological Sciences",
-                "published_on": "1999",
-                "accessed_on": "2026-09-26",
-                "identifier": "",
-                "quote": "",
-            },
-            {
-                "key": "herodotus",
-                "title": "The Histories, Book II",
-                "url": "",
-                "authors": "Herodotus, translated by A. D. Godley",
-                "publisher": "Loeb Classical Library, Harvard University Press",
-                "published_on": "1920",
+                "key": "speke",
+                "title": "John Hanning Speke",
+                "url": "https://www.britannica.com/biography/John-Hanning-Speke",
+                "authors": "",
+                "publisher": "Encyclopaedia Britannica",
+                "published_on": "",
                 "accessed_on": "2026-09-26",
                 "identifier": "",
                 "quote": "",
@@ -456,169 +483,176 @@ river, though the hippopotamus has long been absent from Egypt.
         ],
         "see_also": [
             "Ancient Egypt",
-            "The water cycle",
             "The Sahara",
+            "The water cycle",
             "Cartography",
             "Salt",
         ],
         "aliases": ["Nile River"],
         "is_stub": False,
         "is_disambiguation": False,
-        "tags": ["rivers", "hydrology", "egypt", "irrigation", "dams"],
+        "tags": ["rivers", "hydrology", "egypt", "dams"],
     },
     {
         "title": "The Sahara",
         "category": "Geography and Places",
         "categories": ["Earth and Environment", "History"],
-        "short_description": "The largest hot desert on Earth, and grassland within the last ten millennia",
+        "short_description": "The world's largest hot desert, about nine million square kilometres",
         "summary": (
-            "The Sahara covers about 9.2 million square kilometres of northern Africa. Mostly "
-            "gravel plain and bare rock rather than dune, it held lakes and grassland as recently "
-            "as 6,000 years ago and its dust now fertilises the Amazon."
+            "The Sahara spans North Africa from the Atlantic to the Red Sea, covering "
+            "roughly nine million square kilometres. Sand seas make up about a quarter of "
+            "it, it was green savanna 6,000 years ago, and its dust fertilises the Amazon."
         ),
-        "content": """**The Sahara** is the largest hot desert on Earth, covering about 9.2
-million square kilometres of northern Africa — an area comparable to China — and running some
-4,800 kilometres from the Atlantic to the Red Sea and between about 1,300 and 1,900 kilometres
-from north to south. Only the polar deserts of Antarctica and the Arctic are larger. Eleven
-countries and territories hold part of it.[^britannica_sahara]
+        "content": """**The Sahara** is the largest hot desert on Earth, a belt of arid
+land stretching across northern Africa from the Atlantic coast to the Red Sea
+and from the Mediterranean and the
+Atlas ranges south to the semi-arid Sahel. Published areas range from about 8.6 to 9.2
+million square kilometres depending on where the southern boundary is drawn, which places
+it on the same scale as China or the United States. The name comes from the Arabic
+sahra, meaning desert.[^britannica]
 
-## Terrain
+## Extent and surfaces
 
-Dunes are the popular image and a minority of the surface. Sand seas, called ergs, cover
-roughly a quarter of the desert; the rest is reg, gravel plain stripped of fines by the wind;
-hamada, bare rock plateau; dry valleys, salt flats and playas; and mountains. The highest
-point is Emi Koussi, a volcano in the Tibesti of northern Chad, at 3,415 metres, and the
-lowest is the Qattara Depression in Egypt, 133 metres below sea level. The Ahaggar massif in
-Algeria and the Aïr in Niger rise high enough to catch occasional rain and to hold relict
-Mediterranean plants. One river crosses the desert: [[The Nile|the Nile]], fed entirely from
-outside it.
+Dunes are the popular image and the minority case. Sand seas, or ergs — among them the
+Grand Erg Oriental, the Grand Erg Occidental and the Libyan Sand Sea — cover perhaps a
+quarter of the surface. The rest is hamada, bare rock plateau scoured clean of fines; reg,
+gravel plains armoured with a pavement of coarse stones; dry valleys, or wadis, cut when
+the climate was wetter; salt flats; and mountain massifs that rise high enough to be cool
+and comparatively damp. The Ahaggar in Algeria and the Tibesti in Chad are volcanic
+uplands, and the Tibesti carries the desert's high point at Emi Koussi, 3,415 metres. Its
+lowest point is the Qattara Depression in Egypt, 133 metres below sea level.[^britannica]
+Temperatures are extreme but not unbounded: the World Meteorological Organization struck
+out the celebrated 58 °C reading from El Azizia in Libya, dated 13 September 1922, after a
+2012 review found the instrument, the observer and the site all unreliable.[^wmo]
 
-## Climate
+## Why it is dry
 
-The Sahara sits beneath the descending limb of the Hadley circulation, where air that rose and
-rained out near the equator returns to the surface warm and dry — a permanent feature of
-[[The water cycle|the water cycle]] rather than a local accident. Most of the desert receives
-under 100 millimetres of rain a year, and the hyper-arid core under 25 millimetres, often
-delivered in single storms years apart. Clear skies and dry air produce a large daily
-temperature range, with summer maxima routinely above 45 °C and near-freezing nights in
-winter at altitude. The reading of 58 °C recorded at El Azizia in Libya in 1922, long cited as
-the world's highest air temperature, was examined by a World Meteorological Organization panel
-and rejected in 2012.[^wmo] Seasonal winds have their own names: the dust-laden harmattan
-blowing southwest toward the Gulf of Guinea, and the sirocco or ghibli carrying Saharan air
-across the Mediterranean.
+The Sahara sits under the descending branch of the Hadley circulation, where air that rose
+over the tropics returns to the surface warming and drying as it sinks. That subsiding air
+suppresses cloud formation and holds a belt of high pressure across the subtropics on both
+sides of the equator, which is why the world's great deserts line up near 25 degrees of
+latitude. Much of the central Sahara receives less than 25 millimetres of rain a year, and
+some stations go several years without a measurable fall. What rain there is arrives from
+the north in winter along the Mediterranean margin and from the West African monsoon in
+summer along the southern edge, so the desert's own contribution to [[The water cycle|the
+water cycle]] is mostly evaporation and dust.
 
 ## The green Sahara
 
-The desert is not a permanent condition. Slow changes in the Earth's orbit — chiefly the
-precession that shifts the season at which the planet is closest to the Sun, on a cycle of
-roughly 20,000 years — strengthen and weaken the West African monsoon, the same orbital
-arithmetic that paces the glacial cycles of an [[Ice age|ice age]]. During the African Humid
-Period, from roughly 11,000 to 5,000 years ago, the monsoon reached far north of its present
-limit and much of the Sahara carried grassland, permanent lakes and rivers; the transition
-back to desert appears in marine sediment records off West Africa as a comparatively abrupt
-shift.[^demenocal]
+The present desert is recent. Through the early Holocene, and during comparable intervals
+earlier in the [[Ice age|Quaternary]], the Sahara held lakes, rivers, grassland and
+woodland. This African Humid Period ran from roughly 11,000 to 5,000 years ago and was
+paced by precession, the slow wobble of Earth's axis that shifts the seasonal distribution
+of sunlight; stronger northern summer insolation drove the West African monsoon much
+further north. Marine sediment cores off Mauritania show that both the onset and the end
+were abrupt, taking centuries rather than millennia, which points to vegetation and ocean
+feedbacks amplifying a gradual orbital push.[^demenocal] Lake Mega-Chad, the ancestor of
+Lake Chad, may have been among the largest lakes on the planet.
 
-The evidence on the ground is abundant. Lake Chad expanded into an inland sea covering some
-hundreds of thousands of square kilometres. Radar carried on the Space Shuttle in 1981 imaged
-river valleys buried beneath the sand sheets of the eastern Sahara, invisible at the
-surface.[^mccauley] Archaeological sites hold fish bones, harpoons and crocodile remains
-hundreds of kilometres from any modern water. Above all there is rock art: tens of thousands
-of paintings and engravings at Tassili n'Ajjer in Algeria, Tadrart Acacus in Libya and the
-Gilf Kebir on the Egyptian-Libyan border, in a rough stylistic sequence that runs from wild
-elephant, giraffe and hippopotamus, through herds of cattle, to horses and finally camels —
-a record of drying compressed into a few rock shelters. As the pastures failed, populations
-concentrated along permanent water, and the consolidation of [[Ancient Egypt]] along the Nile
-falls close to the end of the humid period.
+The evidence is also painted on the rock. Tassili n'Ajjer in southeastern Algeria holds
+more than 15,000 drawings and engravings spanning roughly 6000 BCE to the early centuries
+CE, recording elephants, giraffes, hippopotamuses and cattle herding in a landscape that
+now supports almost nothing.[^unesco] Similar galleries survive in the Messak in Libya and
+the Gilf Kebir on the Egyptian-Libyan frontier. Drying populations concentrated along
+permanent water, a movement that is part of the background to the rise of
+[[Ancient Egypt|Egyptian]] civilisation along [[The Nile]].
 
-## Water underground
+## Water in the desert
 
-Beneath the eastern Sahara lies the Nubian Sandstone Aquifer System, among the largest known
-bodies of fossil groundwater, recharged during earlier humid phases and shared by Egypt,
-Libya, Sudan and Chad. Libya's Great Man-Made River project, begun in 1984, pipes this water
-hundreds of kilometres to the coast. Oases such as Siwa, Kufra, Ghadames and Timimoun depend
-on springs, artesian pressure or foggara — gently sloping tunnels, close kin to the Persian
-qanat, that lead water by gravity from a water table to a garden. Date palms provide the shade
-under which other crops will grow. Much of the water now drawn is not being replaced.
+Much of that vanished rainfall is still underground. The Nubian Sandstone Aquifer System,
+spread beneath more than two million square kilometres of Egypt, Libya, Sudan and Chad,
+holds on the order of 150,000 cubic kilometres of fossil water recharged mainly during
+humid phases, and it is not meaningfully replenished today.[^nasa] Where the water table
+meets the surface, or where wells reach it, oases such as Siwa, Kufra, Ghadames and the
+Tuat form; they sustained date cultivation and, more importantly, made crossing possible.
 
-## Crossing the desert
+## Crossing it
 
-Regular trans-Saharan traffic became possible with the adoption of the dromedary from about
-the third century CE. The trade was structured by a simple asymmetry: West Africa had gold and
-almost no [[Salt|salt]], while the desert had rock salt in quantity. Slabs cut at Taghaza, and
-after its abandonment in the late sixteenth century at Taoudenni, were carried south by camel
-to the Niger bend and exchanged for gold, kola and grain; captives were moved north. Medieval
-accounts of the salt price are so high that a claim of weight-for-weight exchange with gold
-became proverbial, though it is an exaggeration. Ibn Battuta crossed in 1352 and described a
-settlement at Taghaza whose houses and mosque were built of salt slabs.[^ibnbattuta]
-[[Timbuktu]] grew at the meeting point of camel and canoe, and Mansa Musa's pilgrimage of 1324
-advertised the wealth the route carried. Like [[The Silk Road]], the crossing worked as a relay
-of short stages between wells rather than a single journey, and it carried scholarship, law and
-religion as reliably as it carried cargo. Salt caravans, the azalai, still work the Taoudenni
-route.
+The desert was a barrier and a corridor at once. Camel caravans, from about the first
+centuries CE, linked the Mediterranean and the Sahel on routes as demanding as the Central
+Asian legs of [[The Silk Road]]. Northbound the trade carried gold, ivory, enslaved people
+and later manuscripts; southbound it carried [[Salt]], quarried in slabs at desert mines
+such as Taghaza and, after Taghaza was abandoned near the end of the sixteenth century, at
+Taoudenni. Salt was scarce in the savanna and gold was scarce in the Mediterranean world,
+and the exchange of the two built the Saharan trading cities, [[Timbuktu]] among them.
+Azalai caravans still run the Taoudenni route.
 
-## Dust
+## Dust and the Atlantic
 
-The Sahara is the planet's largest source of mineral dust, and the Bodélé Depression in Chad —
-the diatomite floor of the vanished lake — is the most productive single source known.
-Satellite lidar measurements estimate that about 182 million tonnes of dust leave North Africa
-each year, of which roughly 28 million tonnes settle over the Amazon basin, carrying on the
-order of 22,000 tonnes of phosphorus; that delivery is comparable to the phosphorus the forest
-loses each year to runoff, so [[The Amazon rainforest]] is fertilised in part by a dry lakebed
-on the other side of the Atlantic.[^yu] Nearer home, the dry Saharan Air Layer streaming west
-across the tropical Atlantic suppresses the convection that hurricanes need, and dust falls out
-over southern Europe as coloured rain.
-
-## Life and people
-
-Saharan organisms manage water rather than tolerate heat. Ephemeral plants complete a life
-cycle in weeks after a storm; most vertebrates are nocturnal or shelter in burrows; the addax
-and dama gazelle obtain water largely from plants, and the Saharan silver ant forages in the
-hottest part of the day, at surface temperatures no other ant is known to withstand. Human
-population is on the order of two to three million, concentrated in oases and river valleys,
-and includes Tuareg, Toubou, Sahrawi, Moorish and Bedouin communities whose older economies
-were built on herding, caravan trade and the salt and gold routes.
+The Sahara is the largest single source of mineral dust in the atmosphere. Satellite lidar
+measurements put the quantity leaving the western edge of the desert at roughly 182 million
+tonnes a year, of which about 27.7 million tonnes settle over the Amazon basin after
+crossing some 5,000 kilometres of ocean. Much of it originates in the Bodélé Depression in
+Chad, the dried bed of a former arm of Lake Mega-Chad, whose diatom-rich sediments are rich
+in phosphorus. The deposited dust delivers roughly 22,000 tonnes of phosphorus a year,
+close to the amount that [[The Amazon rainforest]] loses through rainfall runoff and
+flooding, so one desert's erosion partly underwrites another continent's forest.[^yu]
+Saharan dust also darkens Caribbean skies, fertilises the Atlantic, and suppresses tropical
+cyclone formation by drying and stabilising the air ahead of developing storms.
 """,
         "tier": "standard",
         "kind": "place",
         "infobox": {
             "title": "The Sahara",
-            "subtitle": "Desert in northern Africa",
+            "subtitle": "The largest hot desert on Earth",
             "rows": [
-                {"kind": "header", "value": "Geography"},
-                {"kind": "row", "label": "Area", "value": "About 9,200,000 km²"},
+                {
+                    "kind": "header",
+                    "value": "Extent",
+                },
                 {
                     "kind": "row",
-                    "label": "Extent",
-                    "value": "About 4,800 km, Atlantic Ocean to the Red Sea",
+                    "label": "Area",
+                    "value": "Roughly 9 million km2; published figures 8.6-9.2 million",
+                },
+                {
+                    "kind": "row",
+                    "label": "Span",
+                    "value": "Atlantic to the Red Sea, across eleven countries and territories",
                 },
                 {
                     "kind": "row",
                     "label": "Highest point",
-                    "value": "Emi Koussi, 3,415 m (Tibesti, Chad)",
+                    "value": "Emi Koussi, 3,415 m, Tibesti Mountains, Chad",
                 },
                 {
                     "kind": "row",
                     "label": "Lowest point",
-                    "value": "Qattara Depression, 133 m below sea level (Egypt)",
+                    "value": "Qattara Depression, 133 m below sea level, Egypt",
                 },
-                {"kind": "row", "label": "Sand seas", "value": "About one quarter of the surface"},
+                {
+                    "kind": "header",
+                    "value": "Surfaces",
+                },
                 {
                     "kind": "row",
-                    "label": "Annual rainfall",
-                    "value": "Under 100 mm in most areas; under 25 mm in the hyper-arid core",
+                    "label": "Sand seas",
+                    "value": "About a quarter of the area, as ergs",
                 },
-                {"kind": "row", "label": "Countries and territories", "value": "Eleven"},
-                {"kind": "header", "value": "Past climate"},
+                {
+                    "kind": "row",
+                    "label": "Other terrain",
+                    "value": "Hamada plateaus, reg gravel plains, wadis, massifs, oases",
+                },
+                {
+                    "kind": "header",
+                    "value": "Climate history",
+                },
                 {
                     "kind": "row",
                     "label": "African Humid Period",
-                    "value": "About 11,000 to 5,000 years ago",
+                    "value": "Roughly 11,000 to 5,000 years ago",
+                },
+                {
+                    "kind": "row",
+                    "label": "Driver",
+                    "value": "Precession-paced strengthening of the West African monsoon",
                 },
                 {
                     "kind": "full",
                     "value": (
-                        "The largest hot desert on Earth; only the Antarctic and Arctic polar "
-                        "deserts cover more ground."
+                        "Dust from the Bodele Depression in Chad supplies phosphorus to "
+                        "the Amazon basin."
                     ),
                 },
             ],
@@ -626,11 +660,63 @@ were built on herding, caravan trade and the salt and gold routes.
         "image": None,
         "references": [
             {
-                "key": "britannica_sahara",
+                "key": "britannica",
                 "title": "Sahara",
-                "url": "https://www.britannica.com/place/Sahara-desert",
+                "url": "https://www.britannica.com/place/Sahara-desert-Africa",
                 "authors": "",
                 "publisher": "Encyclopaedia Britannica",
+                "published_on": "",
+                "accessed_on": "2026-09-26",
+                "identifier": "",
+                "quote": "",
+            },
+            {
+                "key": "wmo",
+                "title": (
+                    "World Meteorological Organization Assessment of the Purported World "
+                    "Record 58 C Temperature Extreme at El Azizia, Libya (13 September 1922)"
+                ),
+                "url": (
+                    "https://journals.ametsoc.org/view/journals/bams/94/2/bams-d-12-00093.1.xml"
+                ),
+                "authors": "Khalid I. El Fadli and others",
+                "publisher": "Bulletin of the American Meteorological Society",
+                "published_on": "2013",
+                "accessed_on": "2026-09-26",
+                "identifier": "doi:10.1175/BAMS-D-12-00093.1",
+                "quote": "",
+            },
+            {
+                "key": "demenocal",
+                "title": (
+                    "Abrupt onset and termination of the African Humid Period: rapid "
+                    "climate responses to gradual insolation forcing"
+                ),
+                "url": "https://www.sciencedirect.com/science/article/pii/S0277379199000815",
+                "authors": "Peter deMenocal and others",
+                "publisher": "Quaternary Science Reviews",
+                "published_on": "2000",
+                "accessed_on": "2026-09-26",
+                "identifier": "doi:10.1016/S0277-3791(99)00081-5",
+                "quote": "",
+            },
+            {
+                "key": "unesco",
+                "title": "Tassili n'Ajjer",
+                "url": "https://whc.unesco.org/en/list/179",
+                "authors": "",
+                "publisher": "UNESCO World Heritage Centre",
+                "published_on": "",
+                "accessed_on": "2026-09-26",
+                "identifier": "",
+                "quote": "",
+            },
+            {
+                "key": "nasa",
+                "title": "Nubian Sandstone Aquifer, Egypt",
+                "url": "https://science.nasa.gov/photojournal/nubian-sandstone-aquifer-egypt/",
+                "authors": "",
+                "publisher": "NASA",
                 "published_on": "",
                 "accessed_on": "2026-09-26",
                 "identifier": "",
@@ -639,83 +725,29 @@ were built on herding, caravan trade and the salt and gold routes.
             {
                 "key": "yu",
                 "title": (
-                    "The fertilizing role of African dust in the Amazon rainforest: A first "
-                    "multiyear assessment based on data from Cloud-Aerosol Lidar and Infrared "
-                    "Pathfinder Satellite Observations"
+                    "The fertilizing role of African dust in the Amazon rainforest: a "
+                    "first multiyear assessment based on data from CALIPSO"
                 ),
-                "url": "https://doi.org/10.1002/2015GL063040",
-                "authors": "Hongbin Yu et al.",
+                "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2015GL063040",
+                "authors": "Hongbin Yu and others",
                 "publisher": "Geophysical Research Letters",
                 "published_on": "2015",
                 "accessed_on": "2026-09-26",
                 "identifier": "doi:10.1002/2015GL063040",
                 "quote": "",
             },
-            {
-                "key": "demenocal",
-                "title": (
-                    "Abrupt onset and termination of the African Humid Period: rapid climate "
-                    "responses to gradual insolation forcing"
-                ),
-                "url": "",
-                "authors": "Peter B. deMenocal et al.",
-                "publisher": "Quaternary Science Reviews",
-                "published_on": "2000",
-                "accessed_on": "2026-09-26",
-                "identifier": "",
-                "quote": "",
-            },
-            {
-                "key": "mccauley",
-                "title": (
-                    "Subsurface valleys and geoarchaeology of the eastern Sahara revealed by "
-                    "shuttle radar"
-                ),
-                "url": "",
-                "authors": "John F. McCauley et al.",
-                "publisher": "Science",
-                "published_on": "1982",
-                "accessed_on": "2026-09-26",
-                "identifier": "",
-                "quote": "",
-            },
-            {
-                "key": "ibnbattuta",
-                "title": "The Travels of Ibn Battuta, A.D. 1325-1354, Volume IV",
-                "url": "",
-                "authors": "Ibn Battuta, translated by H. A. R. Gibb and C. F. Beckingham",
-                "publisher": "Hakluyt Society",
-                "published_on": "1994",
-                "accessed_on": "2026-09-26",
-                "identifier": "",
-                "quote": "",
-            },
-            {
-                "key": "wmo",
-                "title": (
-                    "World Meteorological Organization assessment of the purported world record "
-                    "58 °C temperature extreme at El Azizia, Libya (13 September 1922)"
-                ),
-                "url": "",
-                "authors": "Khalid I. El Fadli et al.",
-                "publisher": "Bulletin of the American Meteorological Society",
-                "published_on": "2013",
-                "accessed_on": "2026-09-26",
-                "identifier": "",
-                "quote": "",
-            },
         ],
         "see_also": [
             "The Nile",
-            "The water cycle",
             "Timbuktu",
-            "The Silk Road",
-            "The Amazon rainforest",
+            "The water cycle",
             "Ice age",
+            "The Amazon rainforest",
+            "Salt",
         ],
         "aliases": ["Sahara Desert"],
         "is_stub": False,
         "is_disambiguation": False,
-        "tags": ["deserts", "africa", "palaeoclimate", "rock art", "trade routes"],
+        "tags": ["deserts", "palaeoclimate", "north africa", "mineral dust"],
     },
 ]

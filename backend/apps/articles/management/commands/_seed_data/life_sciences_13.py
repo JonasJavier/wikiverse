@@ -30,8 +30,9 @@ single-ringed pyrimidines. Successive sugars are joined by phosphodiester bonds 
 3' carbon of one and the 5' carbon of the next, so each strand has a chemical direction,
 conventionally read from the 5' end to the 3' end.
 
-The two strands run antiparallel, with the bases turned inward. Adenine pairs only with
-thymine, held by two hydrogen bonds, and guanine only with cytosine, held by three.[^watson1953]
+The two strands run antiparallel, with the bases turned inward. Adenine pairs only with thymine
+and guanine only with cytosine, the rule set out in the 1953 structure;[^watson1953] the A-T pair
+is held by two hydrogen bonds and the G-C pair by three.[^alberts]
 Something of this complementarity was already implicit in the base ratios Erwin Chargaff
 measured around 1950, which showed that in DNA from any species the quantity of adenine matches
 that of thymine and guanine matches cytosine. The pairing rule also keeps the helix a constant
@@ -60,8 +61,8 @@ converted to a virulent form by something in the remains of killed virulent bact
 Oswald Avery, Colin MacLeod and Maclyn McCarty identified that transforming principle as DNA,
 purified, free of detectable protein and still active at very low concentrations.[^avery1944]
 Alfred Hershey and Martha Chase reinforced the conclusion in 1952 by labelling bacteriophage
-protein and DNA with different radioisotopes and showing that only the DNA label entered
-infected cells.
+protein and DNA with different radioisotopes and showing that most of the DNA label entered
+infected cells while most of the protein label stayed outside.
 
 The structure itself was solved at Cambridge in early 1953 by James Watson and Francis Crick,
 working from X-ray diffraction data produced at King's College London by Rosalind Franklin and
@@ -95,8 +96,8 @@ the error rate down to the order of one wrong base in a billion or more added.[^
 
 DNA specifies proteins indirectly. A gene is transcribed into messenger RNA, which uses ribose
 in place of deoxyribose and uracil in place of thymine, and ribosomes then translate that
-message into a chain of amino acids. Since there are four bases and twenty standard amino acids,
-the code cannot use one base per amino acid; triplets allow 64 combinations. Marshall Nirenberg
+message into a chain of amino acids. Four bases cannot specify twenty standard amino acids one at
+a time, and pairs of bases allow only sixteen combinations; triplets allow 64. Marshall Nirenberg
 and Heinrich Matthaei read the first codon in 1961 by adding synthetic RNA composed only of
 uracil to a bacterial extract and recovering a polypeptide of pure phenylalanine.[^nirenberg1961]
 Within five years the table was complete: 61 codons specify amino acids, three mark the end of a
@@ -255,7 +256,7 @@ in exceptional cases, from very much older material.
                     "The Dependence of Cell-Free Protein Synthesis in E. coli upon Naturally "
                     "Occurring or Synthetic Polyribonucleotides"
                 ),
-                "url": "https://www.pnas.org/doi/10.1073/pnas.47.10.1588",
+                "url": "https://doi.org/10.1073/pnas.47.10.1588",
                 "authors": "Marshall W. Nirenberg and J. Heinrich Matthaei",
                 "publisher": "Proceedings of the National Academy of Sciences 47, 1588-1602",
                 "published_on": "October 1961",
@@ -288,10 +289,10 @@ in exceptional cases, from very much older material.
             {
                 "key": "alberts",
                 "title": "Molecular Biology of the Cell, sixth edition",
-                "url": "https://www.ncbi.nlm.nih.gov/books/NBK21054/",
-                "authors": "Bruce Alberts and colleagues",
-                "publisher": "Garland Science",
-                "published_on": "2014",
+                "url": "https://archive.org/details/molecularbiology0006edalbe",
+                "authors": "Bruce Alberts, Alexander Johnson, Julian Lewis and others",
+                "publisher": "Garland Science, New York",
+                "published_on": "2015",
                 "accessed_on": "2026-09-26",
                 "identifier": "ISBN 978-0-8153-4432-2",
                 "quote": "",
@@ -348,7 +349,7 @@ Every cell is enclosed by a plasma membrane about 5 nanometres thick, built from
 of phospholipids whose water-repelling tails face inward. The bilayer blocks the passage of ions
 and most polar molecules, so traffic across it is handled by embedded transport proteins, which
 is what allows a cell to hold an interior chemically unlike its surroundings. The membrane is
-not rigid: in the fluid mosaic description proposed by Seymour Singer and Garth Nicolson in
+not rigid: in the fluid mosaic description proposed by Jonathan Singer and Garth Nicolson in
 1972, its lipids and proteins diffuse laterally within the plane of the sheet.
 
 Inside is the cytosol, a crowded solution in which [[Water|water]] accounts for roughly seventy
@@ -397,9 +398,9 @@ genetic variation on which [[Natural selection|selection]] operates.
 
 ## Scale, number and specialisation
 
-The smallest free-living cells, such as some mycoplasmas, are around 0.2 micrometres across; the
+The smallest bacterial cells, such as some mycoplasmas, are around 0.2 micrometres across; the
 largest single cells, including bird eggs, are visible without help. A human adult has been
-estimated to contain about 3.7 x 10^13 cells, a figure arrived at by adding up organ-by-organ
+estimated to contain about 37 trillion cells, a figure arrived at by adding up organ-by-organ
 counts rather than by any single measurement.[^bianconi2013] These fall into more than two
 hundred recognised types whose division of labour is the subject matter of
 [[Human anatomy|human anatomy]]: red blood cells, which in humans discard their nucleus and last
@@ -457,7 +458,7 @@ themselves persist for a lifetime.
                 "title": "Micrographia: or Some Physiological Descriptions of Minute Bodies",
                 "url": "https://www.gutenberg.org/ebooks/15491",
                 "authors": "Robert Hooke",
-                "publisher": "The Royal Society, London",
+                "publisher": "Printed for the Royal Society, London",
                 "published_on": "1665",
                 "accessed_on": "2026-09-26",
                 "identifier": "",
@@ -513,10 +514,10 @@ themselves persist for a lifetime.
             {
                 "key": "alberts",
                 "title": "Molecular Biology of the Cell, sixth edition",
-                "url": "https://www.ncbi.nlm.nih.gov/books/NBK21054/",
-                "authors": "Bruce Alberts and colleagues",
-                "publisher": "Garland Science",
-                "published_on": "2014",
+                "url": "https://archive.org/details/molecularbiology0006edalbe",
+                "authors": "Bruce Alberts, Alexander Johnson, Julian Lewis and others",
+                "publisher": "Garland Science, New York",
+                "published_on": "2015",
                 "accessed_on": "2026-09-26",
                 "identifier": "ISBN 978-0-8153-4432-2",
                 "quote": "",
@@ -541,8 +542,8 @@ themselves persist for a lifetime.
         "short_description": "A limestone structure built by colonial animals living with algae",
         "summary": (
             "A coral reef is a wave-resistant limestone structure built by colonial stony "
-            "corals in partnership with photosynthetic algae. Reefs cover a tiny share of the "
-            "sea floor yet shelter about a quarter of marine species."
+            "corals in partnership with photosynthetic algae. Reefs cover about one per cent of "
+            "the ocean yet shelter at least a quarter of marine species."
         ),
         "content": """**A coral reef** is a wave-resistant structure of calcium carbonate built by
 colonial marine animals, chiefly the stony corals, together with calcifying algae and the
@@ -559,14 +560,14 @@ beneath itself. Polyps bud to form colonies, and colonies cement together into a
 What makes rapid reef construction possible is a partnership inside the coral's own tissue.
 Single-celled dinoflagellate algae of the family Symbiodiniaceae, long known as zooxanthellae,
 live within the coral's gastrodermal cells at densities of around a million per square
-centimetre. They photosynthesise and pass sugars, glycerol and amino acids to the host, which
-can supply up to ninety per cent of the coral's energy requirements; in exchange they receive
-shelter, carbon dioxide and nitrogenous waste.[^noaa_zoox] That subsidy is what allows corals to
-calcify fast enough to outpace erosion, and it also constrains them: reef-building corals need
-clear, sunlit [[Water|seawater]], so reefs are largely confined to depths above about 30 metres,
-to waters between roughly 18 and 30 degrees Celsius, and to places where nutrients and suspended
-sediment are low. The reef is, in effect, a limestone landform erected on the proceeds of
-[[Photosynthesis]].
+centimetre. They photosynthesise and pass sugars, glycerol and amino acids to the host: as much
+as ninety per cent of the organic material they produce is transferred to the coral's tissue, and
+in exchange they receive shelter, carbon dioxide and nitrogenous waste.[^noaa_zoox] That subsidy
+is what allows corals to calcify fast enough to outpace erosion, and it also constrains them:
+reef-building corals need clear, well-lit [[Water|seawater]], so reefs are largely confined to
+the upper few tens of metres of the water column, to waters between roughly 18 and 30 degrees
+Celsius, and to places where nutrients and suspended sediment are low. The reef is, in effect, a
+limestone landform erected on the proceeds of [[Photosynthesis]].
 
 ## Reef types and Darwin's subsidence theory
 
@@ -588,8 +589,8 @@ carries a volcanic island away from the hotspot that built it.
 
 ## Biodiversity
 
-Reefs occupy well under one per cent of the sea floor yet provide habitat for roughly a quarter
-of all marine species.[^noaa] The reason is structural as much as biological: a reef framework
+Reefs occupy about one per cent of the ocean yet provide habitat for at least a quarter of all
+marine species.[^noaa] The reason is structural as much as biological: a reef framework
 is riddled with crevices, overhangs and cavities at every scale, offering refuges, nurseries and
 feeding stations that a flat sea bed cannot. Several hundred species of reef-building coral, and
 tens of thousands of fish, molluscs, crustaceans, sponges and echinoderms, partition that space
@@ -657,7 +658,11 @@ correspondingly slow to recover from damage by bottom trawling.
                 },
                 {"kind": "header", "value": "Conditions for reef growth"},
                 {"kind": "row", "label": "Temperature", "value": "Roughly 18-30 degrees Celsius"},
-                {"kind": "row", "label": "Depth", "value": "Mostly shallower than 30 metres"},
+                {
+                    "kind": "row",
+                    "label": "Depth",
+                    "value": "Mostly the upper few tens of metres",
+                },
                 {"kind": "header", "value": "Forms"},
                 {"kind": "row", "label": "Types", "value": "Fringing reef, barrier reef, atoll"},
                 {
@@ -668,7 +673,7 @@ correspondingly slow to recover from damage by bottom trawling.
                 {
                     "kind": "full",
                     "value": (
-                        "Reefs cover under one per cent of the sea floor but host about a "
+                        "Reefs cover about one per cent of the ocean but host at least a "
                         "quarter of marine species"
                     ),
                 },
@@ -721,13 +726,13 @@ correspondingly slow to recover from damage by bottom trawling.
             },
             {
                 "key": "noaa",
-                "title": "Corals Tutorial: Why Are Coral Reefs Important?",
+                "title": "Why Are Coral Reefs Important?",
                 "url": (
                     "https://oceanservice.noaa.gov/education/tutorial_corals/"
                     "coral07_importance.html"
                 ),
                 "authors": "",
-                "publisher": "NOAA National Ocean Service",
+                "publisher": "NOAA National Ocean Service, Corals Tutorial",
                 "published_on": "",
                 "accessed_on": "2026-09-26",
                 "identifier": "",
@@ -735,13 +740,13 @@ correspondingly slow to recover from damage by bottom trawling.
             },
             {
                 "key": "noaa_zoox",
-                "title": "Corals Tutorial: Zooxanthellae and Their Coral Hosts",
+                "title": "What Is Zooxanthellae?",
                 "url": (
                     "https://oceanservice.noaa.gov/education/tutorial_corals/"
                     "coral02_zooxanthellae.html"
                 ),
                 "authors": "",
-                "publisher": "NOAA National Ocean Service",
+                "publisher": "NOAA National Ocean Service, Corals Tutorial",
                 "published_on": "",
                 "accessed_on": "2026-09-26",
                 "identifier": "",

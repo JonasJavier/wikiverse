@@ -761,7 +761,10 @@ level.[^gcb]
             },
             {
                 "key": "berna",
-                "title": "Microstratigraphic evidence of in situ fire in the Acheulean strata of Wonderwerk Cave",
+                "title": (
+                    "Microstratigraphic evidence of in situ fire in the Acheulean strata of "
+                    "Wonderwerk Cave, Northern Cape province, South Africa"
+                ),
                 "url": "https://www.pnas.org/doi/10.1073/pnas.1117620109",
                 "authors": "Francesco Berna, Paul Goldberg, Liora Kolska Horwitz and others",
                 "publisher": "Proceedings of the National Academy of Sciences 109 (20): E1215–E1220",
