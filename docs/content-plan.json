@@ -1,0 +1,2144 @@
+{
+  "categories": [
+    {
+      "name": "Mathematics",
+      "description": "Number, structure, shape and proof, from the invention of zero to the mathematics of unpredictability.",
+      "color": "#41678f"
+    },
+    {
+      "name": "Physics",
+      "description": "Matter, energy, motion and the laws that connect a kettle to a black hole.",
+      "color": "#55599b"
+    },
+    {
+      "name": "Astronomy and Space",
+      "description": "The contents and history of the sky, and the instruments and probes sent to read it.",
+      "color": "#6f5698"
+    },
+    {
+      "name": "Chemistry and Materials",
+      "description": "Atoms, bonds and reactions, and the long road from alchemy to the periodic table.",
+      "color": "#2d7f80"
+    },
+    {
+      "name": "Life Sciences",
+      "description": "Living systems from molecules to reefs, and the evolutionary logic behind them.",
+      "color": "#3d8a5a"
+    },
+    {
+      "name": "Medicine and the Mind",
+      "description": "How medical knowledge was established, and how bodies and memory actually work.",
+      "color": "#a2555c"
+    },
+    {
+      "name": "Earth and Environment",
+      "description": "The planet as a working machine: crust, water, ice, air and the cycles that link them.",
+      "color": "#6f8a3d"
+    },
+    {
+      "name": "Geography and Places",
+      "description": "Specific places on Earth, why they ended up that way, and the craft of mapping them.",
+      "color": "#35798f"
+    },
+    {
+      "name": "Computing and Information",
+      "description": "Computation, cryptography, networks and information as a measurable quantity.",
+      "color": "#4f7d93"
+    },
+    {
+      "name": "Engineering and Technology",
+      "description": "Machines and instruments, from bronze gearwork to satellites that keep time.",
+      "color": "#7b8290"
+    },
+    {
+      "name": "History",
+      "description": "Periods, events and exchange networks that reshaped how people lived and thought.",
+      "color": "#8f5f45"
+    },
+    {
+      "name": "Philosophy and Religion",
+      "description": "Traditions of reasoning, belief and conduct, and the arguments that outlived them.",
+      "color": "#8d5590"
+    },
+    {
+      "name": "Language and Literature",
+      "description": "Writing systems, languages and the works that survived long enough to matter.",
+      "color": "#9c5570"
+    },
+    {
+      "name": "Visual Arts",
+      "description": "Images and image-making: pigment, geometry, printing and paint.",
+      "color": "#b07a3c"
+    },
+    {
+      "name": "Music and Performance",
+      "description": "Sound organised on purpose: tuning systems, styles, instruments and ensembles.",
+      "color": "#a8604f"
+    },
+    {
+      "name": "Society and Everyday Life",
+      "description": "Money, records, trade goods and games, and the ordinary things with extraordinary histories.",
+      "color": "#8a7a4a"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Zero",
+      "category": "Mathematics",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "How a placeholder mark became a number: Babylonian gaps, Brahmagupta's rules, the route through Arabic mathematics into Europe, and why positional notation made arithmetic mechanical.",
+      "links_to": [
+        "Prime number",
+        "Algorithm",
+        "Cuneiform",
+        "The Islamic Golden Age",
+        "Writing systems",
+        "Quipu",
+        "Double-entry bookkeeping"
+      ]
+    },
+    {
+      "title": "Prime number",
+      "category": "Mathematics",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Primes as the multiplicative atoms: the sieve of Eratosthenes, Euclid's infinitude proof, how they are distributed, and why factoring being hard keeps modern secrets.",
+      "links_to": [
+        "Zero",
+        "Euclid's Elements",
+        "Public-key cryptography",
+        "Algorithm",
+        "Probability theory"
+      ]
+    },
+    {
+      "title": "Euclid's Elements",
+      "category": "Mathematics",
+      "tier": "standard",
+      "kind": "work",
+      "angle": "The most reprinted textbook in history: definitions, postulates and propositions, the axiomatic method it taught the West, and the parallel postulate that eventually cracked open other geometries.",
+      "links_to": [
+        "Prime number",
+        "The Library of Alexandria",
+        "Linear perspective",
+        "Plato",
+        "The Renaissance",
+        "Möbius strip",
+        "Aristotle"
+      ]
+    },
+    {
+      "title": "Calculus",
+      "category": "Mathematics",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "Limits, derivatives and integrals built up from motion problems; the Newton-Leibniz priority dispute; and how rates of change became the default language of physics and engineering.",
+      "links_to": [
+        "Isaac Newton",
+        "Fourier transform",
+        "Probability theory",
+        "Thermodynamics",
+        "General relativity",
+        "Chaos theory",
+        "Light"
+      ]
+    },
+    {
+      "title": "Fourier transform",
+      "category": "Mathematics",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Any signal as a sum of pure waves: Fourier's heat problem, thinking in the frequency domain, the fast Fourier transform, and its use in sound, images and seismology.",
+      "links_to": [
+        "Calculus",
+        "Sound",
+        "Equal temperament",
+        "Information theory",
+        "Light",
+        "Quantum mechanics",
+        "Earthquake"
+      ]
+    },
+    {
+      "title": "Probability theory",
+      "category": "Mathematics",
+      "tier": "standard",
+      "kind": "discipline",
+      "angle": "From gambling puzzles to Kolmogorov's axioms: expectation, the law of large numbers, Bayesian updating, and why physics and biology cannot do without chance.",
+      "links_to": [
+        "Calculus",
+        "Entropy",
+        "Information theory",
+        "Natural selection",
+        "Game theory",
+        "Chess",
+        "Chaos theory"
+      ]
+    },
+    {
+      "title": "Chaos theory",
+      "category": "Mathematics",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "Deterministic systems that stay unpredictable: Lorenz's rounded-off weather run, sensitive dependence, strange attractors, and what the butterfly effect does and does not claim.",
+      "links_to": [
+        "Isaac Newton",
+        "Entropy",
+        "Probability theory",
+        "Calculus",
+        "Game theory",
+        "Plate tectonics",
+        "The water cycle",
+        "Möbius strip"
+      ]
+    },
+    {
+      "title": "Möbius strip",
+      "category": "Mathematics",
+      "tier": "stub",
+      "kind": "concept",
+      "angle": "A surface with one side and one edge: how to make one from a strip of paper, what happens when you cut it down the middle, and why orientability matters.",
+      "links_to": [
+        "Euclid's Elements",
+        "Chaos theory",
+        "General relativity"
+      ]
+    },
+    {
+      "title": "Isaac Newton",
+      "category": "Physics",
+      "tier": "feature",
+      "kind": "person",
+      "angle": "The laws of motion and universal gravitation, the Principia, optics and the calculus, alongside the alchemy, the Royal Mint years and the feuds the textbook version leaves out.",
+      "links_to": [
+        "Calculus",
+        "Light",
+        "The Solar System",
+        "Galileo Galilei",
+        "The Scientific Revolution",
+        "Alchemy",
+        "General relativity",
+        "Marine chronometer"
+      ]
+    },
+    {
+      "title": "Thermodynamics",
+      "category": "Physics",
+      "tier": "standard",
+      "kind": "discipline",
+      "angle": "The four laws, the difference between heat and work, efficiency limits, and how a science born in boiler rooms and breweries ended up constraining stars and cells alike.",
+      "links_to": [
+        "Entropy",
+        "Heat engine",
+        "Steam engine",
+        "Combustion",
+        "Probability theory",
+        "The Industrial Revolution",
+        "Information theory"
+      ]
+    },
+    {
+      "title": "Entropy",
+      "category": "Physics",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "One word with two great meanings: Clausius's bookkeeping of waste heat, Boltzmann's counting of microstates, Shannon's measure of surprise, and the arrow of time that follows.",
+      "links_to": [
+        "Thermodynamics",
+        "Heat engine",
+        "Information theory",
+        "Probability theory",
+        "Black hole",
+        "Steam engine",
+        "Chaos theory"
+      ]
+    },
+    {
+      "title": "Electromagnetism",
+      "category": "Physics",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Electricity and magnetism unified: fields and induction, Maxwell's equations, the realisation that light is an electromagnetic wave, and the technologies that followed.",
+      "links_to": [
+        "Light",
+        "Special relativity",
+        "Quantum mechanics",
+        "The transistor",
+        "Aurora",
+        "Sound"
+      ]
+    },
+    {
+      "title": "Light",
+      "category": "Physics",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "Ray, wave and photon accounts side by side: reflection and refraction, measuring the speed of light, colour and lenses, and how images are formed.",
+      "links_to": [
+        "Electromagnetism",
+        "Quantum mechanics",
+        "Special relativity",
+        "Photosynthesis",
+        "Camera obscura",
+        "Galileo Galilei",
+        "Fourier transform",
+        "Impressionism"
+      ]
+    },
+    {
+      "title": "Special relativity",
+      "category": "Physics",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Two postulates and their consequences: the loss of absolute simultaneity, time dilation and length contraction, mass-energy equivalence, and the muon and satellite evidence.",
+      "links_to": [
+        "Light",
+        "Electromagnetism",
+        "General relativity",
+        "Isaac Newton",
+        "Global Positioning System"
+      ]
+    },
+    {
+      "title": "General relativity",
+      "category": "Physics",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Gravity as curvature: the equivalence principle, the field equations in words, and the classic tests from Mercury's precession to eclipse starlight deflection.",
+      "links_to": [
+        "Special relativity",
+        "Black hole",
+        "Mercury (planet)",
+        "The Solar System",
+        "Calculus",
+        "Solar eclipse"
+      ]
+    },
+    {
+      "title": "Quantum mechanics",
+      "category": "Physics",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "Quantisation, wave-particle duality, uncertainty and superposition told through the experiments that forced each idea, plus what the theory explains about chemistry and transistors.",
+      "links_to": [
+        "Light",
+        "Electromagnetism",
+        "Atomic theory",
+        "Chemical bond",
+        "The transistor",
+        "The periodic table",
+        "Mercury (element)"
+      ]
+    },
+    {
+      "title": "Sound",
+      "category": "Physics",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Pressure waves in matter: pitch, loudness and timbre, resonance and standing waves, the limits of hearing, and the loudest events ever measured.",
+      "links_to": [
+        "Fourier transform",
+        "Equal temperament",
+        "Earthquake",
+        "Krakatoa",
+        "Gamelan",
+        "Bass",
+        "Jazz"
+      ]
+    },
+    {
+      "title": "The Solar System",
+      "category": "Astronomy and Space",
+      "tier": "feature",
+      "kind": "place",
+      "angle": "A tour of Sun, planets, moons and small bodies, how the system condensed from a disc of gas and dust, and the sheer scale of the distances involved.",
+      "links_to": [
+        "Mercury (planet)",
+        "The Copernican Revolution",
+        "Isaac Newton",
+        "General relativity",
+        "Solar eclipse",
+        "Voyager program",
+        "The Antikythera mechanism",
+        "Plate tectonics"
+      ]
+    },
+    {
+      "title": "Mercury (planet)",
+      "category": "Astronomy and Space",
+      "tier": "standard",
+      "kind": "place",
+      "angle": "The smallest and fastest planet: a cratered crust, an oversized iron core, a 3:2 spin-orbit resonance, polar ice in permanent shadow, and the precession that tested gravity.",
+      "links_to": [
+        "The Solar System",
+        "General relativity",
+        "Mercury (element)",
+        "Solar eclipse",
+        "The Copernican Revolution",
+        "Mercury"
+      ]
+    },
+    {
+      "title": "Mercury",
+      "category": "Astronomy and Space",
+      "tier": "stub",
+      "kind": "disambiguation",
+      "angle": "Disambiguation page separating the innermost planet, the liquid metal element, and the Roman messenger god who gave both of them their name.",
+      "links_to": [
+        "Mercury (planet)",
+        "Mercury (element)",
+        "Alchemy",
+        "The Roman Empire"
+      ]
+    },
+    {
+      "title": "The Copernican Revolution",
+      "category": "Astronomy and Space",
+      "tier": "standard",
+      "kind": "period",
+      "angle": "Heliocentrism from De revolutionibus through Kepler's ellipses and Galileo's telescope to Newton's gravitation, and how slowly and unevenly the idea won.",
+      "links_to": [
+        "The Solar System",
+        "Galileo Galilei",
+        "Isaac Newton",
+        "The Scientific Revolution",
+        "Mercury (planet)",
+        "The Renaissance",
+        "Revolution"
+      ]
+    },
+    {
+      "title": "Galileo Galilei",
+      "category": "Astronomy and Space",
+      "tier": "standard",
+      "kind": "person",
+      "angle": "Telescopic discoveries, inclined-plane experiments and the mathematisation of motion, then the trial and the long argument about what it meant.",
+      "links_to": [
+        "The Copernican Revolution",
+        "The Solar System",
+        "Isaac Newton",
+        "The Scientific Revolution",
+        "Light",
+        "Venice",
+        "Camera obscura"
+      ]
+    },
+    {
+      "title": "Black hole",
+      "category": "Astronomy and Space",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "From escape velocity to event horizons: how stars collapse, what tidal forces and Hawking radiation mean, why horizons carry enormous entropy, and how one was finally imaged.",
+      "links_to": [
+        "General relativity",
+        "Entropy",
+        "Light",
+        "Special relativity",
+        "Information theory",
+        "The Solar System"
+      ]
+    },
+    {
+      "title": "Solar eclipse",
+      "category": "Astronomy and Space",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "A coincidence of angular sizes: the saros cycle that let ancient scribes predict eclipses, what totality actually looks like, and the 1919 expedition that tested gravity.",
+      "links_to": [
+        "The Antikythera mechanism",
+        "The Solar System",
+        "General relativity",
+        "Mercury (planet)",
+        "Cuneiform",
+        "Camera obscura"
+      ]
+    },
+    {
+      "title": "Voyager program",
+      "category": "Astronomy and Space",
+      "tier": "standard",
+      "kind": "work",
+      "angle": "Two probes, a planetary alignment that recurs roughly every 176 years, the Golden Record's music and greetings, and what it means that both craft are now beyond the heliosphere.",
+      "links_to": [
+        "The Solar System",
+        "Information theory",
+        "Gamelan",
+        "Baroque music",
+        "Global Positioning System",
+        "Johann Sebastian Bach"
+      ]
+    },
+    {
+      "title": "The periodic table",
+      "category": "Chemistry and Materials",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "How the elements were ordered, Mendeleev's gaps and successful predictions, periodicity explained by electron shells, where the elements were forged, and how to read a modern table.",
+      "links_to": [
+        "Atomic theory",
+        "Chemical bond",
+        "Marie Curie",
+        "Mercury (element)",
+        "Alchemy",
+        "Quantum mechanics",
+        "Combustion"
+      ]
+    },
+    {
+      "title": "Atomic theory",
+      "category": "Chemistry and Materials",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "From Democritus to measurement: Dalton's ratios, Brownian motion, Rutherford's foil experiment, isotopes, and the shell picture that replaced the plum pudding.",
+      "links_to": [
+        "The periodic table",
+        "Chemical bond",
+        "Quantum mechanics",
+        "Alchemy",
+        "Marie Curie",
+        "Mercury (element)"
+      ]
+    },
+    {
+      "title": "Chemical bond",
+      "category": "Chemistry and Materials",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Ionic, covalent and metallic bonding plus hydrogen bonds: electronegativity, geometry and strength, and why they explain both water and the double helix.",
+      "links_to": [
+        "Atomic theory",
+        "The periodic table",
+        "Water",
+        "Quantum mechanics",
+        "Deoxyribonucleic acid",
+        "Combustion"
+      ]
+    },
+    {
+      "title": "Water",
+      "category": "Chemistry and Materials",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "A small polar molecule with a startling list of anomalies: hydrogen bonding, ice that floats, huge heat capacity, surface tension, and what each one does for the planet.",
+      "links_to": [
+        "Chemical bond",
+        "The water cycle",
+        "Photosynthesis",
+        "The cell",
+        "Ice age",
+        "Coral reef",
+        "Venice"
+      ]
+    },
+    {
+      "title": "Combustion",
+      "category": "Chemistry and Materials",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Oxidation and flame chemistry: Lavoisier's overthrow of phlogiston, what a flame is made of, and fire's place in engines, smelting and the carbon cycle.",
+      "links_to": [
+        "Thermodynamics",
+        "Heat engine",
+        "The carbon cycle",
+        "Alchemy",
+        "Steam engine",
+        "The Industrial Revolution"
+      ]
+    },
+    {
+      "title": "Alchemy",
+      "category": "Chemistry and Materials",
+      "tier": "standard",
+      "kind": "discipline",
+      "angle": "Alchemy as laboratory craft and symbolic system across Hellenistic, Islamic and European traditions, and the apparatus and techniques it handed to chemistry.",
+      "links_to": [
+        "Atomic theory",
+        "The periodic table",
+        "Mercury (element)",
+        "Isaac Newton",
+        "The Islamic Golden Age",
+        "The Scientific Revolution",
+        "Ultramarine"
+      ]
+    },
+    {
+      "title": "Mercury (element)",
+      "category": "Chemistry and Materials",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "The only metal liquid at room temperature: why relativistic effects keep it fluid, its long service in mirrors, hats and thermometers, and the toxicity that ended that.",
+      "links_to": [
+        "The periodic table",
+        "Alchemy",
+        "Atomic theory",
+        "Mercury (planet)",
+        "Marie Curie",
+        "Mercury"
+      ]
+    },
+    {
+      "title": "Marie Curie",
+      "category": "Chemistry and Materials",
+      "tier": "standard",
+      "kind": "person",
+      "angle": "Radioactivity named and measured, tonnes of pitchblende reduced to a decigram of radium, Nobel prizes in two sciences, and hazards nobody yet understood.",
+      "links_to": [
+        "The periodic table",
+        "Atomic theory",
+        "Quantum mechanics",
+        "Mercury (element)",
+        "Light",
+        "Human anatomy"
+      ]
+    },
+    {
+      "title": "Photosynthesis",
+      "category": "Life Sciences",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "How light becomes sugar: chlorophyll and the two photosystems, the Calvin cycle, the Great Oxidation Event, and C4 and CAM variants as engineering answers to heat.",
+      "links_to": [
+        "The cell",
+        "Light",
+        "The carbon cycle",
+        "Water",
+        "Coral reef",
+        "Chemical bond",
+        "The Amazon rainforest"
+      ]
+    },
+    {
+      "title": "Natural selection",
+      "category": "Life Sciences",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "Variation, heredity and differential survival stated plainly, the evidence from fossils, islands and drug resistance, and the misreadings that refuse to die.",
+      "links_to": [
+        "Charles Darwin",
+        "Deoxyribonucleic acid",
+        "Extinction",
+        "The Galápagos Islands",
+        "Probability theory",
+        "Penicillin",
+        "Coral reef",
+        "Octopus",
+        "Honey bee"
+      ]
+    },
+    {
+      "title": "Charles Darwin",
+      "category": "Life Sciences",
+      "tier": "feature",
+      "kind": "person",
+      "angle": "The Beagle years, two decades of quiet evidence-gathering, the coral atoll theory he was proudest of, and the barnacles, orchids and earthworms behind the famous book.",
+      "links_to": [
+        "Natural selection",
+        "The Galápagos Islands",
+        "Coral reef",
+        "Extinction",
+        "Ice age",
+        "Deoxyribonucleic acid",
+        "Cartography"
+      ]
+    },
+    {
+      "title": "Deoxyribonucleic acid",
+      "category": "Life Sciences",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "Structure and function of DNA: the double helix and the contested road to it, base pairing and replication, the genetic code, and DNA read as stored information.",
+      "links_to": [
+        "The cell",
+        "Natural selection",
+        "Chemical bond",
+        "Information theory",
+        "Ship of Theseus",
+        "Penicillin"
+      ]
+    },
+    {
+      "title": "The cell",
+      "category": "Life Sciences",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Cell theory from Hooke's cork onward: membranes and organelles, the prokaryote-eukaryote divide, division, and the organelles that were once free-living bacteria.",
+      "links_to": [
+        "Deoxyribonucleic acid",
+        "Photosynthesis",
+        "Germ theory of disease",
+        "Human anatomy",
+        "Water",
+        "Memory"
+      ]
+    },
+    {
+      "title": "Coral reef",
+      "category": "Life Sciences",
+      "tier": "standard",
+      "kind": "place",
+      "angle": "Animal, alga and limestone in partnership: Darwin's atoll subsidence theory confirmed by drilling, why reefs are biodiversity hotspots, and what bleaching physically is.",
+      "links_to": [
+        "Charles Darwin",
+        "Water",
+        "Octopus",
+        "Plate tectonics",
+        "Extinction",
+        "Natural selection"
+      ]
+    },
+    {
+      "title": "Octopus",
+      "category": "Life Sciences",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "A nervous system distributed through eight arms, colour-changing skin in a colour-blind animal, tool use and problem solving, and a life that ends after one brood.",
+      "links_to": [
+        "Natural selection",
+        "Coral reef",
+        "Memory",
+        "Deoxyribonucleic acid",
+        "Light"
+      ]
+    },
+    {
+      "title": "Honey bee",
+      "category": "Life Sciences",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "A colony as a superorganism: the waggle dance that encodes distance and bearing, democratic swarm decisions, hexagonal comb geometry, and the chemistry of wax and honey.",
+      "links_to": [
+        "Information theory",
+        "Natural selection",
+        "Photosynthesis",
+        "Memory",
+        "Probability theory",
+        "The cell"
+      ]
+    },
+    {
+      "title": "Germ theory of disease",
+      "category": "Medicine and the Mind",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "How miasma gave way to microbes: Snow's cholera map, Semmelweis's hand-washing data, Pasteur's flasks and Koch's postulates, and the sanitation and surgery that followed.",
+      "links_to": [
+        "The Black Death",
+        "Penicillin",
+        "The cell",
+        "Vaccination",
+        "The water cycle",
+        "Venice",
+        "Human anatomy"
+      ]
+    },
+    {
+      "title": "Vaccination",
+      "category": "Medicine and the Mind",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "A history of immunisation: variolation in Asia and Africa, Jenner's cowpox observation, Pasteur's attenuated cultures, the smallpox eradication campaign, and immunological memory.",
+      "links_to": [
+        "Germ theory of disease",
+        "Penicillin",
+        "The Black Death",
+        "Human anatomy",
+        "Memory",
+        "Natural selection"
+      ]
+    },
+    {
+      "title": "Penicillin",
+      "category": "Medicine and the Mind",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "A contaminated plate in 1928, the Oxford team who turned a mould into a drug, wartime mass production, and resistance as natural selection observed in real time.",
+      "links_to": [
+        "Germ theory of disease",
+        "Natural selection",
+        "The cell",
+        "Vaccination",
+        "Deoxyribonucleic acid"
+      ]
+    },
+    {
+      "title": "Human anatomy",
+      "category": "Medicine and the Mind",
+      "tier": "standard",
+      "kind": "discipline",
+      "angle": "The body's major systems and the history of describing them, from Galen's inherited errors to Renaissance dissection, printed atlases and modern imaging.",
+      "links_to": [
+        "Leonardo da Vinci",
+        "The cell",
+        "Germ theory of disease",
+        "Memory",
+        "The Renaissance",
+        "Aristotle"
+      ]
+    },
+    {
+      "title": "Memory",
+      "category": "Medicine and the Mind",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Encoding, consolidation and retrieval; what the patient H.M. revealed about the hippocampus; why remembering rewrites; and external memory from knotted cords to files.",
+      "links_to": [
+        "Ship of Theseus",
+        "Quipu",
+        "Octopus",
+        "Artificial intelligence",
+        "Cuneiform",
+        "Human anatomy"
+      ]
+    },
+    {
+      "title": "Plate tectonics",
+      "category": "Earth and Environment",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "From Wegener's ridiculed drift to seafloor magnetic stripes: plate boundaries, subduction, the supercontinent cycle, and why mountains, quakes and volcanoes sit where they do.",
+      "links_to": [
+        "Earthquake",
+        "Krakatoa",
+        "Mount Everest",
+        "Ice age",
+        "Extinction",
+        "The Galápagos Islands",
+        "Coral reef",
+        "The Solar System"
+      ]
+    },
+    {
+      "title": "Earthquake",
+      "category": "Earth and Environment",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Faults and stick-slip rupture, P and S waves, magnitude versus intensity, tsunami generation, and how cities learned to build for shaking.",
+      "links_to": [
+        "Plate tectonics",
+        "Krakatoa",
+        "Sound",
+        "Mount Everest",
+        "The Great Wave off Kanagawa",
+        "Fourier transform"
+      ]
+    },
+    {
+      "title": "Krakatoa",
+      "category": "Earth and Environment",
+      "tier": "standard",
+      "kind": "period",
+      "angle": "The 1883 eruption: a blast heard thousands of kilometres away, pressure waves that circled the globe, deadly tsunamis, and years of lurid sunsets and global cooling.",
+      "links_to": [
+        "Plate tectonics",
+        "Earthquake",
+        "Sound",
+        "Ice age",
+        "Gamelan",
+        "Extinction"
+      ]
+    },
+    {
+      "title": "Ice age",
+      "category": "Earth and Environment",
+      "tier": "standard",
+      "kind": "period",
+      "angle": "Glacial cycles and their orbital pacing, the evidence in ice cores and moraines, and the coastlines, lakes and migration routes the last glaciation left behind.",
+      "links_to": [
+        "The carbon cycle",
+        "Extinction",
+        "Plate tectonics",
+        "The water cycle",
+        "The Sahara",
+        "Charles Darwin",
+        "Lascaux cave paintings"
+      ]
+    },
+    {
+      "title": "The water cycle",
+      "category": "Earth and Environment",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Evaporation, transport, precipitation and runoff; reservoirs and residence times; and why rivers, monsoons and deserts sit where they do.",
+      "links_to": [
+        "Water",
+        "The Nile",
+        "Ice age",
+        "The carbon cycle",
+        "The Sahara",
+        "The Amazon rainforest"
+      ]
+    },
+    {
+      "title": "The carbon cycle",
+      "category": "Earth and Environment",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "The fast biological loop and the slow geological one: photosynthesis and respiration, weathering, buried carbon, and what the ice-core record shows.",
+      "links_to": [
+        "Photosynthesis",
+        "Combustion",
+        "Ice age",
+        "The water cycle",
+        "Extinction",
+        "The Industrial Revolution"
+      ]
+    },
+    {
+      "title": "Aurora",
+      "category": "Earth and Environment",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Solar wind, magnetosphere and excited oxygen and nitrogen: why aurorae ring the poles, what gives each colour, and the 1859 storm that set telegraph paper smouldering.",
+      "links_to": [
+        "Electromagnetism",
+        "The Solar System",
+        "Global Positioning System",
+        "Cuneiform",
+        "Light"
+      ]
+    },
+    {
+      "title": "Extinction",
+      "category": "Earth and Environment",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Background versus mass extinction, the big five events and their suspected causes, and how a disappearance is reconstructed from rock, isotopes and pollen.",
+      "links_to": [
+        "Natural selection",
+        "Ice age",
+        "Plate tectonics",
+        "Krakatoa",
+        "The Galápagos Islands",
+        "Charles Darwin"
+      ]
+    },
+    {
+      "title": "Mount Everest",
+      "category": "Geography and Places",
+      "tier": "standard",
+      "kind": "place",
+      "angle": "How collision built it and how its height was surveyed from 240 km away and later revised, the physiology of the death zone, and the Sherpa labour behind the summit stories.",
+      "links_to": [
+        "Plate tectonics",
+        "Cartography",
+        "Earthquake",
+        "Ice age",
+        "Global Positioning System",
+        "Marine chronometer"
+      ]
+    },
+    {
+      "title": "The Nile",
+      "category": "Geography and Places",
+      "tier": "standard",
+      "kind": "place",
+      "angle": "Two branches and a contested source, the annual flood and its silt, the damming that ended it, and the states the river made possible.",
+      "links_to": [
+        "Ancient Egypt",
+        "The water cycle",
+        "The Sahara",
+        "Cartography",
+        "Salt"
+      ]
+    },
+    {
+      "title": "The Sahara",
+      "category": "Geography and Places",
+      "tier": "standard",
+      "kind": "place",
+      "angle": "Desert machinery beyond the dunes: the green Sahara of about 6,000 years ago recorded in rock art, oases and caravan routes, and dust that fertilises a rainforest.",
+      "links_to": [
+        "The water cycle",
+        "The Nile",
+        "Ancient Egypt",
+        "The Silk Road",
+        "Ice age",
+        "Timbuktu",
+        "Salt",
+        "The Amazon rainforest"
+      ]
+    },
+    {
+      "title": "Venice",
+      "category": "Geography and Places",
+      "tier": "standard",
+      "kind": "place",
+      "angle": "A city on millions of wooden piles: lagoon hydrology, the maritime republic, printing, glass and bookkeeping, plague quarantine islands, and subsidence and flooding today.",
+      "links_to": [
+        "The Renaissance",
+        "Double-entry bookkeeping",
+        "The Black Death",
+        "Money",
+        "Galileo Galilei",
+        "Baroque music",
+        "Water",
+        "The Silk Road"
+      ]
+    },
+    {
+      "title": "Timbuktu",
+      "category": "Geography and Places",
+      "tier": "standard",
+      "kind": "place",
+      "angle": "A Niger-bend city where salt met gold: Sankore's scholars and copyists, hundreds of thousands of manuscripts, and how a real place became a byword for nowhere.",
+      "links_to": [
+        "The Sahara",
+        "The Islamic Golden Age",
+        "Salt",
+        "The Silk Road",
+        "The printing press",
+        "Writing systems"
+      ]
+    },
+    {
+      "title": "Cartography",
+      "category": "Geography and Places",
+      "tier": "standard",
+      "kind": "discipline",
+      "angle": "Map-making as knowledge and argument: projections and the distortions they trade, the longitude problem, thematic maps, and the leap to digital geodata.",
+      "links_to": [
+        "The Nile",
+        "Astrolabe",
+        "Marine chronometer",
+        "Mount Everest",
+        "The Silk Road",
+        "Euclid's Elements",
+        "Global Positioning System",
+        "The Library of Alexandria"
+      ]
+    },
+    {
+      "title": "The Amazon rainforest",
+      "category": "Geography and Places",
+      "tier": "standard",
+      "kind": "place",
+      "angle": "A basin that makes its own rain: flying rivers, staggering species counts, nutrient-poor soils and the terra preta left by pre-Columbian populations.",
+      "links_to": [
+        "Photosynthesis",
+        "The water cycle",
+        "The Sahara",
+        "Natural selection",
+        "Extinction",
+        "The carbon cycle"
+      ]
+    },
+    {
+      "title": "The Galápagos Islands",
+      "category": "Geography and Places",
+      "tier": "standard",
+      "kind": "place",
+      "angle": "Volcanic islands on a hotspot: extraordinary endemism, what Darwin actually collected in five weeks, and the conservation pressure the archipelago faces now.",
+      "links_to": [
+        "Charles Darwin",
+        "Natural selection",
+        "Plate tectonics",
+        "Extinction",
+        "Coral reef",
+        "Cartography"
+      ]
+    },
+    {
+      "title": "Algorithm",
+      "category": "Computing and Information",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "From al-Khwarizmi's manuals to complexity classes: what makes a procedure an algorithm, worked examples like Euclid's and sorting, correctness, and how growth rates decide the possible.",
+      "links_to": [
+        "Alan Turing",
+        "Zero",
+        "The Islamic Golden Age",
+        "Artificial intelligence",
+        "Public-key cryptography",
+        "Chess",
+        "Logic",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Alan Turing",
+      "category": "Computing and Information",
+      "tier": "feature",
+      "kind": "person",
+      "angle": "Computable numbers and the machine that defines computability, the halting problem, Bletchley Park cryptanalysis, the imitation game, morphogenesis, and the prosecution that ended his career.",
+      "links_to": [
+        "Algorithm",
+        "Public-key cryptography",
+        "Artificial intelligence",
+        "Logic",
+        "Information theory",
+        "Chess",
+        "Natural selection"
+      ]
+    },
+    {
+      "title": "Information theory",
+      "category": "Computing and Information",
+      "tier": "feature",
+      "kind": "discipline",
+      "angle": "Shannon's bit: entropy as uncertainty, redundancy, channel capacity and noisy-channel coding, error correction, and why compression has a hard floor.",
+      "links_to": [
+        "Entropy",
+        "Public-key cryptography",
+        "Unicode",
+        "Deoxyribonucleic acid",
+        "Probability theory",
+        "The Internet",
+        "Fourier transform",
+        "Honey bee"
+      ]
+    },
+    {
+      "title": "Public-key cryptography",
+      "category": "Computing and Information",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Sharing a secret in public: Diffie-Hellman and RSA explained with small numbers, signatures and certificates, and the earlier classified discovery at GCHQ.",
+      "links_to": [
+        "Prime number",
+        "Algorithm",
+        "Information theory",
+        "The Internet",
+        "Alan Turing",
+        "World Wide Web"
+      ]
+    },
+    {
+      "title": "The Internet",
+      "category": "Computing and Information",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Packet switching and layered protocols, addressing, routing and DNS, the growth from ARPANET to a global network, and the standards process that kept it one network.",
+      "links_to": [
+        "World Wide Web",
+        "Information theory",
+        "Public-key cryptography",
+        "Unicode",
+        "The transistor",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "World Wide Web",
+      "category": "Computing and Information",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Hypertext realised: URLs, HTTP and HTML from a CERN proposal to a public-domain release, its debts to earlier hypertext dreams, and link rot as a preservation problem.",
+      "links_to": [
+        "The Internet",
+        "JavaScript",
+        "Unicode",
+        "The printing press",
+        "The Library of Alexandria",
+        "Public-key cryptography"
+      ]
+    },
+    {
+      "title": "Artificial intelligence",
+      "category": "Computing and Information",
+      "tier": "standard",
+      "kind": "discipline",
+      "angle": "A historical survey: symbolic AI and expert systems, two winters, the statistical turn and neural networks, game-playing milestones, and how such systems are evaluated.",
+      "links_to": [
+        "Alan Turing",
+        "Algorithm",
+        "Logic",
+        "Probability theory",
+        "Chess",
+        "Memory",
+        "Information theory",
+        "Game theory"
+      ]
+    },
+    {
+      "title": "JavaScript",
+      "category": "Computing and Information",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "A language written in ten days: the document object model, ECMAScript standardisation, the event loop and asynchrony, fast engines, and its spread beyond the browser.",
+      "links_to": [
+        "World Wide Web",
+        "The Internet",
+        "Algorithm",
+        "Unicode"
+      ]
+    },
+    {
+      "title": "Unicode",
+      "category": "Computing and Information",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "One code point per character: escaping the code-page era, UTF-8's design, historic scripts and emoji, normalisation, and the committee politics of adding a character.",
+      "links_to": [
+        "Writing systems",
+        "The printing press",
+        "World Wide Web",
+        "Information theory",
+        "Cuneiform",
+        "Quipu"
+      ]
+    },
+    {
+      "title": "Steam engine",
+      "category": "Engineering and Technology",
+      "tier": "feature",
+      "kind": "concept",
+      "angle": "Newcomen's atmospheric pump, Watt's separate condenser and governor, high-pressure locomotives, and how portable power reorganised mines, mills and travel.",
+      "links_to": [
+        "Heat engine",
+        "The Industrial Revolution",
+        "Thermodynamics",
+        "Entropy",
+        "Combustion",
+        "The carbon cycle"
+      ]
+    },
+    {
+      "title": "Heat engine",
+      "category": "Engineering and Technology",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Turning a temperature difference into work: cycles on a pressure-volume diagram, Carnot's efficiency limit, and the debt thermodynamics owes to practical engineers.",
+      "links_to": [
+        "Thermodynamics",
+        "Entropy",
+        "Steam engine",
+        "Combustion",
+        "The Industrial Revolution"
+      ]
+    },
+    {
+      "title": "The printing press",
+      "category": "Engineering and Technology",
+      "tier": "feature",
+      "kind": "work",
+      "angle": "Movable type as a system of punches, matrices, alloy, oil-based ink and press; earlier East Asian printing; and the measurable effects of cheap identical copies.",
+      "links_to": [
+        "The Renaissance",
+        "Writing systems",
+        "Unicode",
+        "The Library of Alexandria",
+        "The Scientific Revolution",
+        "William Shakespeare",
+        "The Great Wave off Kanagawa",
+        "The Islamic Golden Age"
+      ]
+    },
+    {
+      "title": "The transistor",
+      "category": "Engineering and Technology",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Semiconductors and doping, the p-n junction, the point-contact device of 1947 and the MOSFET, integrated circuits, and decades of scaling.",
+      "links_to": [
+        "Quantum mechanics",
+        "Electromagnetism",
+        "The Internet",
+        "Artificial intelligence",
+        "Global Positioning System"
+      ]
+    },
+    {
+      "title": "The Antikythera mechanism",
+      "category": "Engineering and Technology",
+      "tier": "standard",
+      "kind": "work",
+      "angle": "Corroded bronze gearwork raised from a shipwreck that turns out to model the heavens, predict eclipses and track the Olympiad cycle, decoded by modern imaging.",
+      "links_to": [
+        "Solar eclipse",
+        "The Solar System",
+        "Euclid's Elements",
+        "Astrolabe",
+        "Marine chronometer",
+        "The Library of Alexandria"
+      ]
+    },
+    {
+      "title": "Marine chronometer",
+      "category": "Engineering and Technology",
+      "tier": "standard",
+      "kind": "work",
+      "angle": "The longitude problem and the prize for solving it: Harrison's H1 to H4, the astronomers' rival lunar-distance method, and keeping time as the price of knowing where you are.",
+      "links_to": [
+        "Cartography",
+        "Global Positioning System",
+        "The Antikythera mechanism",
+        "Isaac Newton",
+        "Astrolabe",
+        "Mount Everest"
+      ]
+    },
+    {
+      "title": "Global Positioning System",
+      "category": "Engineering and Technology",
+      "tier": "standard",
+      "kind": "work",
+      "angle": "Trilateration from atomic clocks in orbit, relativistic corrections of tens of microseconds a day, signal structure and error sources, and how much now depends on it.",
+      "links_to": [
+        "Special relativity",
+        "Marine chronometer",
+        "Cartography",
+        "Aurora",
+        "Mount Everest",
+        "The transistor"
+      ]
+    },
+    {
+      "title": "Astrolabe",
+      "category": "Engineering and Technology",
+      "tier": "stub",
+      "kind": "concept",
+      "angle": "A brass analogue of the sky: what its plates and rule do, and its use for telling time, finding latitude and fixing prayer hours before the sextant.",
+      "links_to": [
+        "Cartography",
+        "The Islamic Golden Age",
+        "Marine chronometer",
+        "The Antikythera mechanism"
+      ]
+    },
+    {
+      "title": "The Silk Road",
+      "category": "History",
+      "tier": "feature",
+      "kind": "period",
+      "angle": "Not one road but a relay of exchanges: silk, horses, paper, notation, religions and pathogens moving both ways across steppe, desert and sea, and the oasis cities that lived off it.",
+      "links_to": [
+        "The Black Death",
+        "The Islamic Golden Age",
+        "Money",
+        "Venice",
+        "Buddhism",
+        "Salt",
+        "Chess",
+        "Timbuktu",
+        "The Roman Empire"
+      ]
+    },
+    {
+      "title": "The Roman Empire",
+      "category": "History",
+      "tier": "standard",
+      "kind": "period",
+      "angle": "Expansion and administration, law and citizenship, roads, aqueducts and concrete, the crises of the third century, and the long transformation rather than a single fall.",
+      "links_to": [
+        "The Silk Road",
+        "The Library of Alexandria",
+        "Stoicism",
+        "Ancient Egypt",
+        "Venice",
+        "Salt",
+        "Writing systems"
+      ]
+    },
+    {
+      "title": "The Islamic Golden Age",
+      "category": "History",
+      "tier": "standard",
+      "kind": "period",
+      "angle": "Baghdad's translation movement, algebra and algorithms, optics, hospitals and observatories, paper-making from the east, and the transmission of it all westward.",
+      "links_to": [
+        "Algorithm",
+        "Zero",
+        "Alchemy",
+        "Astrolabe",
+        "The Library of Alexandria",
+        "The Silk Road",
+        "One Thousand and One Nights",
+        "Camera obscura",
+        "Timbuktu"
+      ]
+    },
+    {
+      "title": "The Library of Alexandria",
+      "category": "History",
+      "tier": "standard",
+      "kind": "place",
+      "angle": "The Mouseion and its scholars, scroll collecting and cataloguing, Eratosthenes measuring the Earth, and why the library's end was slow attrition rather than one fire.",
+      "links_to": [
+        "Euclid's Elements",
+        "Writing systems",
+        "Ancient Egypt",
+        "The Islamic Golden Age",
+        "The printing press",
+        "World Wide Web",
+        "The Antikythera mechanism"
+      ]
+    },
+    {
+      "title": "Ancient Egypt",
+      "category": "History",
+      "tier": "standard",
+      "kind": "period",
+      "angle": "Three thousand years along one river: kingdoms and dynasties, hieroglyphs and scribes, monumental building, religion and burial, and Egyptian mathematics and medicine.",
+      "links_to": [
+        "The Nile",
+        "Writing systems",
+        "The Library of Alexandria",
+        "The Sahara",
+        "Zero",
+        "The Roman Empire",
+        "Salt"
+      ]
+    },
+    {
+      "title": "The Black Death",
+      "category": "History",
+      "tier": "standard",
+      "kind": "period",
+      "angle": "Plague across Eurasia in the 1340s: spread along trade routes, mortality estimates and how they are argued, quarantine invented in port cities, and the wage and land upheaval after.",
+      "links_to": [
+        "Germ theory of disease",
+        "The Silk Road",
+        "The Renaissance",
+        "Venice",
+        "Money",
+        "Vaccination"
+      ]
+    },
+    {
+      "title": "The Renaissance",
+      "category": "History",
+      "tier": "feature",
+      "kind": "period",
+      "angle": "Recovering antiquity: banker patrons and workshop practice, perspective and print, humanist scholarship, new optics, and the argument over whether rebirth describes anything real.",
+      "links_to": [
+        "The printing press",
+        "Linear perspective",
+        "Leonardo da Vinci",
+        "Venice",
+        "The Scientific Revolution",
+        "Euclid's Elements",
+        "The Black Death",
+        "Human anatomy"
+      ]
+    },
+    {
+      "title": "The Scientific Revolution",
+      "category": "History",
+      "tier": "standard",
+      "kind": "period",
+      "angle": "How knowledge-making changed between Copernicus and Newton: new instruments, mathematised nature, controlled experiment, learned societies, journals and print.",
+      "links_to": [
+        "The Copernican Revolution",
+        "Galileo Galilei",
+        "Isaac Newton",
+        "Alchemy",
+        "The printing press",
+        "Human anatomy",
+        "Revolution"
+      ]
+    },
+    {
+      "title": "The Industrial Revolution",
+      "category": "History",
+      "tier": "feature",
+      "kind": "period",
+      "angle": "Coal, steam, cotton and iron: why it began where it did, the factory as a social form, railways and cities, and the ledger of costs beside the gains.",
+      "links_to": [
+        "Steam engine",
+        "Heat engine",
+        "Thermodynamics",
+        "Money",
+        "The carbon cycle",
+        "Double-entry bookkeeping",
+        "Combustion",
+        "Revolution"
+      ]
+    },
+    {
+      "title": "Revolution",
+      "category": "History",
+      "tier": "stub",
+      "kind": "disambiguation",
+      "angle": "Disambiguation page separating political revolution, the Industrial and Scientific revolutions, the Copernican turn, and the astronomical sense of one complete orbit.",
+      "links_to": [
+        "The Industrial Revolution",
+        "The Scientific Revolution",
+        "The Copernican Revolution",
+        "The Solar System"
+      ]
+    },
+    {
+      "title": "Plato",
+      "category": "Philosophy and Religion",
+      "tier": "standard",
+      "kind": "person",
+      "angle": "Dialogue as method and Socrates as its voice, the theory of forms, the Academy, and a long shadow over mathematics, theology and political thought.",
+      "links_to": [
+        "Logic",
+        "Euclid's Elements",
+        "Aristotle",
+        "Stoicism",
+        "Ship of Theseus",
+        "Equal temperament"
+      ]
+    },
+    {
+      "title": "Aristotle",
+      "category": "Philosophy and Religion",
+      "tier": "standard",
+      "kind": "person",
+      "angle": "The encyclopaedic philosopher: the syllogism, causes and substance, classification and biology, the ethics of virtue, and his long afterlife in Arabic and Latin scholarship.",
+      "links_to": [
+        "Plato",
+        "Logic",
+        "The Islamic Golden Age",
+        "Human anatomy",
+        "Euclid's Elements",
+        "Stoicism"
+      ]
+    },
+    {
+      "title": "Logic",
+      "category": "Philosophy and Religion",
+      "tier": "standard",
+      "kind": "discipline",
+      "angle": "Valid inference from Aristotle's syllogisms to Boole and Frege: propositional and predicate logic, truth tables and quantifiers, and the bridge from logic to circuits and proofs.",
+      "links_to": [
+        "Plato",
+        "Aristotle",
+        "Algorithm",
+        "Alan Turing",
+        "Artificial intelligence",
+        "Euclid's Elements"
+      ]
+    },
+    {
+      "title": "Stoicism",
+      "category": "Philosophy and Religion",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Logic, physics and ethics as one system: the dichotomy of control, the Roman Stoics, and what modern popularisations quietly leave out.",
+      "links_to": [
+        "Plato",
+        "The Roman Empire",
+        "Logic",
+        "Buddhism",
+        "Ship of Theseus",
+        "Aristotle",
+        "Confucius"
+      ]
+    },
+    {
+      "title": "Buddhism",
+      "category": "Philosophy and Religion",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Origins in northern India, the four noble truths and dependent origination, monastic life, and the spread and diversification along trade routes into East and Southeast Asia.",
+      "links_to": [
+        "The Silk Road",
+        "Stoicism",
+        "Confucius",
+        "Gamelan",
+        "Ship of Theseus"
+      ]
+    },
+    {
+      "title": "Confucius",
+      "category": "Philosophy and Religion",
+      "tier": "standard",
+      "kind": "person",
+      "angle": "Ritual, reciprocity and the cultivated person as recorded in the Analects, the making of a canon, and the examination system built on it.",
+      "links_to": [
+        "Buddhism",
+        "Writing systems",
+        "The Silk Road",
+        "The printing press",
+        "Stoicism"
+      ]
+    },
+    {
+      "title": "Ship of Theseus",
+      "category": "Philosophy and Religion",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Replace every plank and is it the same ship? Identity over time, Hobbes's twist with the salvaged timbers, and the version where your own cells keep replacing themselves.",
+      "links_to": [
+        "Plato",
+        "Memory",
+        "Stoicism",
+        "Deoxyribonucleic acid",
+        "Logic"
+      ]
+    },
+    {
+      "title": "Writing systems",
+      "category": "Language and Literature",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "How scripts encode language: logographic, syllabic and alphabetic systems, clay tokens to cuneiform to alphabets, independent inventions, and what writing did to memory and rule.",
+      "links_to": [
+        "Unicode",
+        "The printing press",
+        "Ancient Egypt",
+        "Cuneiform",
+        "The Epic of Gilgamesh",
+        "Quipu",
+        "The Library of Alexandria",
+        "Zero"
+      ]
+    },
+    {
+      "title": "Cuneiform",
+      "category": "Language and Literature",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Wedges pressed into clay for three millennia: accounting origins, scribal schools, the languages it served, and the receipts, omens and complaints that read like yesterday.",
+      "links_to": [
+        "Writing systems",
+        "The Epic of Gilgamesh",
+        "Unicode",
+        "Zero",
+        "Solar eclipse",
+        "Ancient Egypt"
+      ]
+    },
+    {
+      "title": "The Epic of Gilgamesh",
+      "category": "Language and Literature",
+      "tier": "standard",
+      "kind": "work",
+      "angle": "A king, a wild companion and a refused immortality, reassembled from broken tablets after two thousand years lost, including the flood account that startled its translator.",
+      "links_to": [
+        "Cuneiform",
+        "Writing systems",
+        "The Library of Alexandria",
+        "One Thousand and One Nights",
+        "Ancient Egypt"
+      ]
+    },
+    {
+      "title": "William Shakespeare",
+      "category": "Language and Literature",
+      "tier": "feature",
+      "kind": "person",
+      "angle": "A working playwright's economics, the playhouse and the plague closures, the range of plays and sonnets, his effect on English, and how the First Folio saved half the work.",
+      "links_to": [
+        "The printing press",
+        "The Renaissance",
+        "The Black Death",
+        "Writing systems",
+        "One Thousand and One Nights",
+        "Venice"
+      ]
+    },
+    {
+      "title": "One Thousand and One Nights",
+      "category": "Language and Literature",
+      "tier": "standard",
+      "kind": "work",
+      "angle": "A frame story assembled across centuries and languages, the tales added by European translators, and Scheherazade as the original cliffhanger engine.",
+      "links_to": [
+        "The Islamic Golden Age",
+        "The Silk Road",
+        "The Epic of Gilgamesh",
+        "William Shakespeare",
+        "Writing systems"
+      ]
+    },
+    {
+      "title": "Quipu",
+      "category": "Language and Literature",
+      "tier": "stub",
+      "kind": "work",
+      "angle": "Andean knotted-cord records: what the knots encode for census and tribute, and the open question of whether some carry narrative as well as numbers.",
+      "links_to": [
+        "Writing systems",
+        "Memory",
+        "Double-entry bookkeeping",
+        "Unicode",
+        "Money"
+      ]
+    },
+    {
+      "title": "Leonardo da Vinci",
+      "category": "Visual Arts",
+      "tier": "feature",
+      "kind": "person",
+      "angle": "Painter, engineer and note-taker: the surviving paintings and sfumato, the notebooks on anatomy, water and flight, the unbuilt machines, and the myth of the lone genius.",
+      "links_to": [
+        "Linear perspective",
+        "The Renaissance",
+        "Camera obscura",
+        "Human anatomy",
+        "Water",
+        "Ultramarine",
+        "Light"
+      ]
+    },
+    {
+      "title": "Linear perspective",
+      "category": "Visual Arts",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "The geometry of depth on a flat surface: Brunelleschi's demonstration and Alberti's rules, vanishing points, and what pictures outside that tradition do instead.",
+      "links_to": [
+        "The Renaissance",
+        "Leonardo da Vinci",
+        "Camera obscura",
+        "Euclid's Elements",
+        "Impressionism",
+        "The Great Wave off Kanagawa"
+      ]
+    },
+    {
+      "title": "Impressionism",
+      "category": "Visual Arts",
+      "tier": "standard",
+      "kind": "period",
+      "angle": "Painting light and modern life: independent exhibitions, broken brushwork and new tube pigments, hostile critics, and the pull of Japanese prints and the camera.",
+      "links_to": [
+        "The Great Wave off Kanagawa",
+        "Light",
+        "Camera obscura",
+        "Linear perspective",
+        "Ultramarine"
+      ]
+    },
+    {
+      "title": "The Great Wave off Kanagawa",
+      "category": "Visual Arts",
+      "tier": "standard",
+      "kind": "work",
+      "angle": "What the print actually shows, the collaborative woodblock workshop behind it, the imported Prussian blue that made it possible, and its life as a global emblem.",
+      "links_to": [
+        "Impressionism",
+        "The printing press",
+        "Linear perspective",
+        "Earthquake",
+        "Ultramarine"
+      ]
+    },
+    {
+      "title": "Camera obscura",
+      "category": "Visual Arts",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "A dark room, a small hole and an inverted image: Ibn al-Haytham's optics, its use by painters and eclipse observers, and its direct line to photography.",
+      "links_to": [
+        "Light",
+        "Linear perspective",
+        "Leonardo da Vinci",
+        "Solar eclipse",
+        "The Islamic Golden Age",
+        "Impressionism"
+      ]
+    },
+    {
+      "title": "Lascaux cave paintings",
+      "category": "Visual Arts",
+      "tier": "standard",
+      "kind": "work",
+      "angle": "Seventeen-thousand-year-old animals in a cave found by teenagers: the pigments and scaffolding used, what the images may have been for, and why the original had to be sealed and copied.",
+      "links_to": [
+        "Ice age",
+        "Ultramarine",
+        "Writing systems",
+        "Memory",
+        "Extinction"
+      ]
+    },
+    {
+      "title": "Ultramarine",
+      "category": "Visual Arts",
+      "tier": "stub",
+      "kind": "concept",
+      "angle": "Blue ground from Afghan lapis lazuli, once costlier than gold and reserved for the Virgin's robe, until a synthetic version arrived in 1826.",
+      "links_to": [
+        "The Renaissance",
+        "Leonardo da Vinci",
+        "The Silk Road",
+        "Lascaux cave paintings"
+      ]
+    },
+    {
+      "title": "Baroque music",
+      "category": "Music and Performance",
+      "tier": "standard",
+      "kind": "period",
+      "angle": "1600 to 1750 in sound: basso continuo and figured bass, ornament and affect, the rise of opera and the concerto, tuning debates, and what historically informed performance changed.",
+      "links_to": [
+        "Johann Sebastian Bach",
+        "Equal temperament",
+        "Jazz",
+        "Venice",
+        "Sound",
+        "The Renaissance"
+      ]
+    },
+    {
+      "title": "Johann Sebastian Bach",
+      "category": "Music and Performance",
+      "tier": "standard",
+      "kind": "person",
+      "angle": "A working church musician's life and output: weekly cantatas and passions, counterpoint as craft, the keyboard cycles, and the nineteenth-century revival that rescued him.",
+      "links_to": [
+        "Baroque music",
+        "Equal temperament",
+        "Sound",
+        "Jazz",
+        "Voyager program"
+      ]
+    },
+    {
+      "title": "Equal temperament",
+      "category": "Music and Performance",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Why pure fifths and pure octaves cannot both close the circle: the comma that must go somewhere, meantone and well temperaments, and tuning systems outside Europe.",
+      "links_to": [
+        "Sound",
+        "Fourier transform",
+        "Baroque music",
+        "Johann Sebastian Bach",
+        "Plato",
+        "Gamelan"
+      ]
+    },
+    {
+      "title": "Jazz",
+      "category": "Music and Performance",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Roots in New Orleans, blues and ragtime; swing, bebop and after; improvisation as composition in real time; and recording's role in spreading it.",
+      "links_to": [
+        "Baroque music",
+        "Sound",
+        "Equal temperament",
+        "Bass",
+        "Johann Sebastian Bach"
+      ]
+    },
+    {
+      "title": "Gamelan",
+      "category": "Music and Performance",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Bronze ensembles of Java and Bali: slendro and pelog tunings, paired instruments deliberately detuned to shimmer, interlocking parts, and a place on the Voyager record.",
+      "links_to": [
+        "Equal temperament",
+        "Sound",
+        "Voyager program",
+        "Krakatoa",
+        "Buddhism"
+      ]
+    },
+    {
+      "title": "Bass",
+      "category": "Music and Performance",
+      "tier": "stub",
+      "kind": "disambiguation",
+      "angle": "Disambiguation page separating the low register and voice type, the instrument family that plays it, and the unrelated fish spelled the same way.",
+      "links_to": [
+        "Sound",
+        "Jazz",
+        "Equal temperament",
+        "Baroque music"
+      ]
+    },
+    {
+      "title": "Money",
+      "category": "Society and Everyday Life",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Beyond the barter myth: credit and tally sticks, coinage and debasement, banknotes and clearing, and what actually makes a unit of account work.",
+      "links_to": [
+        "Double-entry bookkeeping",
+        "The Silk Road",
+        "Salt",
+        "The Industrial Revolution",
+        "Venice",
+        "Quipu",
+        "Game theory"
+      ]
+    },
+    {
+      "title": "Double-entry bookkeeping",
+      "category": "Society and Everyday Life",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Debits, credits and the balancing identity; Pacioli's 1494 manual; and why the balance sheet made large enterprises governable at all.",
+      "links_to": [
+        "Money",
+        "Venice",
+        "The Renaissance",
+        "Quipu",
+        "Zero"
+      ]
+    },
+    {
+      "title": "Salt",
+      "category": "Society and Everyday Life",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "The mineral people built roads, taxes and rebellions around: preservation chemistry, Saharan slabs traded for gold, mines and pans, and why salary sounds like salt.",
+      "links_to": [
+        "Timbuktu",
+        "The Sahara",
+        "The Silk Road",
+        "Money",
+        "The Roman Empire",
+        "Water"
+      ]
+    },
+    {
+      "title": "Chess",
+      "category": "Society and Everyday Life",
+      "tier": "standard",
+      "kind": "concept",
+      "angle": "Chaturanga through Persia to Europe, how the rules and the queen settled, notation and opening theory, the Mechanical Turk hoax, and the moment machines stopped losing.",
+      "links_to": [
+        "Algorithm",
+        "Artificial intelligence",
+        "Game theory",
+        "Probability theory",
+        "The Islamic Golden Age",
+        "The Silk Road"
+      ]
+    },
+    {
+      "title": "Game theory",
+      "category": "Society and Everyday Life",
+      "tier": "standard",
+      "kind": "discipline",
+      "angle": "Payoff matrices, Nash equilibrium, the prisoner's dilemma and repeated play, with tit-for-tat tournaments, auctions and animal standoffs as evidence.",
+      "links_to": [
+        "Chess",
+        "Artificial intelligence",
+        "Probability theory",
+        "Chaos theory",
+        "Money",
+        "Natural selection"
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "from": "DNA",
+      "to": "Deoxyribonucleic acid"
+    },
+    {
+      "from": "Evolution",
+      "to": "Natural selection"
+    },
+    {
+      "from": "Survival of the fittest",
+      "to": "Natural selection"
+    },
+    {
+      "from": "Cell theory",
+      "to": "The cell"
+    },
+    {
+      "from": "Antibiotics",
+      "to": "Penicillin"
+    },
+    {
+      "from": "Germ theory",
+      "to": "Germ theory of disease"
+    },
+    {
+      "from": "Plague",
+      "to": "The Black Death"
+    },
+    {
+      "from": "JS",
+      "to": "JavaScript"
+    },
+    {
+      "from": "ECMAScript",
+      "to": "JavaScript"
+    },
+    {
+      "from": "AI",
+      "to": "Artificial intelligence"
+    },
+    {
+      "from": "Machine learning",
+      "to": "Artificial intelligence"
+    },
+    {
+      "from": "Neural network",
+      "to": "Artificial intelligence"
+    },
+    {
+      "from": "Turing test",
+      "to": "Artificial intelligence"
+    },
+    {
+      "from": "WWW",
+      "to": "World Wide Web"
+    },
+    {
+      "from": "The Web",
+      "to": "World Wide Web"
+    },
+    {
+      "from": "GPS",
+      "to": "Global Positioning System"
+    },
+    {
+      "from": "RSA",
+      "to": "Public-key cryptography"
+    },
+    {
+      "from": "UTF-8",
+      "to": "Unicode"
+    },
+    {
+      "from": "Bletchley Park",
+      "to": "Alan Turing"
+    },
+    {
+      "from": "Shannon entropy",
+      "to": "Information theory"
+    },
+    {
+      "from": "Second law of thermodynamics",
+      "to": "Entropy"
+    },
+    {
+      "from": "Carnot cycle",
+      "to": "Heat engine"
+    },
+    {
+      "from": "E=mc2",
+      "to": "Special relativity"
+    },
+    {
+      "from": "Butterfly effect",
+      "to": "Chaos theory"
+    },
+    {
+      "from": "Fourier series",
+      "to": "Fourier transform"
+    },
+    {
+      "from": "Heliocentrism",
+      "to": "The Copernican Revolution"
+    },
+    {
+      "from": "Newton",
+      "to": "Isaac Newton"
+    },
+    {
+      "from": "Quicksilver",
+      "to": "Mercury (element)"
+    },
+    {
+      "from": "Hg",
+      "to": "Mercury (element)"
+    },
+    {
+      "from": "Continental drift",
+      "to": "Plate tectonics"
+    },
+    {
+      "from": "Krakatau",
+      "to": "Krakatoa"
+    },
+    {
+      "from": "Northern lights",
+      "to": "Aurora"
+    },
+    {
+      "from": "Hydrologic cycle",
+      "to": "The water cycle"
+    },
+    {
+      "from": "Everest",
+      "to": "Mount Everest"
+    },
+    {
+      "from": "Nile River",
+      "to": "The Nile"
+    },
+    {
+      "from": "Sahara Desert",
+      "to": "The Sahara"
+    },
+    {
+      "from": "Galapagos",
+      "to": "The Galápagos Islands"
+    },
+    {
+      "from": "Silk Route",
+      "to": "The Silk Road"
+    },
+    {
+      "from": "Renaissance",
+      "to": "The Renaissance"
+    },
+    {
+      "from": "Movable type",
+      "to": "The printing press"
+    },
+    {
+      "from": "Longitude problem",
+      "to": "Marine chronometer"
+    },
+    {
+      "from": "Gilgamesh",
+      "to": "The Epic of Gilgamesh"
+    },
+    {
+      "from": "Arabian Nights",
+      "to": "One Thousand and One Nights"
+    },
+    {
+      "from": "Khipu",
+      "to": "Quipu"
+    },
+    {
+      "from": "Shakespeare",
+      "to": "William Shakespeare"
+    },
+    {
+      "from": "Da Vinci",
+      "to": "Leonardo da Vinci"
+    },
+    {
+      "from": "Mona Lisa",
+      "to": "Leonardo da Vinci"
+    },
+    {
+      "from": "Bach",
+      "to": "Johann Sebastian Bach"
+    },
+    {
+      "from": "Hokusai",
+      "to": "The Great Wave off Kanagawa"
+    },
+    {
+      "from": "Perspective",
+      "to": "Linear perspective"
+    },
+    {
+      "from": "Lapis lazuli",
+      "to": "Ultramarine"
+    },
+    {
+      "from": "Waggle dance",
+      "to": "Honey bee"
+    }
+  ],
+  "featured": [
+    "The Silk Road",
+    "Entropy",
+    "Natural selection",
+    "Alan Turing",
+    "Black hole",
+    "Leonardo da Vinci"
+  ],
+  "did_you_know": [
+    "... that the word algorithm comes from the name of the ninth-century scholar al-Khwarizmi, whose book on al-jabr also gave us the word algebra?",
+    "... that a corroded lump of bronze raised from a Roman-era shipwreck turned out to be a geared machine that predicted eclipses and tracked the four-year Olympiad cycle?",
+    "... that the 1883 eruption of Krakatoa was heard thousands of kilometres away and its pressure wave circled the globe several times?",
+    "... that the atomic clocks aboard GPS satellites must be corrected by about 38 microseconds a day, because both special and general relativity are pulling on them?",
+    "... that Hokusai's Great Wave is not a tsunami but an offshore swell, and that its striking blue came from Prussian blue pigment newly imported into Japan?",
+    "... that a honey bee's waggle dance encodes both the direction of a food source and how far away it is?",
+    "... that the Sahara was green grassland dotted with lakes as recently as about 6,000 years ago, and that rock art there shows cattle and swimmers?",
+    "... that ultramarine was ground from lapis lazuli hauled out of Afghanistan and cost Renaissance painters more than gold, which is why it was saved for the Virgin's robe?"
+  ],
+  "rationale": "SPINE: Proposal 2 (interlinking). It had the healthiest link graph — cluster-first rather than list-first, with the Entropy-to-Information-theory bridge, the print-and-its-consequences chain, and the maps-and-instruments chain already load-bearing. Its category scheme and most of its titles survive, and its practice of giving every article 4-8 in-set targets is the rule I enforced throughout.\n\nGRAFTS FROM PROPOSAL 3 (curiosity): the titles that make a visitor keep clicking — Chaos theory, Krakatoa, Aurora, Octopus, Honey bee, Coral reef, Salt, Timbuktu, Ultramarine, Lascaux cave paintings, Gamelan, Ship of Theseus, Memory, Game theory, Marine chronometer, Global Positioning System, Voyager program, Solar eclipse, Möbius strip — plus its two best structural ideas: pairing a long-range instrument chain (Antikythera - Astrolabe - Marine chronometer - GPS - Special relativity) and its Society and Everyday Life category, which gives Money, Salt and Chess a home instead of stranding them in Economics. Its \"Medicine and the Mind\" framing is kept so Memory can sit beside Germ theory without implying clinical advice.\n\nGRAFTS FROM PROPOSAL 1 (breadth): the encyclopedic spine items 2 and 3 skipped or split — Marie Curie, Human anatomy, Vaccination, Aristotle, Confucius, Extinction, The Amazon rainforest, Writing systems as a single concept article, and the Revolution disambiguation page, which is the best of the three ambiguity demos because all four of its senses exist inside the set.\n\nCUTS: (a) near-duplicate titles — Volcano (Plate tectonics plus Krakatoa cover it), Atomic theory plus Stellar nucleosynthesis reduced to Atomic theory with element origins folded into The periodic table, Turing machine folded into Alan Turing, Enigma machine folded into Alan Turing and Public-key cryptography, Non-Euclidean geometry folded into Euclid's Elements and General relativity. (b) thin or redundant places — Antarctica, Istanbul, Easter Island, Machu Picchu, Pompeii, Kyoto, Prime meridian. (c) softer humanities duplicates — Socrates (absorbed into Plato), Don Quixote, Latin, Haiku, Indo-European languages, Greek mythology, The Enlightenment, The Protestant Reformation, The Columbian Exchange. (d) three proposals' worth of framework-flavoured tech: no Unicode-plus-JavaScript-plus-Machine-learning-plus-Deep-learning sprawl; machine learning is a redirect into Artificial intelligence, not a title.\n\nVERIFICATION (scripted, not eyeballed): 120 unique titles; 0 dangling links_to targets; 0 self-links; every links_to target and every redirect target resolves to a title in the set; every article's category is one of the 16; no redirect \"from\" collides with a real title and no duplicate redirect keys; all 6 featured titles exist and are feature tier; every article has between 3 and 10 outbound links and at least 2 inbound links, so hover previews, backlinks and \"what links here\" are never empty.\n\nSHAPE: 16 categories, counts 5-10 (History 10; Physics and Computing 9; Mathematics, Astronomy, Chemistry, Life Sciences, Earth, Geography, Engineering 8; Philosophy and Visual Arts 7; Language, Music 6; Medicine and Society 5). Tiers: 25 feature (1400-2000 words, each wanting an infobox and 6-12 references), 88 standard, 7 short pages. Technology totals 17 titles (Computing 9 plus Engineering 8), inside the 12-18 band, and only 9 of those are modern computing, so the portfolio angle survives without the site reading as a developer blog. Colours are one muted ring at roughly 30-40% saturation and 45-50% lightness plus a slate neutral for Engineering, so every chip holds contrast on white and on near-black.\n\nFEATURE FLAGS THE CONTENT EXERCISES: 3 disambiguation pages whose senses all exist in the set — Mercury (planet, element, Roman god via The Roman Empire), Revolution (Industrial, Scientific, Copernican, orbital), Bass (register, instrument family, the fish). 4 genuine stubs with an obvious expand-me hook and 3-5 outbound links each — Möbius strip, Astrolabe, Quipu, Ultramarine. 52 redirects covering abbreviations (DNA, JS, AI, GPS, WWW, RSA, UTF-8, Hg), article-prefix variants (Renaissance, Sahara Desert, Nile River, Silk Route), short names (Bach, Newton, Shakespeare, Da Vinci), alternate spellings and diacritics (Krakatau, Khipu, Galapagos), and playful ones that show off the \"redirected from\" notice (Butterfly effect, Waggle dance, Quicksilver, Longitude problem, Bletchley Park, Mona Lisa) — enough variety to stress slug collision, case handling and redirect-chain guards.\n\nCROSS-FIELD JUMPS (what makes ten minutes of clicking work): Entropy to Information theory; Fourier transform to Equal temperament and to Earthquake; Euclid's Elements to Linear perspective; Ice age to Lascaux cave paintings; The Sahara to The Amazon rainforest; Honey bee to Information theory; Krakatoa to Gamelan; Voyager program to Johann Sebastian Bach; Earthquake to The Great Wave off Kanagawa; Ship of Theseus to Deoxyribonucleic acid; Cuneiform to Solar eclipse; Special relativity to Global Positioning System; Quipu to Double-entry bookkeeping.\n\nSAFETY: no living-person biographies; the medical articles are framed as history of science and method (how germ theory was established, how vaccination was developed, how resistance evolves) and never as guidance; no current politics; every subject is settled and well documented, which also means each feature article can carry real citations."
+}
