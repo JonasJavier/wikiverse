@@ -13,6 +13,14 @@ from pathlib import Path
 
 import environ
 
+# Safe to import from settings: the module pulls in nothing but ``django.conf``
+# and the standard library at import time.
+from apps.common.middleware import (
+    DEFAULT_CONTENT_SECURITY_POLICY,
+    DEFAULT_CSP_EXEMPT_PREFIXES,
+    DEFAULT_PERMISSIONS_POLICY,
+)
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 env = environ.Env(
@@ -24,9 +32,16 @@ env = environ.Env(
         "http://localhost:5173,http://127.0.0.1:5173",
     ),
     CSRF_TRUSTED_ORIGINS=(str, ""),
-    DATABASE_URL=(str, "sqlite:///db.sqlite3"),
+    # Absolute by construction: ``sqlite:///db.sqlite3`` is CWD-relative, so
+    # running manage.py from backend/ used to create a second, empty database.
+    DATABASE_URL=(str, f"sqlite:///{BASE_DIR / 'db.sqlite3'}"),
     REDIS_URL=(str, ""),
     DJANGO_LOG_LEVEL=(str, "INFO"),
+    SEARCH_CONFIG=(str, "wikiverse_english"),
+    SEARCH_SUGGEST_TTL=(int, 60),
+    PUBLIC_BASE_URL=(str, "https://wikiverse.jonasjavier.dev"),
+    PUBLIC_SITE_DOMAIN=(str, "wikiverse.jonasjavier.dev"),
+    SENTRY_DSN=(str, ""),
 )
 
 # Read a .env file if present (handy for non-Docker local runs).
@@ -62,19 +77,24 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.postgres",
+    "django.contrib.sitemaps",
     # Third party
     "rest_framework",
     "rest_framework_simplejwt",
+    "rest_framework_simplejwt.token_blacklist",
     "corsheaders",
     "django_filters",
     "drf_spectacular",
     # Local
+    "apps.common",
     "apps.accounts",
     "apps.articles",
 ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    # Above WhiteNoise so static assets and admin pages carry the headers too.
+    "apps.common.middleware.SecurityHeadersMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "corsheaders.middleware.CorsMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -111,6 +131,15 @@ TEMPLATES = [
 # --------------------------------------------------------------------------- #
 DATABASES = {"default": env.db("DATABASE_URL")}
 DATABASES["default"].setdefault("CONN_MAX_AGE", 60)
+# Persistent connections plus a liveness check: without this, a connection
+# dropped by the platform while the service slept surfaces as a 500 on wake.
+DATABASES["default"]["CONN_HEALTH_CHECKS"] = True
+
+if "postgresql" in DATABASES["default"].get("ENGINE", ""):
+    # psycopg-only option; sqlite3.connect() would reject it.
+    DATABASES["default"].setdefault("OPTIONS", {}).setdefault(
+        "connect_timeout", env.int("DB_CONNECT_TIMEOUT", default=5)
+    )
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 AUTH_USER_MODEL = "accounts.User"
@@ -208,17 +237,30 @@ REST_FRAMEWORK = {
         "rest_framework.throttling.AnonRateThrottle",
         "rest_framework.throttling.UserRateThrottle",
     ),
+    # Railway's edge is the only hop that rewrites X-Forwarded-For in front of
+    # the backend service, so DRF must take the last-but-one entry.
+    "NUM_PROXIES": env.int("NUM_PROXIES", default=1),
+    # All nine scopes (DECISIONS 18); every one is env-overridable.
     "DEFAULT_THROTTLE_RATES": {
-        "anon": "100/min",
-        "user": "1000/min",
+        "anon": clean_env_value(env("THROTTLE_ANON", default="100/min")),
+        "user": clean_env_value(env("THROTTLE_USER", default="1000/min")),
+        "search": clean_env_value(env("THROTTLE_SEARCH", default="60/min")),
+        "suggest": clean_env_value(env("THROTTLE_SUGGEST", default="120/min")),
+        "preview": clean_env_value(env("THROTTLE_PREVIEW", default="240/min")),
+        "diff": clean_env_value(env("THROTTLE_DIFF", default="60/min")),
+        "write": clean_env_value(env("THROTTLE_WRITE", default="60/min")),
+        "login": clean_env_value(env("THROTTLE_LOGIN", default="10/min")),
+        "register": clean_env_value(env("THROTTLE_REGISTER", default="5/hour")),
     },
 }
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=env.int("JWT_ACCESS_MINUTES", default=30)),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=env.int("JWT_REFRESH_DAYS", default=2)),
     "ROTATE_REFRESH_TOKENS": True,
-    "BLACKLIST_AFTER_ROTATION": False,
+    # With rotation on, the superseded refresh token must be revoked; otherwise
+    # a stolen refresh token stays usable for its whole lifetime.
+    "BLACKLIST_AFTER_ROTATION": True,
     "UPDATE_LAST_LOGIN": True,
 }
 
@@ -246,6 +288,69 @@ CORS_ALLOWED_ORIGINS = env_csv(
 CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = env_csv("CSRF_TRUSTED_ORIGINS", "")
+
+
+# --------------------------------------------------------------------------- #
+# Public site identity
+#
+# nginx rewrites the Host header to the Railway domain, so absolute URLs in
+# sitemaps, feeds and Open Graph tags must come from configuration, never from
+# the incoming request.
+# --------------------------------------------------------------------------- #
+PUBLIC_BASE_URL = clean_env_value(env("PUBLIC_BASE_URL")).rstrip("/")
+PUBLIC_SITE_DOMAIN = clean_env_value(env("PUBLIC_SITE_DOMAIN"))
+
+
+# --------------------------------------------------------------------------- #
+# Full-text search
+# --------------------------------------------------------------------------- #
+# Created by migration articles.0004_search_infrastructure; the name always
+# resolves on PostgreSQL, with or without the unaccent extension. Ignored on
+# SQLite, which uses the icontains fallback path.
+SEARCH_CONFIG = clean_env_value(env("SEARCH_CONFIG"))
+SEARCH_SUGGEST_TTL = env.int("SEARCH_SUGGEST_TTL")
+
+
+# --------------------------------------------------------------------------- #
+# Remote media allowlist
+#
+# Must stay in step with the img-src directive of CONTENT_SECURITY_POLICY
+# below: a lead image the CSP would block is a broken image.
+# --------------------------------------------------------------------------- #
+LEAD_IMAGE_ALLOWED_HOSTS = env_csv(
+    "LEAD_IMAGE_ALLOWED_HOSTS",
+    "upload.wikimedia.org,commons.wikimedia.org",
+)
+
+
+# --------------------------------------------------------------------------- #
+# Security headers (apps.common.middleware.SecurityHeadersMiddleware)
+#
+# Emitted by Django, not only by the frontend's nginx: the backend is publicly
+# reachable on its own Railway host, so an nginx-only header would cover just
+# one of the two live paths.
+# --------------------------------------------------------------------------- #
+CONTENT_SECURITY_POLICY = clean_env_value(
+    env("CONTENT_SECURITY_POLICY", default=DEFAULT_CONTENT_SECURITY_POLICY)
+)
+CONTENT_SECURITY_POLICY_REPORT_ONLY = env.bool(
+    "CONTENT_SECURITY_POLICY_REPORT_ONLY",
+    default=False,
+)
+# The admin and the interactive API docs genuinely need inline script.
+CSP_EXEMPT_PREFIXES = env_csv(
+    "CSP_EXEMPT_PREFIXES",
+    ",".join(DEFAULT_CSP_EXEMPT_PREFIXES),
+)
+PERMISSIONS_POLICY = clean_env_value(env("PERMISSIONS_POLICY", default=DEFAULT_PERMISSIONS_POLICY))
+# Read by both Django's SecurityMiddleware and ours; ours writes first and wins.
+SECURE_REFERRER_POLICY = clean_env_value(
+    env("SECURE_REFERRER_POLICY", default="strict-origin-when-cross-origin")
+)
+SECURE_CROSS_ORIGIN_OPENER_POLICY = clean_env_value(
+    env("SECURE_CROSS_ORIGIN_OPENER_POLICY", default="same-origin")
+)
+SECURE_CONTENT_TYPE_NOSNIFF = True
 
 
 # --------------------------------------------------------------------------- #
@@ -299,3 +404,33 @@ LOGGING = {
         "level": clean_env_value(env("DJANGO_LOG_LEVEL", default="INFO")),
     },
 }
+
+
+# --------------------------------------------------------------------------- #
+# Error tracking (optional)
+#
+# A complete no-op unless SENTRY_DSN is set, and a no-op even then if the
+# package is not installed: local dev, pytest and CI must never initialise it.
+# send_default_pii stays False so usernames, emails, IPs and article bodies
+# never leave the service.
+# --------------------------------------------------------------------------- #
+SENTRY_DSN = clean_env_value(env("SENTRY_DSN"))
+
+if SENTRY_DSN:
+    try:
+        import sentry_sdk
+    except ImportError:  # pragma: no cover - optional dependency
+        import logging as _logging
+
+        _logging.getLogger(__name__).warning(
+            "SENTRY_DSN is set but sentry-sdk is not installed; skipping init."
+        )
+    else:
+        sentry_sdk.init(
+            dsn=SENTRY_DSN,
+            environment=clean_env_value(env("SENTRY_ENVIRONMENT", default="production")),
+            release=clean_env_value(env("SENTRY_RELEASE", default="")) or None,
+            send_default_pii=False,
+            traces_sample_rate=env.float("SENTRY_TRACES_SAMPLE_RATE", default=0.05),
+            profiles_sample_rate=env.float("SENTRY_PROFILES_SAMPLE_RATE", default=0.0),
+        )

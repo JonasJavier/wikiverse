@@ -25,4 +25,10 @@ filterwarnings = ["ignore::DeprecationWarning"]
 
 [tool.coverage.run]
 source = ["apps"]
-omit = ["*/migrations/*", "*/tests/*", "manage.py", "config/*"]
+omit = [
+    "*/migrations/*",
+    "*/tests/*",
+    "*/_seed_data/*",
+    "manage.py",
+    "config/*",
+]

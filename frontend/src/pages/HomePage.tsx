@@ -7,7 +7,7 @@ import { ArticleCard } from "@/components/article/ArticleCard";
 import { ArticleCardSkeleton } from "@/components/article/ArticleCardSkeleton";
 import { CategoryChip } from "@/components/article/CategoryChip";
 import { SearchBar } from "@/components/layout/SearchBar";
-import { buttonVariants } from "@/components/ui/Button";
+import { buttonVariants } from "@/components/ui/buttonVariants";
 import { formatCount } from "@/lib/utils";
 
 const CONTAINER = "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8";

@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import { Avatar } from "@/components/ui/Avatar";
-import { buttonVariants } from "@/components/ui/Button";
+import { buttonVariants } from "@/components/ui/buttonVariants";
 import { useAuthStore } from "@/store/auth";
 
 export function UserMenu() {

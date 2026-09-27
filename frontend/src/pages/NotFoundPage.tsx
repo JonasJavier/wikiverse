@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { buttonVariants } from "@/components/ui/Button";
+import { buttonVariants } from "@/components/ui/buttonVariants";
 
 export function NotFoundPage() {
   return (
