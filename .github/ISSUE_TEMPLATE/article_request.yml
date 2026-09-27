@@ -1,0 +1,30 @@
+name: Article request
+description: Suggest an encyclopedia article, or claim one of the planned titles
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        The corpus ships 63 of 120 planned articles. The rest are already in
+        `docs/content-plan.json` and are what the red links across the site point at, so
+        writing one is a self-contained contribution. See CONTRIBUTING.md for the format —
+        and note that citations have to be real ones.
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: If it is already in the content plan, use that exact spelling.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: What it should cover
+    validations:
+      required: true
+  - type: checkboxes
+    id: claiming
+    attributes:
+      label: Are you writing it?
+      options:
+        - label: I intend to write this one

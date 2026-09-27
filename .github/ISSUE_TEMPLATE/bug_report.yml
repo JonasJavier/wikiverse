@@ -1,0 +1,28 @@
+name: Bug report
+description: Something behaves differently from how it should
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what happened, and what you expected instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - The live site (wikiverse.jonasjavier.dev)
+        - Local Docker stack
+        - Local development without Docker
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: >
+        Console output, the failing request and its response, or a screenshot.
+        For an API problem the response body is usually enough to diagnose it.
