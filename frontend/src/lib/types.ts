@@ -377,18 +377,34 @@ export interface DiffRow {
 }
 
 export interface DiffHunk {
+  /** 1-based number of the hunk's first OLD line. */
   a_start: number;
+  /**
+   * Rows in this hunk that exist on the old side. Load-bearing: the
+   * "N unchanged lines" collapse between two hunks is
+   * `next.a_start - (prev.a_start + prev.a_lines)`. `0` on a pure insertion.
+   */
+  a_lines: number;
+  /** 1-based number of the hunk's first NEW line. */
   b_start: number;
+  b_lines: number;
   rows: DiffRow[];
 }
 
-/** One side of the comparison header. */
+/**
+ * One side of the comparison header, as `DiffRevisionSerializer` sends it.
+ *
+ * Every field is nullable on the OLD side of a page-creation diff (`from=0`):
+ * the view emits a fully-shaped object with `id: null` rather than `null`
+ * itself, so the renderer never has to branch on the container.
+ */
 export interface DiffSide {
-  id: number;
-  editor: string | null;
+  id: number | null;
+  editor: Author | null;
   comment: string;
-  created_at: string;
-  size: number;
+  byte_size: number | null;
+  is_minor: boolean;
+  created_at: string | null;
 }
 
 export interface DiffStats {
@@ -399,18 +415,34 @@ export interface DiffStats {
   bytes_removed: number;
 }
 
-/** `GET /api/articles/{slug}/diff/?from=&to=` (DECISIONS §14). */
+/**
+ * `GET /api/articles/{slug}/diff/?from=&to=` (DECISIONS §14).
+ *
+ * The key names are the VIEW's, verified against `DiffSerializer` and
+ * `ArticlesViewSet.diff` — `from_revision` / `to_revision`, not `from` / `to`,
+ * because `from` is a reserved word in Python's serializer declaration. The
+ * hunk/row/op body is assembled by `apps.articles.diff`, whose module
+ * docstring is the normative description of the shape.
+ */
 export interface DiffPayload {
-  article: { slug: string; title: string };
-  /** Null when `from=0`, i.e. the diff is against the empty document. */
-  from: DiffSide | null;
-  to: DiffSide;
+  article: ArticleStub;
+  /** The OLD side. `id === null` means the empty document (`?from=0`). */
+  from_revision: DiffSide;
+  /** The NEW side. Always a real revision. */
+  to_revision: DiffSide;
+  /** The revision immediately OLDER than `to_revision`; null at the creation. */
+  prev_id: number | null;
+  /** The revision immediately NEWER than `to_revision`; null when it is current. */
+  next_id: number | null;
+  /** The old side was the empty document: this revision created the page. */
+  created: boolean;
   title_changed: boolean;
   summary_changed: boolean;
   stats: DiffStats;
   /**
-   * True when a changed line pair blew the ~4000-token valve and fell back
-   * to whole-line ops. Surface it; silently showing a degraded diff is worse.
+   * One of five server-side valves fired: a line pair blew the ~4000-token
+   * budget, or the document/row/op ceilings cut the payload short. Surface it;
+   * silently showing a degraded diff is worse.
    */
   truncated: boolean;
   hunks: DiffHunk[];

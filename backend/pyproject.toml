@@ -17,6 +17,14 @@ ignore = ["E501"]  # line length is handled by the formatter
 "settings.py" = ["F405", "F403"]
 "*/tests/*" = ["S101"]
 
+[tool.ruff.format]
+# The corpus content modules (_seed_data/<domain>_NN.py) are hand-authored data
+# under a separate licence, not application code. The formatter would rewrite
+# roughly a megabyte of prose string concatenation to no benefit and make every
+# content diff unreadable, so it leaves them alone. Linting still applies to
+# them, as do `_seed_data/__init__.py` and `_seed_data/meta.py`, which are code.
+exclude = ["*/_seed_data/*_[0-9][0-9].py"]
+
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
 python_files = ["test_*.py"]
