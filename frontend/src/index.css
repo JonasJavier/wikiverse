@@ -587,6 +587,11 @@
   /* The rule spans the shell, not the measure. That is the encyclopedic
      gesture, and it is why h2 opts out of --measure-prose. */
   max-width: none;
+  /* A block formatting context, so beside a floated infobox the heading box —
+     and therefore its rule — stops at the float instead of running through it.
+     Wikipedia uses overflow:hidden; flow-root does the same without clipping
+     the hover "#" anchor that sits outside the heading's left edge. */
+  display: flow-root;
 }
 .article-prose h3 {
   font-family: var(--font-sans);

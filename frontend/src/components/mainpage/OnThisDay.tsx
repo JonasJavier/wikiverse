@@ -22,6 +22,17 @@ const DAY_MONTH = new Intl.DateTimeFormat("en-GB", {
   month: "long",
 });
 
+/**
+ * The year column is drawn here, so a body that also opens with its year —
+ * `**1859** — On the Origin…`, as editors naturally write it — would print it
+ * twice. Only a leading year equal to the entry's own is dropped.
+ */
+function withoutLeadingYear(body: string, year: number | null): string {
+  if (year === null) return body;
+  const pattern = new RegExp(`^\\s*(\\*\\*|__)?${year}\\1?\\s*[—–-]\\s*`);
+  return body.replace(pattern, "");
+}
+
 /** A leap-safe reference year, so 29 February formats correctly. */
 const REFERENCE_YEAR = 2024;
 
@@ -111,7 +122,9 @@ export function OnThisDay({ entries, resolve }: OnThisDayProps) {
                     {" — "}
                   </>
                 )}
-                <WikiText resolve={resolve}>{entry.body}</WikiText>
+                <WikiText resolve={resolve}>
+                  {withoutLeadingYear(entry.body, entry.year)}
+                </WikiText>
               </li>
             ))}
           </ul>

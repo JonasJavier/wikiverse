@@ -1,5 +1,36 @@
 import { clsx, type ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
+import { extendTailwindMerge } from "tailwind-merge";
+
+/**
+ * The type scale declared as `--text-*` in `index.css`.
+ *
+ * tailwind-merge cannot read the CSS theme, so an unknown `text-ui` is taken for
+ * a text COLOUR — and `cn("text-page", "text-ui")` then silently drops the
+ * colour as a "conflict". That is how every primary button rendered ink-on-ink
+ * with invisible labels. Registering the scale as font sizes keeps size and
+ * colour in separate groups.
+ */
+const FONT_SIZES = [
+  "flag",
+  "2xs",
+  "xs",
+  "ui",
+  "base",
+  "read",
+  "h4",
+  "h3",
+  "h2",
+  "h1",
+  "display",
+];
+
+const twMerge = extendTailwindMerge({
+  extend: {
+    classGroups: {
+      "font-size": [{ text: FONT_SIZES }],
+    },
+  },
+});
 
 /** Merge Tailwind classes with conflict resolution. */
 export function cn(...inputs: ClassValue[]): string {
@@ -103,8 +134,23 @@ const HOUR_MINUTE = new Intl.DateTimeFormat("en-GB", {
   hour12: false,
 });
 
+/**
+ * A calendar date with no time and no zone (`Reference.accessed_on`). It is
+ * formatted in UTC because `new Date("2026-09-26")` IS UTC midnight — in the
+ * reader's zone that is still the 25th anywhere west of Greenwich.
+ */
+const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
+
+const DAY_MONTH_YEAR_UTC = new Intl.DateTimeFormat("en-GB", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+});
+
 /** `"26 September 2026"`. Use for "Retrieved", "Joined", "Created". */
 export function formatDate(iso: string): string {
+  if (DATE_ONLY.test(iso)) return DAY_MONTH_YEAR_UTC.format(new Date(iso));
   return DAY_MONTH_YEAR.format(new Date(iso));
 }
 
@@ -155,7 +201,9 @@ export function formatRelativeTime(iso: string): string {
 
 /** Two-letter fallback inside an `Avatar`. */
 export function initials(name: string): string {
-  return name.slice(0, 2).toUpperCase();
+  // By code point, not UTF-16 unit, so an astral first letter is not split
+  // into a lone surrogate.
+  return Array.from(name).slice(0, 2).join("").toUpperCase();
 }
 
 /**

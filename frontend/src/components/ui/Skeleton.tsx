@@ -10,9 +10,13 @@ import { cn } from "@/lib/utils";
  *
  * `aria-hidden` because the block is decorative — the surrounding region
  * owns the `aria-busy` / live-region announcement.
+ *
+ * A `span` displayed as a block, not a `div`: skeletons also stand in for
+ * inline text (a byline inside a `<p>`), where a `div` is invalid nesting and
+ * React warns about it. Pass `inline-block` to keep one on the text line.
  */
 export function Skeleton({ className }: { className?: string }) {
   return (
-    <div aria-hidden="true" className={cn("skeleton rounded-chrome", className)} />
+    <span aria-hidden="true" className={cn("skeleton block rounded-chrome", className)} />
   );
 }
