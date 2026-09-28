@@ -60,7 +60,7 @@ export const DEFAULT_CHANGE_LIMIT = FEED_PAGE_SIZE;
  * The day windows the filter bar offers. The backend clamps `days` to
  * 1–365, so every one of these survives the round trip.
  */
-export const CHANGE_DAY_OPTIONS = [1, 7, 30] as const;
+export const CHANGE_DAY_OPTIONS = [1, 7, 30, 90] as const;
 
 /**
  * The row limits the filter bar offers.

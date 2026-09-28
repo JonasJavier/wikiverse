@@ -1,6 +1,7 @@
 import { Link, useSearchParams } from "react-router-dom";
 
 import {
+  CHANGE_DAY_OPTIONS,
   changesQuery,
   readChangeFilters,
   useChanges,
@@ -42,6 +43,8 @@ export function RecentChangesPage() {
   });
 
   const rows = query.data?.results ?? [];
+  // The next period up, offered when this one is empty.
+  const wider = CHANGE_DAY_OPTIONS.find((days) => days > state.days);
 
   const olderSearch = new URLSearchParams(writeChangeFilters(state, {}));
   if (query.data?.next_before) {
@@ -90,7 +93,21 @@ export function RecentChangesPage() {
         ) : rows.length === 0 ? (
           <EmptyState
             title="No changes in this period."
-            hint="Widen the period, or clear the contributor and category filters."
+            hint={
+              wider ? (
+                <>
+                  <Link
+                    to={{ search: `?${writeChangeFilters(state, { days: wider })}` }}
+                    className="text-link hover:underline"
+                  >
+                    Show the last {wider} days
+                  </Link>
+                  , or clear the contributor and category filters.
+                </>
+              ) : (
+                "Clear the contributor and category filters."
+              )
+            }
           />
         ) : (
           <>

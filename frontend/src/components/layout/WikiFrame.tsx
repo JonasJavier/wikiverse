@@ -54,18 +54,27 @@ export function WikiFrame({
   // Rendered, not hidden. Mounting both copies of the Tools rail and hiding one
   // with `hidden` would duplicate every `id` and every landmark inside it, and
   // would run its observers twice.
-  const showRail = isShelf && Boolean(rail);
-  const showToolsColumn = isTools && Boolean(tools);
-  const showToolsDisclosure = !isTools && Boolean(tools);
+  const hasRail = Boolean(rail);
+  const hasTools = Boolean(tools);
+  const showRail = isShelf && hasRail;
+  const showToolsColumn = isTools && hasTools;
+  const showToolsDisclosure = !isTools && hasTools;
 
   return (
     <div
       className={cn(
         "mx-auto w-full px-4 sm:px-6 tools:px-8",
-        "max-w-[54rem] shelf:max-w-[67.75rem] tools:max-w-[81.5rem]",
-        "grid grid-cols-1 gap-x-6",
-        "shelf:grid-cols-[var(--rail-w)_minmax(0,1fr)]",
-        "tools:grid-cols-[var(--rail-w)_minmax(0,1fr)_var(--rail-w)]",
+        "grid max-w-[54rem] grid-cols-1 gap-x-6",
+        // Only the columns a page actually supplies are declared. A track for an
+        // absent rail would auto-place the content INTO the 12rem rail slot, and
+        // an empty Tools track would push the page off centre.
+        hasRail && "shelf:max-w-[67.75rem] shelf:grid-cols-[var(--rail-w)_minmax(0,1fr)]",
+        hasRail &&
+          hasTools &&
+          "tools:max-w-[81.5rem] tools:grid-cols-[var(--rail-w)_minmax(0,1fr)_var(--rail-w)]",
+        !hasRail &&
+          hasTools &&
+          "tools:max-w-[67.75rem] tools:grid-cols-[minmax(0,1fr)_var(--rail-w)]",
         className,
       )}
     >

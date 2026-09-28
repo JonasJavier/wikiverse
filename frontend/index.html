@@ -20,6 +20,21 @@
       content="#111315"
       media="(prefers-color-scheme: dark)"
     />
+    <!-- Blocking on purpose: sets .dark before first paint. External, not
+         inline, because the CSP allows only same-origin scripts. -->
+    <script src="/theme-init.js"></script>
+
+    <!-- The site-level card. Article URLs get their own card from the Open
+         Graph shell that nginx serves to link-preview crawlers. -->
+    <meta property="og:site_name" content="Wikiverse" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Wikiverse — the open encyclopedia" />
+    <meta
+      property="og:description"
+      content="An open encyclopedia with revision history, diffs, talk pages, citations and full-text search."
+    />
+    <meta property="og:url" content="https://wikiverse.jonasjavier.dev/" />
+    <meta name="twitter:card" content="summary" />
 
     <!--
       Fonts are self-hosted from this origin (src/fonts.css, public/fonts/).

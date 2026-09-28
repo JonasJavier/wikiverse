@@ -307,6 +307,8 @@ class ArticleWriteSerializer(serializers.ModelSerializer):
         # The slug is stable for the life of the article: a wiki that renames its
         # own URLs breaks every inbound link and every [[wikilink]] to it.
         read_only_fields = ("id", "slug")
+        # The editor sends ``null`` for "no infobox" (see ``validate_infobox``).
+        extra_kwargs = {"infobox": {"allow_null": True}}
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -326,6 +328,15 @@ class ArticleWriteSerializer(serializers.ModelSerializer):
         if len(value) < 3:
             raise serializers.ValidationError("Title must be at least 3 characters.")
         return value
+
+    def validate_infobox(self, value: dict | None) -> dict:
+        """``null`` means "this article has no infobox" and is stored as ``{}``.
+
+        The model column is non-null, and the editor sends ``null`` for an empty
+        infobox. Rejecting it made every save of an infobox-less article fail
+        with a 400 that named a field the form does not show.
+        """
+        return {} if value is None else value
 
     def validate_lead_image_url(self, value: str) -> str:
         """Confine remote images to the CSP ``img-src`` allowlist (DECISIONS §7.4).

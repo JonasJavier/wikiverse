@@ -129,10 +129,10 @@ export function applyTheme(theme: ResolvedTheme): void {
  * before React's first commit — which removes the full-viewport white flash
  * that `survey-frontend.md` §4.9 measured on every cold load in dark mode.
  *
- * It cannot remove the *parse-to-script* flash: that needs a blocking script in
- * `index.html`, and DECISIONS §7.3 sets `script-src 'self'`, so it would have to
- * be an external `/theme.js` file rather than an inline one. `index.html` is not
- * this stage's file; see the stage report.
+ * The earlier *parse-to-script* flash is removed by `public/theme-init.js`, a
+ * blocking same-origin script in `index.html` (an inline one would violate
+ * `script-src 'self'`, DECISIONS §7.3). It reads the same storage key and must
+ * stay in step with `resolve()` above.
  */
 function bootstrapTheme(): void {
   if (typeof window === "undefined") return;

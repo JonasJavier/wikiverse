@@ -56,6 +56,18 @@ def clean_env_value(value: str) -> str:
     return value.strip().strip('"').strip("'")
 
 
+def unwrap_env_value(value: str) -> str:
+    """Strip whitespace and one pair of quotes that wrap the *whole* value.
+
+    For values that legitimately end in a quote character: a CSP ends in
+    ``base-uri 'self'``, and :func:`clean_env_value` would eat that closing quote.
+    """
+    value = value.strip()
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
+        value = value[1:-1].strip()
+    return value
+
+
 def env_csv(name: str, default: str = "") -> list[str]:
     """Read comma-separated env vars safely."""
     raw_value = clean_env_value(env(name, default=default))
@@ -330,7 +342,7 @@ LEAD_IMAGE_ALLOWED_HOSTS = env_csv(
 # reachable on its own Railway host, so an nginx-only header would cover just
 # one of the two live paths.
 # --------------------------------------------------------------------------- #
-CONTENT_SECURITY_POLICY = clean_env_value(
+CONTENT_SECURITY_POLICY = unwrap_env_value(
     env("CONTENT_SECURITY_POLICY", default=DEFAULT_CONTENT_SECURITY_POLICY)
 )
 CONTENT_SECURITY_POLICY_REPORT_ONLY = env.bool(
