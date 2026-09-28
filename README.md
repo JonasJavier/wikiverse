@@ -173,24 +173,22 @@ See [SECURITY.md](SECURITY.md).
 ## Architecture
 
 ```mermaid
-flowchart LR
-    B([Browser]) -->|HTTPS| N
+flowchart TB
+    B([Browser]) -- HTTPS --> N
 
-    subgraph FE[Frontend service]
-        N[nginx]
-        SPA[React SPA<br/>static, hashed assets]
-        N --> SPA
+    subgraph FE [Frontend service]
+        N[nginx] --> SPA[React SPA · hashed static assets]
     end
 
-    subgraph BE[Backend service]
-        G[gunicorn + Django<br/>REST API]
+    N -- "/api · /admin · /sitemap.xml · /robots.txt" --> G
+    N -. "article URLs, link-preview bots only" .-> G
+
+    subgraph BE [Backend service]
+        G[gunicorn + Django REST Framework]
     end
 
-    N -->|/api · /admin · /sitemap.xml · /robots.txt| G
-    N -.->|/wiki/&lt;slug&gt; for link-preview bots| OG[Open Graph view]
-    OG --- G
-    G --> PG[(PostgreSQL<br/>full-text + trigram)]
-    G --> R[(Redis<br/>cache · throttles)]
+    G --> PG[(PostgreSQL · full-text + trigram)]
+    G --> R[(Redis · cache + throttles)]
 ```
 
 A few decisions that shape the codebase — each is explained in
