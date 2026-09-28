@@ -1685,7 +1685,10 @@ class RecentChangesFeed(Feed):
 
     def item_link(self, item: Revision) -> str:
         if item.parent_id:
-            return spa_url(f"/wiki/{item.article.slug}/diff?from={item.parent_id}&to={item.pk}")
+            # The query string stays outside spa_url(): it percent-encodes
+            # everything but "/", which would turn "?from=" into part of the path.
+            diff = spa_url(f"/wiki/{item.article.slug}/diff")
+            return f"{diff}?from={item.parent_id}&to={item.pk}"
         return spa_url(f"/wiki/{item.article.slug}")
 
     def item_pubdate(self, item: Revision):
