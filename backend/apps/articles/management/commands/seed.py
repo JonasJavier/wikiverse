@@ -86,6 +86,19 @@ User = get_user_model()
 #: different timestamps and the whole idempotency claim would be false.
 EPOCH = dt.datetime(2026, 9, 27, 9, 0, tzinfo=dt.UTC)
 
+
+def _parse_epoch(value: str) -> dt.datetime:
+    """``--epoch``: a calendar date, or ``today``, at 09:00 UTC."""
+    if value.strip().lower() == "today":
+        day = dt.datetime.now(dt.UTC).date()
+    else:
+        try:
+            day = dt.date.fromisoformat(value.strip())
+        except ValueError as exc:
+            raise CommandError(f"--epoch expects YYYY-MM-DD or 'today', got {value!r}.") from exc
+    return dt.datetime(day.year, day.month, day.day, 9, 0, tzinfo=dt.UTC)
+
+
 #: Domain for contributor accounts. ``.invalid`` is reserved by RFC 2606, so
 #: these addresses can never reach a real mailbox however the demo is deployed.
 CONTRIBUTOR_DOMAIN = "contributors.wikiverse.invalid"
@@ -338,6 +351,15 @@ class Command(BaseCommand):
             help="Confirm --flush, or overwrite pre-cutover content.",
         )
         parser.add_argument(
+            "--epoch",
+            metavar="YYYY-MM-DD",
+            help=(
+                "End the synthesised history on this date (09:00 UTC) instead of the "
+                "fixed default. 'today' is accepted. The same epoch always produces "
+                "the same history; a new one rewrites only the seed's own revisions."
+            ),
+        )
+        parser.add_argument(
             "--only",
             action="append",
             default=[],
@@ -381,6 +403,14 @@ class Command(BaseCommand):
         )
         if options["check"]:
             return
+
+        if options["epoch"]:
+            # Rebinding the module constant is deliberate: every helper that dates
+            # a synthesised row reads EPOCH at call time, so one assignment moves
+            # the whole history without threading a parameter through each of them.
+            global EPOCH
+            EPOCH = _parse_epoch(options["epoch"])
+            self.stdout.write(f"History ends before {EPOCH:%Y-%m-%d %H:%M} UTC.")
 
         selected = self._select(articles, options["only"])
 
