@@ -17,8 +17,9 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
     ports:
-      # Host:container — host side uses 5433 to avoid clashing with a local Postgres.
-      - "5433:5432"
+      # Host side is overridable: 5433 is a common default and often already taken by
+      # another project on the same machine, which silently shadows this container.
+      - "${POSTGRES_PORT:-5433}:5432"
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-wikiverse}"]
       interval: 5s
@@ -28,8 +29,7 @@ services:
   redis:
     image: redis:7-alpine
     ports:
-      # Host side uses 6380 to avoid clashing with a local Redis.
-      - "6380:6379"
+      - "${REDIS_PORT:-6380}:6379"
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 5s
@@ -54,7 +54,7 @@ services:
       - ./backend:/app
       - media:/app/media
     ports:
-      - "8000:8000"
+      - "${BACKEND_PORT:-8000}:8000"
     depends_on:
       db:
         condition: service_healthy
@@ -72,7 +72,7 @@ services:
       - ./frontend:/app
       - /app/node_modules
     ports:
-      - "5173:5173"
+      - "${FRONTEND_PORT:-5173}:5173"
     depends_on:
       - backend
 

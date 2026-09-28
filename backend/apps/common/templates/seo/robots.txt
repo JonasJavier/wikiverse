@@ -1,0 +1,21 @@
+{% comment %}
+Rendered by apps.common.seo.RobotsTxtView. The Sitemap line is built from
+settings.PUBLIC_BASE_URL so a staging or E2E host advertises its own sitemap.
+
+Disallow /search keeps infinite ?q= permutations out of the index; pair it with
+<meta name="robots" content="noindex"> on SearchPage, because Disallow stops
+crawling, not indexing of URLs discovered elsewhere. Disallow /og/ keeps the
+crawler shell itself out of the index -- the shell's <link rel="canonical">
+already points at the public article URL.
+{% endcomment %}User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /og/
+Disallow: /search
+Disallow: /new
+Disallow: /login
+Disallow: /register
+Disallow: /*/edit$
+
+Sitemap: {{ sitemap_url }}

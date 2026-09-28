@@ -1,176 +1,294 @@
-import { ArrowRight, BookOpen, Eye, FolderOpen, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import { useArticles, usePopularArticles, useSiteStats } from "@/api/articles";
-import { useCategories } from "@/api/categories";
-import { ArticleCard } from "@/components/article/ArticleCard";
-import { ArticleCardSkeleton } from "@/components/article/ArticleCardSkeleton";
-import { CategoryChip } from "@/components/article/CategoryChip";
-import { SearchBar } from "@/components/layout/SearchBar";
-import { buttonVariants } from "@/components/ui/Button";
-import { formatCount } from "@/lib/utils";
+import { buildCategoryTree, useCategories } from "@/api/categories";
+import { useLatestChanges, useMainPage } from "@/api/mainpage";
+import { useArticleLinkResolver } from "@/components/article/markdownUtils";
+import { CategoryTree } from "@/components/mainpage/CategoryTree";
+import { DidYouKnow } from "@/components/mainpage/DidYouKnow";
+import { FeaturedArticle } from "@/components/mainpage/FeaturedArticle";
+import { OnThisDay } from "@/components/mainpage/OnThisDay";
+import { Panel } from "@/components/mainpage/Panel";
+import { SiteStatistics } from "@/components/mainpage/SiteStatistics";
+import { Sidebar } from "@/components/layout/Sidebar";
+import { WikiFrame } from "@/components/layout/WikiFrame";
+import { EmptyState } from "@/components/ui/EmptyState";
+import { Skeleton } from "@/components/ui/Skeleton";
+import { useDocumentMeta } from "@/hooks/useDocumentMeta";
+import type { ChangeRow } from "@/lib/types";
+import {
+  byteDeltaTone,
+  changeRowKey,
+  formatByteDelta,
+  formatRelativeTime,
+  formatDateTime,
+  formatNumber,
+} from "@/lib/utils";
 
-const CONTAINER = "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8";
-
+/**
+ * The main page — an encyclopedia front page, not a landing page.
+ *
+ * What used to be here: a full-viewport hero with a radial dotted background,
+ * a blurred indigo blob, the headline "The encyclopedia anyone can read &
+ * write", a four-tile KPI strip, two 3-up card grids and a solid-indigo
+ * call-to-action block. The first fact on the page sat below the fold. All of
+ * it is deleted.
+ *
+ * What replaces it: the masthead, then bordered panels of real content —
+ * Featured article, Did you know…, On this day, Recent changes, Browse by
+ * category — and the statistics as one sentence. Target: a fact within 200px.
+ *
+ * There is NO "In the news" panel. DECISIONS §5 cut it: a fabricated news feed
+ * on a demo encyclopedia reads as fake and is stale the day after it ships.
+ *
+ * Nothing on this page animates, nothing has a shadow, and nothing lifts on
+ * hover.
+ */
 export function HomePage() {
-  const { data: stats } = useSiteStats();
-  const { data: popular, isLoading: loadingPopular } = usePopularArticles();
-  const { data: recent, isLoading: loadingRecent } = useArticles({
-    ordering: "-updated_at",
-    page_size: 6,
-  });
+  const { data, isPending, isError } = useMainPage();
   const { data: categories } = useCategories();
+  const { data: changes } = useLatestChanges(8);
+  // The article surface's own resolver, fed by `GET /api/wanted/` when no
+  // article's link rows are in hand: one cached request, and the front page's
+  // red links agree with an article body's by construction.
+  const resolve = useArticleLinkResolver(undefined);
 
+  useDocumentMeta({
+    // `undefined` yields the site default, `Wikiverse — the open encyclopedia`.
+    title: null,
+    description:
+      "Wikiverse is an open encyclopedia. Read the featured article, browse every category, and follow the latest changes.",
+    canonical: "/",
+    image: data?.featured?.lead_image_url ?? null,
+    imageAlt: data?.featured?.lead_image_alt ?? null,
+  });
+
+  const branches = buildCategoryTree(categories);
+  const articleCount = data?.stats.articles;
+
+  return (
+    <WikiFrame rail={<Sidebar />} paper={false}>
+      <div className="pt-4 pb-16">
+        <div>
+          <h1 className="font-serif text-display font-normal text-ink">
+            Welcome to Wikiverse
+          </h1>
+          <hr className="mt-1.5 border-0 border-t border-rule" />
+          <p className="mt-1.5 text-ui text-ink-2 tabular-nums">
+            the open encyclopedia —{" "}
+            {articleCount === undefined
+              ? "loading the corpus"
+              : `${formatNumber(articleCount)} article${articleCount === 1 ? "" : "s"} in English`}
+          </p>
+        </div>
+
+        {isError ? (
+          <EmptyState
+            className="mt-5"
+            title="The main page could not be loaded."
+            hint={
+              <>
+                The API did not answer.{" "}
+                <Link to="/browse" className="text-link hover:underline">
+                  Browse all articles
+                </Link>{" "}
+                or{" "}
+                <Link to="/search" className="text-link hover:underline">
+                  search
+                </Link>{" "}
+                instead.
+              </>
+            }
+          />
+        ) : (
+          <>
+            {/* The masthead grid: Featured spans both columns, because a
+                floated lead image inside a half-width panel leaves ~230px of
+                measure and the extract stops being readable. Below it the
+                panels pair off, which is the two-column reading the front
+                page is meant to have. */}
+            <div className="mt-5 grid gap-4 md:grid-cols-2">
+              <Panel
+                title="Featured article"
+                busy={isPending}
+                className="md:col-span-2"
+              >
+                {isPending ? (
+                  <FeaturedSkeleton />
+                ) : (
+                  <FeaturedArticle
+                    featured={data?.featured}
+                    recentlyFeatured={data?.recently_featured ?? []}
+                  />
+                )}
+              </Panel>
+
+              <Panel title="Did you know…" busy={isPending}>
+                {isPending ? (
+                  <LineSkeleton lines={5} />
+                ) : (
+                  <DidYouKnow hooks={data?.dyk ?? []} resolve={resolve} />
+                )}
+              </Panel>
+
+              <Panel title="On this day" busy={isPending}>
+                {isPending ? (
+                  <LineSkeleton lines={4} />
+                ) : (
+                  <OnThisDay entries={data?.otd ?? []} resolve={resolve} />
+                )}
+              </Panel>
+
+              <Panel
+                title="Recent changes"
+                busy={!changes}
+                action={
+                  <Link to="/changes" className="text-link hover:underline">
+                    All recent changes →
+                  </Link>
+                }
+              >
+                {changes ? (
+                  <RecentChangesList rows={changes.results.slice(0, 8)} />
+                ) : (
+                  <LineSkeleton lines={6} />
+                )}
+              </Panel>
+
+              <Panel
+                title="Browse by category"
+                busy={!categories}
+                action={
+                  <Link to="/categories" className="text-link hover:underline">
+                    All categories →
+                  </Link>
+                }
+              >
+                {categories ? (
+                  <CategoryTree branches={branches} variant="columns" />
+                ) : (
+                  <LineSkeleton lines={4} />
+                )}
+              </Panel>
+            </div>
+
+            <SiteStatistics
+              stats={data?.stats}
+              className="mt-4 text-ui text-ink-2"
+            />
+          </>
+        )}
+      </div>
+    </WikiFrame>
+  );
+}
+
+/**
+ * The eight newest rows of the change feed, in the wiki's own order: time,
+ * article, byte delta, editor, summary.
+ *
+ * Rendered here rather than through `components/wiki/ChangeRow.tsx`, which is
+ * the shared row for Recent changes, the watchlist and contributions and does
+ * not exist yet. When it lands this list should be replaced by it — the field
+ * names already match `ChangeRow` (DECISIONS §4), including the em dash for a
+ * talk row's null `byte_delta`.
+ */
+function RecentChangesList({ rows }: { rows: ChangeRow[] }) {
+  if (rows.length === 0) {
+    return <p className="text-ui text-ink-2">No changes recorded yet.</p>;
+  }
+
+  return (
+    <ul className="text-ui">
+      {rows.map((row) => {
+        const tone = byteDeltaTone(row.byte_delta);
+        return (
+          <li
+            key={changeRowKey(row)}
+            className="border-b border-rule-hair py-1 last:border-0"
+          >
+            <span className="flex flex-wrap items-baseline gap-x-1.5">
+              <time
+                dateTime={row.timestamp}
+                title={formatDateTime(row.timestamp)}
+                className="tabular-nums text-ink-2"
+              >
+                {formatRelativeTime(row.timestamp)}
+              </time>
+              <Link
+                to={`/wiki/${row.article.slug}`}
+                className="font-serif text-[1.0625rem] text-link visited:text-link-visited hover:underline"
+              >
+                {row.article.title}
+              </Link>
+              <span
+                className={
+                  tone === "positive"
+                    ? "tabular-nums text-delta-pos"
+                    : tone === "negative"
+                      ? "tabular-nums text-delta-neg"
+                      : "tabular-nums text-delta-null"
+                }
+              >
+                {formatByteDelta(row.byte_delta)}
+              </span>
+              {row.is_minor && (
+                <abbr title="Minor edit" className="text-flag text-ink-2 no-underline">
+                  m
+                </abbr>
+              )}
+              {row.kind === "talk" && (
+                <span className="text-2xs text-ink-2">talk</span>
+              )}
+            </span>
+            {(row.comment || row.user) && (
+              <span className="block truncate text-2xs text-ink-2">
+                {row.user ? (
+                  <Link
+                    to={`/u/${row.user.username}`}
+                    className="text-link hover:underline"
+                  >
+                    {row.user.username}
+                  </Link>
+                ) : (
+                  "anonymous"
+                )}
+                {row.comment && <>: {row.comment}</>}
+              </span>
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+/** Static skeletons that match the panel geometry — no shimmer (§6.2). */
+function FeaturedSkeleton() {
   return (
     <div>
-      {/* Hero */}
-      <section className="relative overflow-hidden border-b border-border">
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.07]"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 1px 1px, var(--foreground) 1px, transparent 0)",
-            backgroundSize: "28px 28px",
-          }}
-        />
-        <div
-          className="pointer-events-none absolute -top-40 left-1/2 size-[40rem] -translate-x-1/2 rounded-full opacity-20 blur-3xl"
-          style={{ background: "var(--primary)" }}
-        />
-        <div className={`${CONTAINER} relative py-20 text-center md:py-28`}>
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted">
-            <span className="size-1.5 rounded-full bg-primary" />
-            Free &amp; open knowledge
-          </span>
-          <h1 className="mx-auto mt-6 max-w-3xl font-serif text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            The encyclopedia anyone can{" "}
-            <span className="text-primary">read &amp; write</span>
-          </h1>
-          <p className="mx-auto mt-5 max-w-xl text-lg text-muted">
-            Explore thousands of articles, contribute your knowledge, and track
-            every edit — a modern take on the classic wiki.
-          </p>
-          <div className="mx-auto mt-8 max-w-xl">
-            <SearchBar large autoFocus />
-          </div>
-          <div className="mt-5 flex flex-wrap items-center justify-center gap-2 text-sm text-muted">
-            <span>Popular:</span>
-            {categories?.slice(0, 4).map((c) => (
-              <CategoryChip key={c.id} category={c} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className={`${CONTAINER} -mt-px`}>
-        <div className="grid grid-cols-2 divide-x divide-y divide-border overflow-hidden rounded-2xl border border-border md:grid-cols-4 md:divide-y-0">
-          <Stat icon={BookOpen} label="Articles" value={stats?.articles} />
-          <Stat icon={FolderOpen} label="Categories" value={stats?.categories} />
-          <Stat icon={Users} label="Contributors" value={stats?.contributors} />
-          <Stat icon={Eye} label="Total views" value={stats?.total_views} />
-        </div>
-      </section>
-
-      {/* Popular */}
-      <section className={`${CONTAINER} mt-16`}>
-        <SectionHeader
-          title="Trending articles"
-          subtitle="The most-read pages right now"
-          to="/browse"
-        />
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {loadingPopular
-            ? Array.from({ length: 6 }).map((_, i) => <ArticleCardSkeleton key={i} />)
-            : popular
-                ?.slice(0, 6)
-                .map((a) => <ArticleCard key={a.id} article={a} />)}
-        </div>
-      </section>
-
-      {/* Recent */}
-      <section className={`${CONTAINER} mt-16`}>
-        <SectionHeader
-          title="Recently updated"
-          subtitle="Fresh edits from the community"
-          to="/browse"
-        />
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {loadingRecent
-            ? Array.from({ length: 6 }).map((_, i) => <ArticleCardSkeleton key={i} />)
-            : recent?.results.map((a) => <ArticleCard key={a.id} article={a} />)}
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className={`${CONTAINER} mt-20`}>
-        <div className="relative overflow-hidden rounded-3xl bg-primary px-8 py-14 text-center">
-          <h2 className="font-serif text-3xl font-bold text-primary-foreground">
-            Share what you know
-          </h2>
-          <p className="mx-auto mt-3 max-w-md text-primary-foreground/80">
-            Every great encyclopedia is built by its readers. Write your first
-            article in minutes.
-          </p>
-          <Link
-            to="/new"
-            className={`${buttonVariants({ size: "lg" })} mt-6 bg-card text-foreground hover:bg-card`}
-          >
-            Start writing
-            <ArrowRight className="size-4" />
-          </Link>
-        </div>
-      </section>
+      <Skeleton className="float-right mb-2 ml-3 h-[13.75rem] w-[7.5rem] sm:w-[9rem] md:w-[11rem]" />
+      <Skeleton className="h-5 w-2/3" />
+      <div className="mt-2 space-y-1.5">
+        <Skeleton className="h-4 w-full" />
+        <Skeleton className="h-4 w-full" />
+        <Skeleton className="h-4 w-11/12" />
+        <Skeleton className="h-4 w-full" />
+        <Skeleton className="h-4 w-4/5" />
+      </div>
+      <div className="clear-both" />
     </div>
   );
 }
 
-function Stat({
-  icon: Icon,
-  label,
-  value,
-}: {
-  icon: typeof BookOpen;
-  label: string;
-  value?: number;
-}) {
+function LineSkeleton({ lines }: { lines: number }) {
   return (
-    <div className="flex items-center gap-3 bg-card p-5">
-      <div className="flex size-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
-        <Icon className="size-5" />
-      </div>
-      <div>
-        <div className="text-2xl font-bold text-foreground">
-          {value === undefined ? "—" : formatCount(value)}
-        </div>
-        <div className="text-xs text-muted">{label}</div>
-      </div>
-    </div>
-  );
-}
-
-function SectionHeader({
-  title,
-  subtitle,
-  to,
-}: {
-  title: string;
-  subtitle: string;
-  to: string;
-}) {
-  return (
-    <div className="mb-6 flex items-end justify-between">
-      <div>
-        <h2 className="font-serif text-2xl font-bold text-foreground">{title}</h2>
-        <p className="mt-1 text-sm text-muted">{subtitle}</p>
-      </div>
-      <Link
-        to={to}
-        className="flex shrink-0 items-center gap-1 text-sm font-medium text-primary hover:gap-2 transition-all"
-      >
-        View all
-        <ArrowRight className="size-4" />
-      </Link>
+    <div className="space-y-1.5">
+      {Array.from({ length: lines }).map((_, index) => (
+        <Skeleton
+          key={index}
+          className={index % 3 === 2 ? "h-4 w-4/5" : "h-4 w-full"}
+        />
+      ))}
     </div>
   );
 }

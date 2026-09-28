@@ -6,16 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Wikiverse — a modern, open encyclopedia. Read, write and explore knowledge."
+      content="Wikiverse is an open encyclopedia. Read, cite, discuss and edit articles across every discipline."
     />
-    <meta name="theme-color" content="#6366f1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="color-scheme" content="light dark" />
+    <!-- Matches --surface-shell in each theme (index.css §1/§2). -->
+    <meta
+      name="theme-color"
+      content="#f5f4f1"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#111315"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!--
+      Fonts are self-hosted from this origin (src/fonts.css, public/fonts/).
+      The Google Fonts stylesheet and its two preconnects are deliberately
+      gone: DECISIONS §7.6. Exactly two faces are preloaded — the sans that
+      renders the chrome and the serif that renders the first paragraph.
+      Mono and italic are not on any first-paint critical path.
+    -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="/fonts/inter-var.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
-    <title>Wikiverse — The open encyclopedia</title>
+    <link
+      rel="preload"
+      href="/fonts/source-serif-4-var.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <title>Wikiverse — the open encyclopedia</title>
   </head>
   <body class="h-full">
     <div id="root"></div>

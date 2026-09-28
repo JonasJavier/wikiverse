@@ -1,6 +1,6 @@
 # --- Core ---
 Django>=5.2,<5.3
-djangorestframework>=3.16,<3.17
+djangorestframework>=3.16,<3.18
 djangorestframework-simplejwt>=5.4,<6
 django-cors-headers>=4.6,<5
 django-environ>=0.12,<1
@@ -15,6 +15,9 @@ drf-spectacular>=0.28,<1
 
 # --- Media ---
 Pillow>=11,<12
+
+# --- Error tracking (optional; a no-op unless SENTRY_DSN is set) ---
+sentry-sdk[django]>=2.20,<3
 
 # --- Production server & static ---
 gunicorn>=23,<24
