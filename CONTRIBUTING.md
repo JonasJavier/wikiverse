@@ -32,12 +32,15 @@ ruff check . && ruff format --check .
 pytest -q
 python manage.py makemigrations --check --dry-run
 python manage.py spectacular --fail-on-warn --file /dev/null
+python manage.py seed --check
 
 # Frontend
 cd frontend
 npx tsc -b
 npm run lint      # runs with --max-warnings=0
+npm test          # Vitest
 npm run build
+npm run test:e2e  # Playwright; starts its own backend and frontend
 ```
 
 Two of these catch mistakes that are easy to make and hard to spot:
@@ -55,7 +58,8 @@ These exist because breaking them has real consequences, not because of taste:
 - **`react-markdown` without `rehype-raw`, with `skipHtml`.** Same reason.
 - **Everything must work on SQLite and PostgreSQL.** Full-text search, trigram matching and
   `SearchHeadline` are PostgreSQL-only; select the path at runtime with
-  `connection.vendor == "postgresql"`, never at import time. The test suite runs on SQLite.
+  `connection.vendor == "postgresql"`, never at import time. The test suite runs on SQLite
+  locally and on PostgreSQL in CI; PostgreSQL-only tests skip themselves on SQLite.
 - **No secrets in source.** Everything reads from the environment with a safe default.
 - **Design tokens live in `frontend/src/index.css`.** There is no `tailwind.config.js` and
   there should not be one — this project uses Tailwind v4's CSS-first configuration. Do not
