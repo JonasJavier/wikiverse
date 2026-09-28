@@ -22,6 +22,7 @@ backend/media/
 node_modules/
 frontend/dist/
 frontend/.vite/
+frontend/coverage/
 *.local
 
 # --- Editors / OS ---
@@ -35,3 +36,7 @@ Thumbs.db
 
 *.tsbuildinfo
 frontend/*.tsbuildinfo
+# --- Playwright ---
+frontend/test-results/
+frontend/playwright-report/
+frontend/blob-report/

@@ -470,12 +470,15 @@ export function validateForm(form: EditorForm): FieldErrors {
     }
     let host = "";
     try {
-      host = new URL(imageUrl).hostname.toLowerCase();
+      const parsed = new URL(imageUrl);
+      // https only: the CSP names `https://` hosts and the server rejects any
+      // other scheme, so an `http://` URL on an allowed host still fails.
+      host = parsed.protocol === "https:" ? parsed.hostname.toLowerCase() : "";
     } catch {
       host = "";
     }
     if (!LEAD_IMAGE_HOSTS.includes(host)) {
-      errors.lead_image_url = `An image must be hosted on ${LEAD_IMAGE_HOSTS.join(" or ")}. The page's Content Security Policy refuses every other origin.`;
+      errors.lead_image_url = `An image must be an https:// URL hosted on ${LEAD_IMAGE_HOSTS.join(" or ")}. The page's Content Security Policy refuses every other origin.`;
     }
   }
 

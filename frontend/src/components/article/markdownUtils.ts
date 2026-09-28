@@ -157,10 +157,13 @@ export const TOC_AUTO_COLLAPSE_ABOVE = 28;
  */
 export function inlineToPlainText(markdown: string): string {
   return (markdown ?? "")
-    .replace(/\[\[([^\]|]+)\|([^\]]*)\]\]/g, (_m, target: string, display: string) =>
-      display.trim() || target.split("#")[0],
-    )
-    .replace(/\[\[([^\]|]+)\]\]/g, (_m, target: string) => target.split("#")[0])
+    // The same pattern and the same `parseWikiTarget` the renderer uses, so a
+    // heading shows — and is slugged from — one display text on both sides
+    // (`[[Euclid#Elements]]` displays as `Euclid#Elements`, as on MediaWiki).
+    .replace(WIKILINK_RE, (match, target: string, display: string | undefined) => {
+      const raw = display === undefined ? target : `${target}|${display}`;
+      return parseWikiTarget(raw)?.display ?? match;
+    })
     .replace(/\[\^[A-Za-z0-9][\w.:-]*\]/g, "")
     .replace(/!\[([^\]]*)\]\([^)]*\)/g, "$1")
     .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
@@ -614,6 +617,17 @@ export function remarkWikiverse(options: RemarkWikiverseOptions = {}) {
     }
 
     function walk(node: MdNode, isTopLevel: boolean, root: MdNode): void {
+      const children = node.children;
+      const expandable =
+        children !== undefined && children.length > 0 && !SKIP_PARENTS.has(node.type);
+
+      // Expand BEFORE deriving a heading id. The id must come from what the
+      // heading displays — a wikilink's display text, no footnote marker —
+      // because that is what `extractHeadings` slugs for the table of contents.
+      // Slugging the raw `[[Target|text]]` / `[^key]` source instead gives the
+      // heading an id no TOC entry points at.
+      if (expandable) node.children = expandTextRuns(children, source, nextFootnoteIndex);
+
       if (headingIds && node.type === "heading" && typeof node.depth === "number") {
         const id = slug(mdastToText(node));
         node.data = node.data ?? {};
@@ -626,11 +640,7 @@ export function remarkWikiverse(options: RemarkWikiverseOptions = {}) {
         leadDone = true;
       }
 
-      const children = node.children;
-      if (!children || children.length === 0) return;
-      if (SKIP_PARENTS.has(node.type)) return;
-
-      node.children = expandTextRuns(children, source, nextFootnoteIndex);
+      if (!expandable || !node.children) return;
       // Children of the root are the top level: that is where `.lead` may land.
       for (const child of node.children) walk(child, node === root, root);
     }
