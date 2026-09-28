@@ -5,3 +5,7 @@ dist
 *.log
 Dockerfile
 .dockerignore
+coverage
+test-results
+playwright-report
+blob-report
