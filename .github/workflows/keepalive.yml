@@ -1,0 +1,22 @@
+name: Keep API awake
+
+# Render's free plan stops the API after 15 idle minutes and a cold start takes
+# longer than Netlify waits on a proxied request, so the first visitor after a
+# quiet spell would get a 504. One always-on free service stays inside Render's
+# 750 monthly instance hours. GitHub may delay or skip scheduled runs; a missed
+# ping only costs one slow request.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Ping /api/health/
+        run: curl -fsS --max-time 120 --retry 2 https://wikiverse-api.onrender.com/api/health/
