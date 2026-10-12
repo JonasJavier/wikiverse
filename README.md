@@ -121,7 +121,7 @@ The 57 planned articles that are not written yet are the red links — exactly a
 ### 🔒 Security by construction
 No user content ever reaches the DOM as HTML — there is no `dangerouslySetInnerHTML` anywhere, and
 a test fails the build if one appears. A strict **Content Security Policy** is emitted by both
-nginx and Django, fonts are self-hosted, remote images are allowlisted, JWT refresh tokens rotate
+the edge (Netlify) and Django, fonts are self-hosted, remote images are allowlisted, JWT refresh tokens rotate
 and are revocable, and login throttles cannot be reset by spoofing `X-Forwarded-For`.
 See [SECURITY.md](SECURITY.md).
 
@@ -168,7 +168,7 @@ See [SECURITY.md](SECURITY.md).
 | **Content** | `react-markdown` + GFM with a custom remark plugin for wikilinks, footnotes and red links |
 | **Testing** | pytest + pytest-django, Vitest + Testing Library, Playwright |
 | **Quality** | Ruff, ESLint (zero warnings), strict TypeScript, OpenAPI schema check, GitHub Actions |
-| **Delivery** | Docker, nginx, gunicorn, WhiteNoise, Railway |
+| **Delivery** | Docker, gunicorn, WhiteNoise, Netlify, Render, Neon |
 
 ## Architecture
 
@@ -325,7 +325,7 @@ wikiverse/
 | [Architecture](docs/ARCHITECTURE.md) | How the system fits together: data model, search, diffs, rendering, security |
 | [Design decisions](docs/DECISIONS.md) | The normative contract between the API and the interface |
 | [Development](docs/DEVELOPMENT.md) | Running without Docker, management commands, tests |
-| [Deployment](docs/DEPLOYMENT.md) | Railway topology, configuration, releasing and seeding |
+| [Deployment](docs/DEPLOYMENT.md) | Netlify / Render / Neon topology, configuration, releasing and seeding |
 | [Security](SECURITY.md) | Threat model, what is defended and how to report a vulnerability |
 | [Contributing](CONTRIBUTING.md) | Quality gates, non-negotiable rules, writing articles |
 | [Changelog](CHANGELOG.md) | What changed between versions |

@@ -35,10 +35,11 @@ COPY nginx.conf.template /etc/nginx/templates/default.conf.template
 COPY nginx/wikiverse_proxy.inc /etc/nginx/conf.d/wikiverse_proxy.inc
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# Overridden by the platform. The defaults keep a local
-# `docker build && docker run` working without extra flags.
-ENV BACKEND_ORIGIN=https://backend-production-25f12.up.railway.app \
-    BACKEND_HOST=backend-production-25f12.up.railway.app
+# Production runs on Netlify (netlify.toml); this image only serves
+# docker-compose.prod.yml, whose API service is called `backend`. Override both
+# to point the proxy anywhere else.
+ENV BACKEND_ORIGIN=http://backend:8000 \
+    BACKEND_HOST=backend
 
 EXPOSE 80
 

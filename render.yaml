@@ -1,0 +1,46 @@
+# Render Blueprint for the Django API. The SPA is on Netlify (netlify.toml) and
+# PostgreSQL is on Neon; Redis is optional and left out (the cache falls back
+# to local memory when REDIS_URL is empty).
+#
+# Values marked `sync: false` are entered in the Render dashboard when the
+# Blueprint is applied and live nowhere else.
+
+services:
+  - type: web
+    name: wikiverse-api
+    runtime: docker
+    plan: free
+    region: ohio
+    branch: main
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    buildFilter:
+      paths:
+        - backend/**
+    healthCheckPath: /api/health/
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false
+      - key: DEBUG
+        value: "false"
+      - key: ALLOWED_HOSTS
+        value: "wikiverse-api.onrender.com,wikiverse.jonasjavier.dev,localhost,127.0.0.1"
+      - key: CSRF_TRUSTED_ORIGINS
+        value: "https://wikiverse.jonasjavier.dev,https://wikiverse-jonasjavier.netlify.app"
+      - key: CORS_ALLOWED_ORIGINS
+        value: "https://wikiverse.jonasjavier.dev,https://wikiverse-jonasjavier.netlify.app"
+      # Client -> Netlify -> Render's proxy -> gunicorn: the client is the
+      # second-to-last X-Forwarded-For entry.
+      - key: NUM_PROXIES
+        value: "2"
+      - key: DJANGO_COLLECTSTATIC
+        value: "true"
+      - key: DJANGO_SEED
+        value: "false"
+      # 512 MB on the free plan.
+      - key: WEB_CONCURRENCY
+        value: "2"
+      - key: SENTRY_DSN
+        sync: false

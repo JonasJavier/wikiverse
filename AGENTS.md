@@ -64,10 +64,9 @@ schema (section 2).
 
 - Other sessions may switch the branch of this checkout. For long runs, work in a `git worktree`
   or on a `git archive` export.
-- Docker: `docker-compose.prod.yml` does not set `BACKEND_ORIGIN`, and the frontend image
-  defaults it to the Railway backend. A local production-like stack therefore needs
-  `BACKEND_ORIGIN=http://backend:8000` and `BACKEND_HOST=backend` on the `frontend` service, or
-  its `/api` calls go to production.
+- Production is Netlify (SPA + proxy) → Render (Django) → Neon (Postgres); see
+  `docs/DEPLOYMENT.md`. The nginx frontend image only serves `docker-compose.prod.yml` and
+  proxies to the compose `backend` service by default.
 - Never create a superuser from the seed. `ensure_admin` reads the credentials from the
   environment.
 - Quality gates and non-negotiable rules are in `CONTRIBUTING.md`. The security model is in

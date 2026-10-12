@@ -1,0 +1,96 @@
+# Netlify serves the SPA and proxies every backend path to the Django service on
+# Render, so the browser only ever talks to one origin. That keeps the strict
+# `connect-src 'self'` CSP valid and the SPA free of CORS preflights, exactly as
+# the nginx front did on Railway (frontend/nginx.conf.template, still used by
+# docker-compose.prod.yml).
+#
+# The backend origin appears in the proxy rules below and in
+# frontend/netlify/edge-functions/og-crawler.ts. Change both if the Render
+# service is renamed.
+
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = "dist"
+  edge_functions = "netlify/edge-functions"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Build-time. Same-origin, so the proxy below carries every API call.
+  VITE_API_URL = "/api"
+
+# ---------------------------------------------------------------------------
+# Backend proxies (status 200 = rewrite, the URL in the browser never changes).
+# ---------------------------------------------------------------------------
+[[redirects]]
+  from = "/api/*"
+  to = "https://wikiverse-api.onrender.com/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/admin/*"
+  to = "https://wikiverse-api.onrender.com/admin/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/static/*"
+  to = "https://wikiverse-api.onrender.com/static/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/media/*"
+  to = "https://wikiverse-api.onrender.com/media/:splat"
+  status = 200
+  force = true
+
+# Crawler documents must come from the site's own origin to be valid for it.
+[[redirects]]
+  from = "/robots.txt"
+  to = "https://wikiverse-api.onrender.com/robots.txt"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "https://wikiverse-api.onrender.com/sitemap.xml"
+  status = 200
+  force = true
+
+# SPA fallback. Not forced, so real files in dist/ still win.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# ---------------------------------------------------------------------------
+# Headers. Kept in step with apps/common/middleware.py and the nginx template.
+# ---------------------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; img-src 'self' https://upload.wikimedia.org https://commons.wikimedia.org data:; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://*.sentry.io; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), interest-cohort=()"
+
+# index.html must never be cached, or a deploy takes hours to reach anyone
+# holding a stale copy.
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+# Vite fingerprints these, so they are immutable.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Access-Control-Allow-Origin = "*"
